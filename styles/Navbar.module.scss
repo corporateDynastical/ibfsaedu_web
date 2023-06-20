@@ -1,0 +1,207 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    padding: 5px 0;
+    background: rgba(255, 55, 0, 0.9);
+    border-bottom: 1px solid #bbb;
+
+    .headerContainer{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 1280px;
+        align-items: center;
+        gap: 1vw;
+
+        .right{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .headerItem{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+    
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    
+    .navContainer{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1024px;
+        align-items: center;
+        background-color: #fff;
+        padding: 15px 0;
+        box-shadow: #e4b8b8 1px 1px 10px 1px;
+
+        .logo{
+            .picture{
+                position: relative;
+                width: 250px;
+                height: 50px;
+                border-radius: 10px;
+            }
+
+            img{
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                }
+        }
+
+        .socialIcons{
+            color: #000;
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .navBurger{
+            color: #fff;
+            font-size: 2rem;
+            padding: 20px;
+            margin: 0 20px 0 0;
+            background-color: rgba(255, 55, 0);
+            height: 100%;
+            cursor: pointer;
+        }
+    }
+}
+
+.menu{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    // background-color: #bdedfcda;
+    background-color: #ffffff70;
+
+    .menuContainer{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1024px;
+        height: 100%;
+        gap: 100px;
+
+        .menuLeft{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 3vw;
+
+            .col{
+                flex: 1;
+                min-width: max-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                .heading{
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    color: #FF5C00;
+                }
+
+                .line{
+                    padding: 0px;
+                    height: 3px;
+                    background: #000;
+                    margin: 7px 0;
+                    transition: all 0.5s;
+                    width: 0%;
+                }
+
+                .links{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    font-size: 1rem;
+                    list-style:square;
+
+                    li{
+                        padding: 5px 0;
+                    }
+                }
+
+                &:hover{
+                    .line{
+                        width: 100%;
+                        padding: 1px;
+                    }
+                }
+            }
+
+            .colL{
+                flex: 2;
+            }
+        }
+
+        .menuRight{
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #000;
+            color: #FF5C00;
+
+            .menuHeaderItem{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .menuSocialIcons{
+                display: flex;
+                align-items: center;
+                gap: 5px;  
+            }
+        }
+
+        .close{
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            font-size: 2rem;
+            font-weight: 500;
+            color: #FF5C00;
+            border: 1px solid #000;
+            cursor: pointer;
+            background-color: #fff;
+        }
+    }
+}
