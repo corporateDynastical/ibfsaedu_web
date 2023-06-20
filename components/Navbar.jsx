@@ -81,10 +81,6 @@ const Navbar = () => {
     <div className={style.menuContainer}>
         <div className={style.menuLeft}>
           <div className={style.col}>
-            <Link href={'/'} className={style.heading}>home</Link>
-            <hr className={style.line}/>
-          </div>
-          <div className={style.col}>
             <div className={style.heading}>about</div>
             <hr className={style.line}/>
             <ul className={style.links}>
@@ -104,10 +100,10 @@ const Navbar = () => {
               </ul>
               <ul className={style.links}>
                 <li><p>Digital Marketing</p></li>
-                <li style={{marginLeft: "5px", listStyle: "disc", fontSize: "16px"}}><Link href={'/'}>digital marketing services</Link></li>
-                <li style={{marginLeft: "5px", listStyle: "disc", fontSize: "16px"}}><Link href={'/'}>digital marketing services</Link></li>
-                <li style={{marginLeft: "5px", listStyle: "disc", fontSize: "16px"}}><Link href={'/'}>digital marketing services</Link></li>
-                <li style={{marginLeft: "5px", listStyle: "disc", fontSize: "16px"}}><Link href={'/'}>digital marketing services</Link></li>
+                <li style={{marginLeft: "5px", listStyle: "circle", fontSize: "16px"}}><Link href={'/'}>digital marketing services</Link></li>
+                <li style={{marginLeft: "5px", listStyle: "circle", fontSize: "16px"}}><Link href={'/'}>digital marketing services</Link></li>
+                <li style={{marginLeft: "5px", listStyle: "circle", fontSize: "16px"}}><Link href={'/'}>digital marketing services</Link></li>
+                <li style={{marginLeft: "5px", listStyle: "circle", fontSize: "16px"}}><Link href={'/'}>digital marketing services</Link></li>
               </ul>
             </div>
           </div>
@@ -138,10 +134,13 @@ const Navbar = () => {
             </ul>
           </div>
           <div className={style.col}>
+            <Link href={'/'} className={style.heading}>home</Link>
+            <hr className={style.line}/>
+          </div>
+          <div className={style.col}>
             <Link href={'/contact-us'} className={style.heading}>Contact</Link>
             <hr className={style.line}/>
           </div>
-
         </div>
         <div className={style.menuRight}>
           <div className={style.menuHeaderItem}>
@@ -168,9 +167,9 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className={style.close} onClick={()=>setShow(false)}>
-          <AiOutlineClose />
-        </div>
+    </div>
+    <div className={style.close} onClick={()=>setShow(false)}>
+      <AiOutlineClose />
     </div>
     </motion.div>}
     </>
