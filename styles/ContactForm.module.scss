@@ -1,0 +1,101 @@
+.container{
+    display: flex;
+    align-items: center;
+
+    .contactformbox{
+        flex: 1;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 3rem 5vw 0 5vw;
+        
+        .title{
+            text-transform: capitalize;
+            font-size: 2.5rem;
+        }
+        
+        .form{
+            margin: 2rem 0;
+            
+            input{
+                width: 100%;
+                padding: 1rem 1.5rem;
+                margin: 10px 0;
+                border: 1px solid black;
+                border-radius: 10px;
+                font-size: 20px;
+            }
+            
+            .name{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                
+                .first{
+                    flex: 1;
+                }
+                
+                .last{
+                    flex: 1;
+                }
+            }
+            
+            .submit{
+                padding: 10px 0;
+                
+                
+                input{
+                    padding: 10px;
+                    width: 50%;
+                    font-size: 20px;
+                    background-color: #FF7A00;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+
+    .addressContainer{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: url("../public/assets/images/stroke.png");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        background-repeat: no-repeat;
+
+        .data{
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            text-transform: capitalize;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+
+            .title{
+                font-size: 3.5rem;
+            }
+
+            .email{
+                text-transform: lowercase;
+            }
+        }
+    }
+}

@@ -1,8 +1,11 @@
 import AboutUs from "@components/AboutUs";
-import ClientTestimonialsHero from "@components/ClientTestimonialsHero";
 import ClientsSlides from "@components/ClientsSlides";
+import ContactForm from "@components/ContactForm";
 import Hero from "@components/Hero";
+import OurBlogs from "@components/OurBlogs";
+import ScrollComponent from "@components/ScrollComponent";
 import ServiceSections from "@components/ServiceSections";
+import TestimonialsHero from "@components/TestimonialsHero";
 
 export default function Home() {
   return (
@@ -11,7 +14,10 @@ export default function Home() {
       <AboutUs />
       <ServiceSections />
       <ClientsSlides />
-      <ClientTestimonialsHero />
+      <TestimonialsHero />
+      <ContactForm />
+      <OurBlogs />
+      <ScrollComponent />
     </div>
   )
 }

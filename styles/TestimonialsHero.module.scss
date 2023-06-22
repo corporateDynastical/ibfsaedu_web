@@ -1,0 +1,282 @@
+.container{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex: 1;
+        height: 100%;
+        min-height: 100vh;
+        background-color: #2e2e2e;
+
+        .title{
+            font-size: 4rem;
+            text-transform: capitalize;
+            padding: 0 5vw;
+            -webkit-text-stroke: 1px #000;
+            -webkit-text-fill-color: rgb(255, 125, 0);
+        }
+
+        .points{    
+            padding: 0 5vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 2vh;
+
+            .point{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                border-bottom: 1px solid #424242;
+
+                .blockOne{
+                    width: 10px;
+                    min-height: 100%;
+                    background-color: rgba(255, 55, 0);
+                }
+
+                .blockTwo{
+                    width: 10px;
+                    min-height: 100%;
+                    background-color: rgb(255, 255, 0);
+                }
+
+                .blockThree{
+                    width: 10px;
+                    min-height: 100%;
+                    background-color: rgb(115, 255, 0);
+                }
+
+                .corp{
+                    font-size: 4rem;
+                    font-weight: 800;
+                    position: relative;
+                    cursor: pointer;
+                    color: #424242;
+                    
+                    &::before{
+                        content: "CORPORATE";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 4rem;
+                        width: 0%;
+                        color: rgba(255, 55, 0);
+                        overflow: hidden;
+                        transition: all 1s ease;
+                    }
+                }
+
+                .poli{
+                    font-size: 4rem;
+                    font-weight: 800;
+                    position: relative;
+                    cursor: pointer;
+                    color: #424242;
+                    
+                    &::before{
+                        content: "POLITICAL";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 4rem;
+                        width: 0%;
+                        color: rgba(255, 255, 0);
+                        overflow: hidden;
+                        transition: all 1s ease;
+                    }
+
+                    &:hover::before{
+                        width: 100%;
+                    }
+                }
+
+                .eve{
+                    font-size: 4rem;
+                    font-weight: 800;
+                    position: relative;
+                    cursor: pointer;
+                    color: #424242;
+                    
+                    &::before{
+                        content: "EVENTS";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 4rem;
+                        width: 0%;
+                        color: rgb(115, 255, 0);
+                        overflow: hidden;
+                        transition: all 1s ease;
+                    }
+
+                    &:hover::before{
+                        width: 100%;
+                    }
+                }
+
+                .tagline{
+                    display: none;
+                }
+
+                &:hover{
+                    .tagline{
+                        display: block;
+                        color: rgb(255, 0, 0);
+                    }
+
+                    .corp::before{
+                        width: 100%;
+                    }
+                    .poli::before{
+                        width: 100%;
+                    }
+                    .eve::before{
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .right{
+        flex: 1;
+        height: 100%;
+        min-height: 100vh;
+        background: rgb(254,205,6);
+        background: linear-gradient(142deg, rgba(254,205,6,1) 0%, rgba(254,80,43,1) 100%);
+
+        .rightContainer{
+            display: grid;
+            grid-template-columns: auto;
+            height: 100%;
+            padding: 10vh 2vw 3vh 2vw;
+            row-gap: 50px;
+
+            .row{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 30px;
+            }
+        }
+
+        .cardDivOne{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            
+            .card{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: all 1s ease;
+                box-shadow: 5px 5px 3px tomato;
+                border-radius: 10px;
+                
+                .front{
+                    border: 1px solid orange;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    background: #fff;
+                    color: #333;
+                    border-radius: 10px;  
+                    padding: 20px 3vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;              
+                    text-align: center;
+                }
+
+                .back{
+                    border: 1px solid orange;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    background-color: #2e2e2e;
+                    color: #fff;
+                    border-radius: 10px; 
+                    padding: 20px 3vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;               
+                    text-align: center;
+                    transform: rotateY(180deg);
+                }
+            }
+            
+            &:hover{
+                
+                .card{
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+
+        .cardDivTwo{
+            width: 250px;
+            height: 300px;
+            position: relative;
+            
+            .card{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: all 1s ease;
+                box-shadow: 5px 5px 3px tomato;
+                border-radius: 10px;
+                
+                .front{
+                    border: 1px solid orange;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    background: #fff;
+                    color: #333;
+                    border-radius: 10px;  
+                    padding: 20px 3vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;              
+                    text-align: center;
+                }
+
+                .back{
+                    border: 1px solid orange;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    background-color: #2e2e2e;
+                    color: #fff;
+                    border-radius: 10px; 
+                    padding: 20px 3vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;               
+                    text-align: center;
+                    transform: rotateY(180deg);
+                }
+            }
+
+            &:hover{
+                
+                .card{
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+}
