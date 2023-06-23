@@ -50,9 +50,11 @@ const Navbar = () => {
     <div className={style.container}>
       <div className={style.navContainer}>
         <div className={style.logo}>
-          <div className={style.picture}>
-          <Image fill src='/assets/images/navbar/main_logo.svg' alt='Dynastical Communication Logo' />
-          </div>
+          <Link href={'/'}>
+            <div className={style.picture}>
+            <Image fill src='/assets/images/main_logo.svg' alt='Dynastical Communication Logo' />
+            </div>
+          </Link>
         </div>
         <div className={style.socialIcons}>
           <Link target='_blank' href={'https://www.facebook.com/DynasticalCommunication/'}>

@@ -1,6 +1,8 @@
 import Navbar from '@components/Navbar'
 import './globals.css'
 import { Outfit } from 'next/font/google'
+import Footer from '@components/Footer'
+import ScrollComponent from '@components/ScrollComponent'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -14,7 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={outfit.className}>
         <Navbar />
+        <ScrollComponent />
         {children}
+        <Footer />
       </body>
     </html>
   )

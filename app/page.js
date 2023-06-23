@@ -3,8 +3,7 @@ import ClientsSlides from "@components/ClientsSlides";
 import ContactForm from "@components/ContactForm";
 import Hero from "@components/Hero";
 import OurBlogs from "@components/OurBlogs";
-import ScrollComponent from "@components/ScrollComponent";
-import ServiceSections from "@components/ServiceSections";
+import ServicesHero from "@components/ServicesHero";
 import TestimonialsHero from "@components/TestimonialsHero";
 
 export default function Home() {
@@ -12,12 +11,11 @@ export default function Home() {
     <div>
       <Hero />
       <AboutUs />
-      <ServiceSections />
+      <ServicesHero />
       <ClientsSlides />
       <TestimonialsHero />
       <ContactForm />
       <OurBlogs />
-      <ScrollComponent />
     </div>
   )
 }
