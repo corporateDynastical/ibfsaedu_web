@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import {AiOutlineClose, AiOutlineMail, AiFillFacebook, AiOutlineTwitter, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
+import {AiFillFacebook, AiOutlineTwitter, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
 import {IoHomeSharp} from 'react-icons/io5'
 import {IoMdCall} from 'react-icons/io'
 import {MdEmail} from 'react-icons/md'

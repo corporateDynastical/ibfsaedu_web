@@ -1,0 +1,35 @@
+.container{
+    width: 100%;
+    height: 60vh;
+    padding-top: 15vh;
+    margin-top: -15vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(46, 46, 46);
+    
+    .title{
+        line-height: 1;
+        font-size: 6rem;
+        font-weight: 800;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 3px -1px 3px rgba(255,55,0,1);
+        -webkit-text-stroke: 1px #000;
+        -webkit-text-fill-color: rgba(255,225,0,1);
+        font-family: sans-serif;
+    }
+
+    .line{
+        background-color: rgba(100,100,100);
+        margin: 5vh 0 0 0;
+        padding: 1px;
+        width: 70%;
+
+    }
+}

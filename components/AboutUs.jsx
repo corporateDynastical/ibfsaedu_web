@@ -1,6 +1,7 @@
 "use client"
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { Lilita_One } from 'next/font/google'
 import { motion, useInView } from 'framer-motion'
 import style from '@styles/AboutUs.module.scss'

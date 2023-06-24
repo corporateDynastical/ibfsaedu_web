@@ -61,6 +61,10 @@
                             content: "•";
                             padding-right: 10px;
                         }
+
+                        &:hover{
+                            color: rgba(255,125,0);
+                        }
                     }
                 }
             }

@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {AiOutlineClose, AiOutlineMail, AiFillFacebook, AiOutlineTwitter, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import  {IoMdCall} from 'react-icons/io'
@@ -11,6 +11,28 @@ import style from '@styles/Navbar.module.scss'
 const Navbar = () => {
 
   const [show, setShow] = useState(false)
+
+  useEffect(() => {
+    const handleSmoothScroll = (e) => {
+      e.preventDefault();
+      const targetId = e.target.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach((link) => {
+      link.addEventListener('click', handleSmoothScroll);
+    });
+
+    return () => {
+      links.forEach((link) => {
+        link.removeEventListener('click', handleSmoothScroll);
+      });
+    };
+  }, []);
 
   return (
     <>

@@ -10,6 +10,7 @@ const mont = Montserrat({
 const ContactForm = () => {
   return (
     <div className={style.container}>
+        <section id="section1"></section>
         <div className={style.contactformbox}>
             <h1 className={style.title}>Want to discuss an idea that could change the world ? We’re all ears !</h1>
             <form className={style.form} action="">
