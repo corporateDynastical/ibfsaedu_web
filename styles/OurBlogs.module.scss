@@ -26,18 +26,21 @@
         border-radius: 10px;
         padding: 10px;
         background-color: #fff;
-        max-width: 20vw;
+        width: 20vw;
+        height: 65vh;
 
         .picture{
-            position: relative;
-            width: 300px;
+            position: absolute;
+            width: 100%;
             height: 350px;
+            top: 0;
+            left: 0;
 
             img{
-                position: absolute;
                 width: 100%;
                 height: 100%;
-                border-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
             }
         }
         
@@ -47,8 +50,9 @@
             padding-top: 10px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
+            height: 100%;
 
             .heading{
                 font-size: 20px;
