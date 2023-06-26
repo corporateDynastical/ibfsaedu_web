@@ -1,0 +1,15 @@
+.container{
+    margin-top: -20vh;
+    background-color: #fff;
+    height: 55vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 15vw 30px 15vw;
+
+    .title{
+        font-size: 6rem;
+        font-weight: 800;
+        font-family: sans-serif;
+        -webkit-text-fill-color: rgba(255,55,0);
+    }
+}

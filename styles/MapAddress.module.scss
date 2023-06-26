@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+    background-color: transparent;
+    
+    .address{
+        color: rgba(255,100,0);
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 2;
+        display: flex;
+        justify-content: center;
+        
+        .title{
+            font-size: 3rem;
+            -webkit-text-stroke: 1px #000;
+            text-transform: capitalize;
+        }
+
+        a{
+            color: rgba(255,55,0);
+        }
+
+    }
+}
