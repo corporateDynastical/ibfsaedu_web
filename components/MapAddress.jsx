@@ -20,7 +20,7 @@ const MapAddress = () => {
           <span>/</span>
           <Link className='px-2' href={'tel: +919175772356'}>+91 91757 72356</Link>
           </h3>
-          <h4 className={style.email}>connectdynastical@gmail.com</h4>
+          <h4 className={style.email}>connectdynastical@gmail.com</h4> 
         </div>
       </div>
     </div>
