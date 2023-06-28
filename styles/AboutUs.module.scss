@@ -90,8 +90,8 @@
         left: auto;
         min-width: 200px;
         min-height: 200px;
-        background: rgb(248,108,108);
-        background: linear-gradient(to top, rgba(248,108,108,0.5) 0%, rgba(255,255,255,1) 100%);
+        background: rgb(155,205,210);
+        background: linear-gradient(42deg, rgba(155,205,210,0.7) 0%, rgba(255,255,255,1) 100%);
         border-radius: 50%;
         z-index: 0;
         box-shadow: 0.2px -0.2px 1px #000;
@@ -173,7 +173,6 @@
                 -webkit-text-fill-color: #fff;
                 font-family: sans-serif;
                 font-size: 1.2rem;
-                border-bottom: 1px solid rgba(255, 55, 0);
             }
 
             p{
@@ -183,7 +182,7 @@
             }
 
             &:hover{
-                box-shadow: 3px 3px 10px 2px #ff0000;
+                box-shadow: 3px 3px 10px 1px #ff0000;
             }
         }
     }

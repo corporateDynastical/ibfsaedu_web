@@ -9,8 +9,11 @@ const lilita = Outfit({
 const PageTitle = () => {
   return (
     <div className={style.container}>
-        <h1 className={`${style.title} ${lilita.className}`}>Coporate Solutions</h1>
-        <hr className={style.line} />
+      <div className={style.circle}></div>
+      <div className={style.circle2}></div>
+      <div className={style.circle3}></div>
+      <div className={style.circle4}></div>
+      <h1 className={`${style.title} ${lilita.className}`}>Corporate Solutions</h1>
     </div>
   )
 }

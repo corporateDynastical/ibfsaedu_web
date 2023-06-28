@@ -20,7 +20,7 @@ const bebas = Bebas_Neue({
 const OurBlogs = () => {
 
     const ref = useRef(null)
-    const isInView = useInView(ref, {once: true})
+    const isInView = useInView(ref, { once: true })
 
     const data = [
         {
@@ -47,32 +47,37 @@ const OurBlogs = () => {
     ]
 
 
-  return (
-    <>
-    <h1 className={`${style.title} ${lilita.className}`}>Our Blogs !</h1>
-    <div ref={ref} className={style.container}>
-        {data.map((item, index)=> {
-           return (<Link href={item.href} >
-            <motion.div 
-            animate={{x: isInView ? 0 : "100vw"}}
-            transition={{duration: 0.8, type: "tween", delay: 0.05 * index}}
-            className={style.card}>
-                <div className={style.picture}>
-                    <Image src={item.src} alt={item.alt} fill />
-                </div>
-                <div className={style.data}>
-                    <h1 className={style.heading}>
-                        {item.heading}
-                    </h1>                    
-                    <div className={style.date}>
-                        <p className={bebas.className}>{item.date}</p>
-                    </div>
-                </div>
-            </motion.div>
-        </Link>)})}
-    </div>
-    </>
-  )
+    return (
+        <div className={style.container}>
+            <div className={style.circle}></div>
+            <div className={style.circle2}></div>
+            <div className={style.circle3}></div>
+            <div className={style.circle4}></div>
+            <h1 className={`${style.title} ${lilita.className}`}>Discover Our Blog Collection !</h1>
+            <div ref={ref} className={style.insideContainer}>
+                {data.map((item, index) => {
+                    return (<Link href={item.href} >
+                        <motion.div
+                            animate={{ x: isInView ? 0 : "100vw" }}
+                            transition={{ duration: 0.8, type: "tween", delay: 0.05 * index }}
+                            className={style.card}>
+                            <div className={style.picture}>
+                                <Image src={item.src} alt={item.alt} fill />
+                            </div>
+                            <div className={style.data}>
+                                <h1 className={style.heading}>
+                                    {item.heading}
+                                </h1>
+                                <div className={style.date}>
+                                    <p className={bebas.className}>{item.date}</p>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </Link>)
+                })}
+            </div>
+        </div>
+    )
 }
 
 export default OurBlogs

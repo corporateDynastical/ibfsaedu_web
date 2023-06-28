@@ -1,15 +1,16 @@
 .container{
     width: 100%;
-    height: 60vh;
-    padding-top: 15vh;
-    margin-top: -15vh;
+    background: #FFDEDE;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgb(46, 46, 46);
-    
+    margin-top: -15vh;
+    padding-top: 25vh;
+    padding-bottom: 2vh;
+    position: relative;
+    height: 50vh;
+    box-shadow: 0 1px 5px #ff0000;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+
     .title{
         line-height: 1;
         font-size: 6rem;
@@ -17,19 +18,65 @@
         display: flex;
         width: 100%;
         justify-content: center;
+        align-items: flex-end;
         text-align: center;
         text-transform: uppercase;
-        text-shadow: 3px -1px 3px rgba(255,55,0,1);
-        -webkit-text-stroke: 1px #000;
-        -webkit-text-fill-color: rgba(255,225,0,1);
+        -webkit-text-fill-color: #fff;
+        text-shadow: 1px 1px 3px #ff0000;
         font-family: sans-serif;
+        z-index: 1;
+        position: relative;
     }
 
-    .line{
-        background-color: rgba(100,100,100);
-        margin: 5vh 0 0 0;
-        padding: 1px;
-        width: 70%;
-
+    .circle{
+        position: absolute;
+        top: 23%;
+        left: 15%;
+        min-width: 100px;
+        min-height: 100px;
+        background: rgb(155,205,210);
+        background: linear-gradient(42deg, rgba(155,205,210,0.7) 0%, rgba(255,255,255,1) 100%);
+        border-radius: 50%;
+        z-index: 1;
+        box-shadow: 0.2px -0.2px 1px #0000007a;
+    }
+    .circle2{
+        position: absolute;
+        top: 40%;
+        left: 37%;
+        right: auto;
+        min-width: 100px;
+        min-height: 100px;
+        background: rgb(248,108,108);
+        background: linear-gradient(to top, rgba(248,108,108,0.7) 0%, rgba(255,255,255,1) 100%);
+        border-radius: 50%;
+        z-index: 1;
+        box-shadow: 0.2px -0.2px 1px #0000007a;
+    }
+    .circle3{
+        position: absolute;
+        bottom: 4%;
+        left: 52%;
+        right: auto;
+        min-width: 100px;
+        min-height: 100px;
+        background: rgb(155,205,210);
+        background: linear-gradient(42deg, rgba(155,205,210,0.7) 0%, rgba(255,255,255,1) 100%);
+        border-radius: 50%;
+        z-index: 1;
+        box-shadow: 0.2px -0.2px 1px #0000007a;
+    }
+    .circle4{
+        position: absolute;
+        bottom: 15%;
+        right: 2%;
+        left: auto;
+        min-width: 200px;
+        min-height: 200px;
+        background: rgb(248,108,108);
+        background: linear-gradient(to top, rgba(248,108,108,0.7) 0%, rgba(255,255,255,1) 100%);
+        border-radius: 50%;
+        z-index: 1;
+        box-shadow: 0.2px -0.2px 1px #0000007a;
     }
 }
