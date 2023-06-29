@@ -61,14 +61,6 @@ const ServicePageTestimonials = () => {
 
     return (
         <div className={'container'}>
-            {/* <div className='circle1'></div>
-            <div className='circle2'></div>
-            <div className='circle3'></div>
-            <div className='circle4'></div>
-            <div className='circle5'></div>
-            <div className='circle6'></div>
-            <div className='circle7'></div>
-            <div className='circle8'></div> */}
             <h1 className={'heading'}><span className={lilita.className}>Hear what our esteemed corporate clients have to say about us.</span></h1>
             <div className={'arrows'}>
                 <div style={{ padding: "20px", background: "#fff", borderRadius: "50%", boxShadow: "-1px 1px 2px #000" }} className={'prevComment'} onClick={() => prevComment()}>

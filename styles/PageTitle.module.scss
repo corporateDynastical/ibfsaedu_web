@@ -1,82 +1,100 @@
 .container{
     width: 100%;
-    background: #FFDEDE;
+    height: 66vh;
+    display: flex;
+    padding-top: 15vh;
+    align-items: center;
     position: relative;
     margin-top: -15vh;
-    padding-top: 25vh;
-    padding-bottom: 2vh;
-    position: relative;
-    height: 50vh;
-    box-shadow: 0 1px 5px #ff0000;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-
-    .title{
-        line-height: 1;
-        font-size: 6rem;
-        font-weight: 800;
+    background: #FFDEDE;
+    
+    .left{
+        flex: 1;
         display: flex;
-        width: 100%;
         justify-content: center;
-        align-items: flex-end;
+        flex-direction: column;
+        align-items: flex-start;
         text-align: center;
-        text-transform: uppercase;
-        -webkit-text-fill-color: #fff;
-        text-shadow: 1px 1px 3px #ff0000;
-        font-family: sans-serif;
+        padding-left: 15vw;
         z-index: 1;
         position: relative;
+        height: 100%;
+
+        .headingOne{
+            color: #f86c6c;
+            font-weight: 400;
+            font-size: 25px;
+            padding-left: 5px;
+            text-shadow: 0.5px 0.5px 1px #ff0000;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+        }
+        
+        h1{
+            font-size: 6rem;
+            text-transform: uppercase;
+            -webkit-text-fill-color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 3px #ff0000;
+            line-height: 1.1;
+        }
+    }
+    
+    .right{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+
+        .outerCircle{
+            min-width: 300px;
+            min-height: 300px;
+            border: 1px solid #fff;
+            border-style: dashed;
+            padding: 40px;
+            border-radius: 50%;
+            background: #9BCDD2;
+            box-shadow: 1px 1px 4px #000;
+            z-index: 2;
+    
+            .innerCircle{
+                min-width: 200px;
+                min-height: 230px;
+                border-radius: 50%;
+                position: relative;
+                box-shadow: 1px 1px 4px rgb(0, 0, 0);
+    
+                .picture{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    min-width: 100%;
+                    min-height: 100%;
+    
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .line{
+            position: absolute;
+            background: #018E9B;
+            height: 10px;
+            top: 50%;
+            width: 80%;
+            border-radius: 50%;
+        }
+
     }
 
-    .circle{
+    .shape{
         position: absolute;
-        top: 23%;
-        left: 15%;
-        min-width: 100px;
-        min-height: 100px;
-        background: rgb(155,205,210);
-        background: linear-gradient(42deg, rgba(155,205,210,0.7) 0%, rgba(255,255,255,1) 100%);
-        border-radius: 50%;
-        z-index: 1;
-        box-shadow: 0.2px -0.2px 1px #0000007a;
-    }
-    .circle2{
-        position: absolute;
-        top: 40%;
-        left: 37%;
-        right: auto;
-        min-width: 100px;
-        min-height: 100px;
-        background: rgb(248,108,108);
-        background: linear-gradient(to top, rgba(248,108,108,0.7) 0%, rgba(255,255,255,1) 100%);
-        border-radius: 50%;
-        z-index: 1;
-        box-shadow: 0.2px -0.2px 1px #0000007a;
-    }
-    .circle3{
-        position: absolute;
-        bottom: 4%;
-        left: 52%;
-        right: auto;
-        min-width: 100px;
-        min-height: 100px;
-        background: rgb(155,205,210);
-        background: linear-gradient(42deg, rgba(155,205,210,0.7) 0%, rgba(255,255,255,1) 100%);
-        border-radius: 50%;
-        z-index: 1;
-        box-shadow: 0.2px -0.2px 1px #0000007a;
-    }
-    .circle4{
-        position: absolute;
-        bottom: 15%;
-        right: 2%;
-        left: auto;
-        min-width: 200px;
-        min-height: 200px;
-        background: rgb(248,108,108);
-        background: linear-gradient(to top, rgba(248,108,108,0.7) 0%, rgba(255,255,255,1) 100%);
-        border-radius: 50%;
-        z-index: 1;
-        box-shadow: 0.2px -0.2px 1px #0000007a;
+        top: 78%;
+        width: 100%;
+        z-index: 0;
     }
 }

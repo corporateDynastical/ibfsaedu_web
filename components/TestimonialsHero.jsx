@@ -12,10 +12,10 @@ const lilita = Lilita_One({
 const TestimonialsHero = () => {
   return (
     <div className={style.container}>
-        <div className={style.circle}></div>
+        {/* <div className={style.circle}></div>
         <div className={style.circle2}></div>
         <div className={style.circle3}></div>
-        <div className={style.circle4}></div>
+        <div className={style.circle4}></div> */}
         <div className={style.left}>
             <h1 className={`${style.title} ${lilita.className}`}>Read What our Clients say about us !</h1>
             <p className={style.tagline}>Explore our clients' stories. Click below to dive in deeper.</p>
