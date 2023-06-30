@@ -1,6 +1,12 @@
 import Link from "next/link";
-import style from "@styles/AboutUs.module.scss";
 import Image from "next/image";
+import { Lilita_One } from "next/font/google";
+import style from "@styles/AboutUs.module.scss";
+
+const lilita = Lilita_One({
+  weight: "400",
+  subsets: ['latin-ext']
+})
 
 const AboutUs = () => {
 
@@ -8,17 +14,16 @@ const AboutUs = () => {
   const dynasticalArr = Array.from(dynastical)
   const political = "Political Analysis"
   const politicalArr = Array.from(political)
-  const evnets = "Events Events"
+  const evnets = "Events"
   const evnetsArr = Array.from(evnets)
 
   return (
     <div className={style.container}>
       <div className={style.circle}></div>
-      <div className={style.circle2}></div>
       <div className={style.circle3}></div>
       <div className={style.left}>
-        <p className={style.headingOne}>We're Offering</p>
-        <h1>Awesome Customer Services</h1>
+        <p className={`${style.headingOne}`}>We're Offering</p>
+        <h1 className={lilita.className}>Awesome Customer Services</h1>
         <p className={style.tagline}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
@@ -41,69 +46,82 @@ const AboutUs = () => {
               {dynasticalArr.map((item, index) => {
                 return (
                   <span
+                    className={lilita.className}
                     style={{
                       transform: `rotate(${(index * 18)}deg)`,
-                      color: "rgba(255,255,0)"
                     }}>
                     {item}
                   </span>
                 )
               })}
             </h1>
-            <div className={style.icon}>
+            <div className={`${style.icon}`}>
               <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
-              <Link href={'corporate-solutions'} >
-              <div className={style.overlay}>
-                View More
-              </div>
+              <Link href={'/corporate-solutions'} >
+                <div className={style.overlay}>
+                  View More
+                </div>
               </Link>
             </div>
+            <button>
+              <Link href={'/corporate-solutions'}>
+                Learn More
+              </Link>
+            </button>
           </div>
           <div className={style.block}>
             <h1 className={style.title}>
               {politicalArr.map((item, index) => {
                 return (
-                  <span className={style.poli}
+                  <span className={`${style.poli} ${lilita.className}`}
                     style={{
                       transform: `rotate(${(index * 18)}deg)`,
-                      color: "rgba(255,125,0)"
                     }}>
                     {item}
                   </span>
                 )
               })}
             </h1>
-            <div className={style.icon}>
+            <div className={`${style.icon}`}>
               <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
               <Link href={'political-analysis'} >
-              <div className={style.overlay}>
-                View More
-              </div>
+                <div className={style.overlay}>
+                  View More
+                </div>
               </Link>
             </div>
+            <button>
+              <Link href={'/political-analysis'}>
+                Learn More
+              </Link>
+            </button>
           </div>
           <div className={style.block}>
-            <h1 className={style.title}>
+            <h1 className={`${style.title} ${style.title3}`}>
               {evnetsArr.map((item, index) => {
                 return (
-                  <span className={style.eve}
+                  <span className={`${style.eve} ${lilita.className}`}
                     style={{
                       transform: `rotate(${(index * 18)}deg)`,
-                      color: "#f86c6c"
                     }}>
                     {item}
                   </span>
                 )
               })}
             </h1>
-            <div className={style.icon}>
+            <div className={`${style.icon} ${lilita.className}`}>
               <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
               <Link href={'events'} >
-              <div className={style.overlay}>
-                View More
-              </div>
+                <div className={style.overlay}>
+                  View More
+                </div>
               </Link>
             </div>
+            <button>
+              <Link href={'/events'}>
+                Learn More
+              </Link>
+            </button>
           </div>
         </div>
       </div>

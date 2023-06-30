@@ -52,7 +52,6 @@
 
     .data {
         display: flex;
-        // padding: 0 5vw;
         align-items: center;
         gap: 2vw;
         z-index: 1;
@@ -61,11 +60,10 @@
 
         .info {
             flex: 1.5;
-            font-size: 18px;
+            font-size: 22px;
             text-transform: capitalize;
             color: #000;
             text-shadow: 0.2px 0.2px 1px #f86c6c;
-            line-height: 2;
         }
 
         .infoEnd{

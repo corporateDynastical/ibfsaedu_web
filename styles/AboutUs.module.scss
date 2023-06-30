@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-
 .container {
     display: flex;
     align-items: center;
@@ -33,7 +31,6 @@
         }
 
         h1 {
-            font-family: 'Lilita One', cursive;
             font-size: 3rem;
             -webkit-text-fill-color: #f86c6c;
             text-shadow: 0.5px 0.5px 1px #ff0000;
@@ -52,7 +49,7 @@
         }
 
         .info {
-            font-size: 18px;
+            font-size: 22px;
             width: 80%;
             text-transform: capitalize;
             color: #000;
@@ -69,8 +66,8 @@
         left: 13%;
         min-width: 300px;
         min-height: 300px;
-        background: rgb(248, 108, 108);
-        background: linear-gradient(222deg, rgba(248, 108, 108, 0.7) 0%, rgba(255, 255, 255, 1) 100%);
+        background: rgb(155, 205, 210);
+        background: linear-gradient(42deg, rgba(155, 205, 210, 0.7) 0%, rgba(255, 255, 255, 1) 100%);
         border-radius: 50%;
         z-index: 0;
         box-shadow: -0.2px 0.2px 1px #000;
@@ -148,7 +145,7 @@
                         border-radius: 50%;
                     }
 
-                    .overlay{
+                    .overlay {
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -160,6 +157,7 @@
                         align-items: center;
                         color: #fff;
                         display: none;
+                        font-weight: 500;
                     }
                 }
 
@@ -168,47 +166,73 @@
                     width: 100%;
                     height: 100%;
                     animation: startRotation 15s linear infinite;
-                    
+
                     @keyframes startRotation {
-                        0%{
+                        0% {
                             transform: rotate(-360deg);
                         }
-                        100%{
+
+                        100% {
                             transform: rotate(0deg);
                         }
                     }
-                    
+
                     span {
                         position: absolute;
                         font-size: 2rem;
                         left: 50%;
                         transform-origin: 0 150px;
-                        font-family: 'Lilita One', cursive;
                         text-shadow: 1px 1px 1px #ff0000;
                         text-transform: uppercase;
+                        color: #f86c6c;
 
-                        .poli{
-                            -webkit-text-fill-color: rgba(255,125,0);
+
+                        .poli {
+                            -webkit-text-fill-color: rgba(255, 125, 0);
                             text-shadow: 1px 1px 1px #ff0000;
                         }
-                        .eve{
+
+                        .eve {
                             -webkit-text-fill-color: #f86c6c;
                             text-shadow: 1px 1px 1px #ff0000;
                         }
                     }
                 }
-                
+
                 &:hover {
-                    .title{
+                    .title {
                         animation: none;
                         transform: rotate(290deg);
+
+                        span{
+                            color: rgba(255, 255, 0);
+                        }
                     }
 
-                    .icon{
+                    .title3{
+                        transform: rotate(315deg);
+                    }
 
-                        .overlay{
+                    .icon {
+                        .overlay {
                             display: flex;
                         }
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    width: max-content;
+                    height: max-content;
+                    background: rgb(255, 255, 255);
+                    top: 110%;
+                    padding: 10px 25px;
+                    color: #018e9b;
+                    border-radius: 50px;
+                    box-shadow: 1px 1px 3px #000;
+
+                    &:hover {
+                        background: rgba(255, 255, 0);
                     }
                 }
             }

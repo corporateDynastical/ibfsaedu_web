@@ -53,17 +53,17 @@ const OurBlogs = () => {
             <div className={style.circle2}></div>
             <div className={style.circle3}></div>
             <div className={style.circle4}></div>
-            <h1 className={`${style.title} ${lilita.className}`}>Discover Our Blog Collection !</h1>
-            <div ref={ref} className={style.insideContainer}>
+            <div className={style.left}>
+                <h1 className={`${style.title} ${lilita.className}`}>Discover Our Blog Collection !
+                </h1>
+                <div className={style.picture}>
+                    <Image src={'/assets/images/about.jpg'} alt='dynastical blogs' fill />
+                </div>
+            </div>
+            <div ref={ref} className={style.right}>
                 {data.map((item, index) => {
                     return (<Link href={item.href} >
-                        <motion.div
-                            animate={{ x: isInView ? 0 : "100vw" }}
-                            transition={{ duration: 0.8, type: "tween", delay: 0.05 * index }}
-                            className={style.card}>
-                            <div className={style.picture}>
-                                <Image src={item.src} alt={item.alt} fill />
-                            </div>
+                        <div className={style.strip}>
                             <div className={style.data}>
                                 <h1 className={style.heading}>
                                     {item.heading}
@@ -72,7 +72,7 @@ const OurBlogs = () => {
                                     <p className={bebas.className}>{item.date}</p>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     </Link>)
                 })}
             </div>
