@@ -1,8 +1,9 @@
 import Navbar from '@components/Navbar'
 import './globals.css'
 import { Outfit } from 'next/font/google'
-import Footer from '@components/Footer'
+// import Footer from '@components/Footer'
 import ScrollComponent from '@components/ScrollComponent'
+import FooterNew from '@components/FooterNew'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <ScrollComponent />
         {children}
-        <Footer />
+        <FooterNew />
       </body>
     </html>
   )

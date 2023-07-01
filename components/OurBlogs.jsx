@@ -62,18 +62,32 @@ const OurBlogs = () => {
             </div>
             <div ref={ref} className={style.right}>
                 {data.map((item, index) => {
-                    return (<Link href={item.href} >
-                        <div className={style.strip}>
-                            <div className={style.data}>
-                                <h1 className={style.heading}>
-                                    {item.heading}
-                                </h1>
-                                <div className={style.date}>
-                                    <p className={bebas.className}>{item.date}</p>
+                    return (
+                        <Link href={item.href} >
+                            <div className={style.stripDiv}>
+                                <div className={style.stripHead}>
+                                    <div className={style.date}>
+                                        <p className={bebas.className}>{item.date}</p>
+                                    </div>
+                                </div>
+                                <div className={style.strip}>
+                                    <div className={style.insideTopLeftCircle}></div>
+                                    <div className={style.insideTopLeftCircle1}></div>
+                                    <div className={style.insideTopLeftCircle2}></div>
+                                    <div className={style.insideTopLeftCircle3}></div>
+                                    <div className={style.insideBottomRightCircle}></div>
+                                    <div className={style.insideBottomRightCircle1}></div>
+                                    <div className={style.insideBottomRightCircle2}></div>
+                                    <div className={style.insideBottomRightCircle3}></div>
+                                    <div className={style.data}>
+                                        <h1 className={`${style.heading} ${lilita.className}`}>
+                                            {item.heading}
+                                        </h1>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </Link>)
+                        </Link>
+                    )
                 })}
             </div>
         </div>

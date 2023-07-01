@@ -1,49 +1,63 @@
 import { Lilita_One } from "next/font/google";
 import style from '@styles/CompanyAndVentures.module.scss'
 import Image from 'next/image'
+import Link from "next/link";
 const lilita = Lilita_One({
     weight: "400",
     subsets: ['latin-ext']
 })
 
 const CompanyAndVentures = () => {
+
+    const titleContent = "Companies & Ventures "
+    const titleContentArr = Array.from(titleContent)
+
     return (
         <div className={style.container}>
-            <div className={style.left}>
-                <h1 className={lilita.className}>Companies</h1>
-                <div className={style.companies}>
-                    <div className={style.topDiv}>
-                        <div className={style.company}>
-                            <Image src={'/assets/images/about.jpg'} alt='' fill />
-                        </div>
-                        <div className={style.company}>
-                            <Image src={'/assets/images/about.jpg'} alt='' fill />
-                        </div>
-                        <div className={style.company}>
-                            <Image src={'/assets/images/about.jpg'} alt='' fill />
-                        </div>
+            <div className={style.block}>
+                <h1 className={`${lilita.className} ${style.title}`}>
+                    <br />
+                    {titleContentArr.map((item, index) => {
+                        return (
+                            <span key={index}
+                                className={lilita.className}
+                                style={{
+                                    transform: `rotate(${(index * 5)}deg)`,
+                                }}>
+                                {item}
+                            </span>
+                        )
+                    })}
+                </h1>
+            </div>
+            <div className={style.logos}>
+                <div className={style.top}>
+                    <div className={style.picture}>
+                        <Image src={'/assets/images/about.jpg'} alt="" fill />
                     </div>
-                    <div className={style.bottomDiv}>
-                        <div className={style.company}>
-                            <Image src={'/assets/images/about.jpg'} alt='' fill />
-                        </div>
-                        <div className={style.company}>
-                            <Image src={'/assets/images/about.jpg'} alt='' fill />
-                        </div>
+                    <div className={style.picture}>
+                        <Image src={'/assets/images/about.jpg'} alt="" fill />
+                    </div>
+                    <div className={style.picture}>
+                        <Image src={'/assets/images/about.jpg'} alt="" fill />
+                    </div>
+                    <div className={style.picture}>
+                        <Image src={'/assets/images/about.jpg'} alt="" fill />
+                    </div>
+                </div>
+                <div className={style.bottom}>
+                    <div className={style.picture}>
+                        <Image src={'/assets/images/about.jpg'} alt="" fill />
+                    </div>
+                    <div className={style.picture}>
+                        <Image src={'/assets/images/about.jpg'} alt="" fill />
+                    </div>
+                    <div className={style.picture}>
+                        <Image src={'/assets/images/about.jpg'} alt="" fill />
                     </div>
                 </div>
             </div>
-            <div className={style.right}>
-                <h1 className={lilita.className}>Ventures</h1>
-                <div className={style.ventures}>
-                    <div className={style.venture}>
-                        <Image src={'/assets/images/about.jpg'} alt='' fill />
-                    </div>
-                    <div className={style.venture}>
-                        <Image src={'/assets/images/about.jpg'} alt='' fill />
-                    </div>
-                </div>
-            </div>
+            <Link href={'/companies-&-ventures/'} className={lilita.className} >View More</Link>
         </div>
     )
 }

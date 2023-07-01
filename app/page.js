@@ -15,12 +15,12 @@ export default function Home() {
       <Hero />
       <About />
       <AboutUs />
-      <Slider />
       <ClientsSlides />
       <ServicePageTestimonials />
       <ContactForm />
       <CompanyAndVentures />
       <OurBlogs />
+      <Slider />
     </div>
   )
 }
