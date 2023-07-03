@@ -15,12 +15,12 @@ const bebas = Bebas_Neue({
   subsets: ["latin"]
 })
 
-const PageTitle = ({title1, title2}) => {
+const PageTitle = ({subHeading, title1, title2}) => {
 
   return (
     <div className={style.container}>
       <div className={`${style.left}`}>
-        <p className={`${style.headingOne} ${bebas.className}`}>We offer</p>
+        <p className={`${style.headingOne} ${bebas.className}`}>{subHeading}</p>
         <h1 className={lilita.className}>{title1} <br /> {title2}</h1>
       </div>
       <div className={style.right}>

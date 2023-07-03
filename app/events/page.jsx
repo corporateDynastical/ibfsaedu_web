@@ -1,13 +1,16 @@
 import EventsPageHero from '@components/EventsPageHero'
+import ServicePageContactForm from '@components/ServicePageContactForm'
 import PageTitle from '@components/PageTitle'
-import PoliticalPageHero from '@components/PoliticalPageHero'
+import Slider from '@components/Slider'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        <PageTitle title1={'Events'} />
+        <PageTitle subHeading={'We offer'} title1={'Events'} />
         <EventsPageHero />
+        <ServicePageContactForm />
+        <Slider />
     </div>
   )
 }

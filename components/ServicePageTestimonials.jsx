@@ -19,9 +19,26 @@ const lilita = Lilita_One({
 import '@styles/ServicePageTestimonials.scss'
 import Image from 'next/image'
 
-const ServicePageTestimonials = ({ title, tagline, testimonialData }) => {
+const ServicePageTestimonials = () => {
 
-    const data = testimonialData
+    const data = [
+        {
+          id: 0, author: "John Doe", comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam omnis autem dicta laborum delectus porro nesciunt vel aspernatur corporis ea? Dolorum numquam culpa voluptatibus minima temporibus", img: "/assets/images/about.jpg", commenter: "Right Foundation"
+        },
+        {
+          id: 1, author: "John Doe", comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam omnis autem dicta laborum delectus porro nesciunt vel aspernatur corporis ea? Dolorum numquam culpa voluptatibus minima temporibus", img: "/assets/images/about.jpg", commenter: "Royal Runbhumi"
+        },
+        {
+          id: 2, author: "John Doe", comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam omnis autem dicta laborum delectus porro nesciunt vel aspernatur corporis ea? Dolorum numquam culpa voluptatibus minima temporibus", img: "/assets/images/about.jpg", commenter: "Right Foundation"
+        },
+        {
+          id: 3, author: "Saumitra Vilankar", comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam omnis autem dicta laborum delectus porro nesciunt vel aspernatur corporis ea? Dolorum numquam culpa voluptatibus minima",
+          img: "/assets/images/about.jpg", commenter: "Right Foundation"
+        },
+        {
+          id: 4, author: "John Doe", comment: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam omnis autem dicta laborum delectus porro nesciunt vel aspernatur corporis ea? Dolorum numquam culpa voluptatibus minima temporibus", img: "/assets/images/about.jpg", commenter: "Right Foundation"
+        },
+      ]
 
     const [indexArr, setIndexArr] = useState([0, 1, 2, 3, 4]);
 
@@ -60,10 +77,10 @@ const ServicePageTestimonials = ({ title, tagline, testimonialData }) => {
             <div className="circle3"></div>
             <div className="circle4"></div>
             <h1 className={'heading'}>
-                <span className={lilita.className}>{title}
+                <span className={lilita.className}>Hear what  our esteemed clients have to say about us.
                 </span>
             </h1>
-            <p className="tagline">{tagline}</p>
+            <p className="tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div className={'arrows'}>
                 <div style={{ padding: "20px", background: "#fff", borderRadius: "50%", boxShadow: "-1px 1px 2px #000" }} className={'prevComment'} onClick={() => prevComment()}>
                     <GrFormPrevious style={{ color: "#018e9b" }} />
@@ -84,7 +101,7 @@ const ServicePageTestimonials = ({ title, tagline, testimonialData }) => {
                         className = "testimony testimonyLeft";
                     } else className = "testimony";
                     return (
-                        <div className={className}>
+                        <div key={index} className={className}>
                             <h3 className={`${amatic_sc.className} author`}>{data[index].author}</h3>
                             <h6 className={`${amatic_sc.className} comment`}>{data[index].comment}
                             </h6>
