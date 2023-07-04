@@ -1,5 +1,11 @@
-import style from '@styles/ClientsShowCase.module.scss'
 import Image from 'next/image'
+import { Lilita_One } from 'next/font/google'
+import style from '@styles/ClientsShowCase.module.scss'
+
+const lilita = Lilita_One({
+    weight: "400",
+    subsets: ['latin']
+})
 
 const ClientsShowCase = () => {
 
@@ -68,6 +74,7 @@ const ClientsShowCase = () => {
 
     return (
         <div className={style.container}>
+            <h1 className={lilita.className}>Our Political Clients</h1>
             <div className={style.clients}>
                 {data.map((item, index) => {
                     return (
