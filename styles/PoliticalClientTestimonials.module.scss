@@ -6,6 +6,7 @@
  .container {
      width: 100%;
      overflow: hidden;
+     position: relative;
 
      .title {
          padding: 8vh 10vw 8vh 10vw;
@@ -20,16 +21,15 @@
      }
 
      .testimonials {
-         width: 300vw;
+         width: 400vw;
          display: flex;
          align-items: flex-start;
-         transform: translateX(00vw);
-        // height: 100vh;
-        // overflow-x: hidden;
+         transition: all 1s;
+
 
          .slideDiv {
-            width: 100vw;
-            padding: 0 10vw;
+             width: 100vw;
+             padding: 0 10vw;
 
              .testimony {
                  display: flex;
@@ -37,6 +37,7 @@
                  justify-content: space-between;
                  width: 100%;
                  gap: 1vw;
+                 padding-left: 1vw;
 
                  .comment {
                      width: 100%;
@@ -125,9 +126,58 @@
 
              .reverse {
                  flex-direction: row-reverse;
+                 padding-right: 1vw;
              }
          }
 
      }
 
+     .buttons {
+         position: absolute;
+         top: 50%;
+         right: 50px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+
+         .button {
+             width: 20px;
+             height: 20px;
+             border-radius: 50%;
+             background: rgb(5, 61, 83);
+             border: 2px solid #fff;
+             cursor: pointer;
+         }
+
+         .active {
+             background: skyblue;
+             border: 2px solid #393939;
+             scale: 1.1;
+         }
+     }
+
+     .buttonsBottoms {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 4vh 0;
+         gap: 20px;
+
+         .button {
+             width: 20px;
+             height: 20px;
+             border-radius: 50%;
+             background: rgb(5, 61, 83);
+             border: 2px solid #fff;
+             cursor: pointer;
+         }
+
+         .active {
+             background: skyblue;
+             border: 2px solid #393939;
+             scale: 1.1;
+         }
+     }
  }

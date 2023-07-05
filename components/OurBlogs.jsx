@@ -20,7 +20,7 @@ const bebas = Bebas_Neue({
 const OurBlogs = () => {
 
     const ref = useRef(null)
-    const isInView = useInView(ref, { once: true })
+    const isInView = useInView(ref, {once: true})
 
     const data = [
         {
@@ -64,28 +64,23 @@ const OurBlogs = () => {
                 {data.map((item, index) => {
                     return (
                         <Link href={item.href} >
-                            <div className={style.stripDiv}>
+                            <motion.div
+                            animate={{x: isInView ? 0 : "50vw"}}
+                            transition={{delay: index*0.2, ease: "linear", type: "tween"}}
+                            key={index} className={style.stripDiv}>
                                 <div className={style.stripHead}>
                                     <div className={style.date}>
                                         <p className={bebas.className}>{item.date}</p>
                                     </div>
                                 </div>
                                 <div className={style.strip}>
-                                    <div className={style.insideTopLeftCircle}></div>
-                                    <div className={style.insideTopLeftCircle1}></div>
-                                    <div className={style.insideTopLeftCircle2}></div>
-                                    <div className={style.insideTopLeftCircle3}></div>
-                                    <div className={style.insideBottomRightCircle}></div>
-                                    <div className={style.insideBottomRightCircle1}></div>
-                                    <div className={style.insideBottomRightCircle2}></div>
-                                    <div className={style.insideBottomRightCircle3}></div>
                                     <div className={style.data}>
                                         <h1 className={`${style.heading} ${lilita.className}`}>
                                             {item.heading}
                                         </h1>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </Link>
                     )
                 })}

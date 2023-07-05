@@ -41,60 +41,62 @@ const AboutUs = () => {
       </div>
       <div className={style.right}>
         <div className={style.blockDiv}>
-          <div className={style.block}>
-            <h1 className={style.title}>
-              {dynasticalArr.map((item, index) => {
-                return (
-                  <span
-                    className={lilita.className}
-                    style={{
-                      transform: `rotate(${(index * 18)}deg)`,
-                    }}>
-                    {item}
-                  </span>
-                )
-              })}
-            </h1>
-            <div className={`${style.icon}`}>
-              <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
-              <Link href={'/corporate-solutions'} >
-                <div className={style.overlay}>
-                  View More
-                </div>
-              </Link>
+          <div style={{display: "flex", alignItems: "center", gap: "8vw"}}>
+            <div className={style.block}>
+              <h1 className={style.title}>
+                {dynasticalArr.map((item, index) => {
+                  return (
+                    <span
+                      className={lilita.className}
+                      style={{
+                        transform: `rotate(${(index * 18)}deg)`,
+                      }}>
+                      {item}
+                    </span>
+                  )
+                })}
+              </h1>
+              <div className={`${style.icon}`}>
+                <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
+                <Link href={'/corporate-solutions'} >
+                  <div className={style.overlay}>
+                    View More
+                  </div>
+                </Link>
+              </div>
+              <button>
+                <Link href={'/corporate-solutions'}>
+                  Learn More
+                </Link>
+              </button>
             </div>
-            <button>
-              <Link href={'/corporate-solutions'}>
-                Learn More
-              </Link>
-            </button>
-          </div>
-          <div className={style.block}>
-            <h1 className={style.title}>
-              {politicalArr.map((item, index) => {
-                return (
-                  <span className={`${style.poli} ${lilita.className}`}
-                    style={{
-                      transform: `rotate(${(index * 18)}deg)`,
-                    }}>
-                    {item}
-                  </span>
-                )
-              })}
-            </h1>
-            <div className={`${style.icon}`}>
-              <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
-              <Link href={'political-analysis'} >
-                <div className={style.overlay}>
-                  View More
-                </div>
-              </Link>
+            <div className={style.block}>
+              <h1 className={style.title}>
+                {politicalArr.map((item, index) => {
+                  return (
+                    <span className={`${style.poli} ${lilita.className}`}
+                      style={{
+                        transform: `rotate(${(index * 18)}deg)`,
+                      }}>
+                      {item}
+                    </span>
+                  )
+                })}
+              </h1>
+              <div className={`${style.icon}`}>
+                <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
+                <Link href={'political-analysis'} >
+                  <div className={style.overlay}>
+                    View More
+                  </div>
+                </Link>
+              </div>
+              <button>
+                <Link href={'/political-analysis'}>
+                  Learn More
+                </Link>
+              </button>
             </div>
-            <button>
-              <Link href={'/political-analysis'}>
-                Learn More
-              </Link>
-            </button>
           </div>
           <div className={style.block}>
             <h1 className={`${style.title} ${style.title3}`}>

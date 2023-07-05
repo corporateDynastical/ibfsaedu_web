@@ -1,24 +1,28 @@
 .container{
     width: 100%;
-    background-color: transparent;
     
     .address{
-        color: rgba(255,100,0);
+        -webkit-text-fill-color: rgba(255,100,0);
+        text-shadow: 1px 1px 1px #fff;
         font-size: 22px;
         font-weight: 400;
         text-align: center;
         line-height: 2;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 7vh 0 20vh 0;
         
         .title{
             font-size: 3rem;
-            -webkit-text-stroke: 1px #000;
             text-transform: capitalize;
+            -webkit-text-fill-color: #F86C6C;
+            text-shadow: 1px 1px 1px #ff0000;
         }
 
         a{
-            color: rgba(255,55,0);
+            -webkit-text-fill-color: rgba(255,55,0);
         }
 
     }

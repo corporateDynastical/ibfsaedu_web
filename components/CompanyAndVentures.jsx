@@ -1,7 +1,10 @@
+"use client"
+import {motion} from "framer-motion"
 import { Lilita_One } from "next/font/google";
-import style from '@styles/CompanyAndVentures.module.scss'
 import Image from 'next/image'
 import Link from "next/link";
+import style from '@styles/CompanyAndVentures.module.scss'
+
 const lilita = Lilita_One({
     weight: "400",
     subsets: ['latin-ext']
@@ -14,6 +17,10 @@ const CompanyAndVentures = () => {
 
     return (
         <div className={style.container}>
+            <motion.div drag whileDrag={{scale:1.2}} dragConstraints={{left: 50, right: 300, top:50, bottom: 300}} className={style.circle1}></motion.div>
+            <motion.div drag whileDrag={{scale:1.2}} dragConstraints={{left: 50, right: 50, top:50, bottom: 50}} className={style.circle2}></motion.div>
+            <motion.div drag whileDrag={{scale:1.2}} dragConstraints={{left: 50, right: 50, top:50, bottom: 50}} className={style.circle3}></motion.div>
+            <motion.div drag whileDrag={{scale:1.2}} dragConstraints={{left: 50, right: 50, top:50, bottom: 50}} className={style.circle4}></motion.div>
             <div className={style.block}>
                 <h1 className={`${lilita.className} ${style.title}`}>
                     <br />
@@ -57,7 +64,7 @@ const CompanyAndVentures = () => {
                     </div>
                 </div>
             </div>
-            <Link href={'/companies-&-ventures/'} className={lilita.className} >View More</Link>
+            <Link href={'/companies-&-ventures/'} >View More</Link>
         </div>
     )
 }

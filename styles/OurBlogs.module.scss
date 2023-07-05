@@ -70,11 +70,19 @@
                 text-align: center;
                 font-size: 22px;
                 box-shadow: 2px 2px 2px 2px #127a81;
+                -webkit-text-fill-color: #fff;
+                text-shadow: 1px 1px 1px #ff0000;
+                
+                .date{
+                    font-weight: 800;
+                }
             }
 
             .strip {
-                background: #c0f6fa;
-                width: 30vw;
+                background: linear-gradient(45deg, rgba(205, 248, 253, 0.4), rgba(192, 252, 252, 0.3)), url("../public/assets/images/blogMandla.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 40vw;
                 height: 148px;
                 display: flex;
                 justify-content: flex-start;
@@ -90,118 +98,13 @@
                     align-items: flex-start;
                     justify-content: space-around;
                     height: 100%;
-                    font-size: 25px;
+                    font-size: 2rem;
                     font-weight: 500;
                     position: relative;
                     -webkit-text-fill-color: rgba(255,155,0);
                     -webkit-text-stroke: 1px #000;
                     z-index: 10;
                     text-transform: capitalize;
-                }
-
-                .insideBottomRightCircle {
-                    position: absolute;
-                    bottom: -5%;
-                    right: -5%;
-                    left: auto;
-                    min-width: 80px;
-                    min-height: 80px;
-                    background: rgb(248, 108, 108);
-                    background: linear-gradient(to right, rgba(248, 108, 108) 0%, rgba(255, 255, 255, 1) 100%);
-                    border-radius: 50%;
-                    z-index: 2;
-                    box-shadow: 0.2px -0.2px 1px #000;
-                }
-                .insideBottomRightCircle1 {
-                    position: absolute;
-                    bottom: -11%;
-                    right: 6%;
-                    left: auto;
-                    min-width: 60px;
-                    min-height: 60px;
-                    background: rgb(248, 108, 108);
-                    background: linear-gradient(to left, rgba(248, 108, 108) 0%, rgba(255, 255, 255, 1) 100%);
-                    border-radius: 50%;
-                    z-index: 3;
-                    box-shadow: 0.2px -0.2px 1px #000;
-                }
-                .insideBottomRightCircle2 {
-                    position: absolute;
-                    bottom: -7%;
-                    right: 17%;
-                    left: auto;
-                    min-width: 30px;
-                    min-height: 30px;
-                    background: rgb(248, 108, 108);
-                    background: linear-gradient(to bottom, rgba(235, 179, 179, 0.7) 0%, rgba(255, 255, 255, 1) 100%);
-                    border-radius: 50%;
-                    z-index: 1;
-                    box-shadow: 0.2px -0.2px 1px #000;
-                }
-                .insideBottomRightCircle3 {
-                    position: absolute;
-                    bottom: 41%;
-                    right: -3%;
-                    left: auto;
-                    min-width: 25px;
-                    min-height: 25px;
-                    background: rgb(248, 108, 108);
-                    background: linear-gradient(to top, rgba(250, 134, 134, 0.7) 0%, rgba(255, 255, 255, 1) 100%);
-                    border-radius: 50%;
-                    z-index: 1;
-                    box-shadow: 0.2px -0.2px 1px #000;
-                }
-                .insideTopLeftCircle {
-                    position: absolute;
-                    top: -5%;
-                    left: -5%;
-                    right: auto;
-                    min-width: 80px;
-                    min-height: 80px;
-                    background: rgb(155,205,210);
-                    background: linear-gradient(42deg, rgba(155,205,210) 0%, rgba(255,255,255,1) 100%);
-                    border-radius: 50%;
-                    z-index: 2;
-                    box-shadow: 0.2px -0.2px 1px #000;
-                }
-                .insideTopLeftCircle1 {
-                    position: absolute;
-                    top: -11%;
-                    left: 6%;
-                    right: auto;
-                    min-width: 60px;
-                    min-height: 60px;
-                    background: rgb(155,205,210);
-                    background: linear-gradient(42deg, rgba(155,205,210) 0%, rgba(255,255,255,1) 100%);
-                    border-radius: 50%;
-                    z-index: 3;
-                    box-shadow: 0.2px -0.2px 1px #000;
-                }
-                .insideTopLeftCircle2 {
-                    position: absolute;
-                    top: -7%;
-                    left: 17%;
-                    right: auto;
-                    min-width: 30px;
-                    min-height: 30px;
-                    background: rgb(155,205,210);
-                    background: linear-gradient(42deg, rgba(155,205,210) 0%, rgba(255,255,255,1) 100%);
-                    border-radius: 50%;
-                    z-index: 1;
-                    box-shadow: 0.2px -0.2px 1px #000;
-                }
-                .insideTopLeftCircle3 {
-                    position: absolute;
-                    top: 43%;
-                    left: -3%;
-                    right: auto;
-                    min-width: 25px;
-                    min-height: 25px;
-                    background: rgb(155,205,210);
-                    background: linear-gradient(42deg, rgba(155,205,210) 0%, rgba(255,255,255,1) 100%);
-                    border-radius: 50%;
-                    z-index: 1;
-                    box-shadow: 0.2px -0.2px 1px #000;
                 }
             }
         }
