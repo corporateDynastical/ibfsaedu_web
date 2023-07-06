@@ -16,6 +16,8 @@ const AboutUs = () => {
   const politicalArr = Array.from(political)
   const evnets = "Events"
   const evnetsArr = Array.from(evnets)
+  const digital = "Digital Marketing"
+  const digitalArr = Array.from(digital)
 
   return (
     <div className={style.container}>
@@ -41,7 +43,7 @@ const AboutUs = () => {
       </div>
       <div className={style.right}>
         <div className={style.blockDiv}>
-          <div style={{display: "flex", alignItems: "center", gap: "8vw"}}>
+          <div style={{ display: "flex", alignItems: "center", gap: "4vw" }}>
             <div className={style.block}>
               <h1 className={style.title}>
                 {dynasticalArr.map((item, index) => {
@@ -98,32 +100,61 @@ const AboutUs = () => {
               </button>
             </div>
           </div>
-          <div className={style.block}>
-            <h1 className={`${style.title} ${style.title3}`}>
-              {evnetsArr.map((item, index) => {
-                return (
-                  <span className={`${style.eve} ${lilita.className}`}
-                    style={{
-                      transform: `rotate(${(index * 18)}deg)`,
-                    }}>
-                    {item}
-                  </span>
-                )
-              })}
-            </h1>
-            <div className={`${style.icon} ${lilita.className}`}>
-              <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
-              <Link href={'events'} >
-                <div className={style.overlay}>
-                  View More
-                </div>
-              </Link>
+          <div style={{ display: "flex", alignItems: "center", gap: "4vw" }}>
+            <div className={style.block}>
+              <h1 className={`${style.title} ${style.title3}`}>
+                {evnetsArr.map((item, index) => {
+                  return (
+                    <span className={`${style.eve} ${lilita.className}`}
+                      style={{
+                        transform: `rotate(${(index * 18)}deg)`,
+                      }}>
+                      {item}
+                    </span>
+                  )
+                })}
+              </h1>
+              <div className={`${style.icon} ${lilita.className}`}>
+                <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
+                <Link href={'events'} >
+                  <div className={style.overlay}>
+                    View More
+                  </div>
+                </Link>
+              </div>
+              <button>
+                <Link href={'/events'}>
+                  Learn More
+                </Link>
+              </button>
             </div>
-            <button>
-              <Link href={'/events'}>
-                Learn More
-              </Link>
-            </button>
+            <div className={style.block}>
+              <h1 className={`${style.title} ${style.title3}`}>
+                {digitalArr.map((item, index) => {
+                  return (
+                    <span className={`${style.eve} ${lilita.className}`}
+                      style={{
+                        transform: `rotate(${(index * 18)}deg)`,
+                      }}>
+                      {item}
+                    </span>
+                  )
+                })}
+              </h1>
+              <div className={`${style.icon} ${lilita.className}`}>
+                <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
+                <Link href={'/digital-marketing'} >
+                  <div className={style.overlay}>
+                    View More
+                  </div>
+                </Link>
+              </div>
+              <button>
+                <Link href={'/digital-marketing'}>
+                  Learn More
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
       </div>
