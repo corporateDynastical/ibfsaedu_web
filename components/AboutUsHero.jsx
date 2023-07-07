@@ -17,33 +17,15 @@ const AboutUsHero = () => {
     const isInView = useInView(ref, { once: true })
 
     return (
-        <>
-            <div className={style.container}>
-                <h1 className={lilita.className}>Why Choose Us</h1>
+        <>  
+            <div className={style.container1}>
+                <h1 className={lilita.className}>Welcome to Dynastical</h1>
+                <p className='pb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, esse! Veniam</p>
                 <div className={style.info}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi omnis natus quo! Qui, quod voluptate. Aut qui accusamus voluptas quo, ea perferendis sapiente fugiat iste repudiandae perspiciatis nesciunt temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat id provident harum laboriosam tempore officia quisquam doloremque molestias et? Quaerat voluptas dolorem officiis necessitatibus quae. Animi temporibus perferendis ab accusantium.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum ab ipsa, debitis adipisci maxime? Aperiam ipsum, molestiae ea, a optio neque maiores earum iusto ex odit, aspernatur laborum? Id?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi omnis natus quo! Qui, quod voluptate. Aut qui accusamus voluptas quo, ea perferendis sapiente fugiat iste repudiandae perspiciatis nesciunt temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat id provident harum laboriosam tempore officia quisquam doloremque molestias et? Quaerat voluptas dolorem officiis necessitatibus quae. Animi temporibus perferendis ab accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum ab ipsa, debitis adipisci maxime? Aperiam ipsum, molestiae ea, a optio neque maiores earum iusto ex odit, aspernatur laborum? Id? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo veniam est sint. Ipsa recusandae tenetur enim, ad laudantium illum. Sapiente reiciendis eius beatae libero et, ea quaerat. Blanditiis, ut iure!</p>
                 </div>
             </div>
-            <div className={style.countDiv}>
-                <div ref={ref} className={style.point}>
-                    <div className={style.number}>{isInView && <CountUp start={0} end={5000} duration={3} delay={0} />} +</div>
-                    <p>Leads Converted</p>
-                </div>
-                <div ref={ref} className={style.point}>
-                    <div className={style.number}>{isInView && <CountUp start={0} end={2000} duration={3} delay={0} />} +</div>
-                    <p>Successful Campaigns</p>
-                </div>
-                <div ref={ref} className={style.point}>
-                    <div className={style.number}>{isInView && <CountUp start={0} end={100} duration={3} delay={0} />} +</div>
-                    <p>Satisfied Clients</p>
-                </div>
-                <div ref={ref} className={style.point}>
-                    <div className={style.number}>{isInView && <CountUp start={0} end={10} duration={3} delay={0} />} +</div>
-                    <p>Years of Industrial Experience</p>
-                </div>
-            </div>
-            <h1 className={`${style.heading} ${lilita.className}`}>Our Visionary Founder</h1>
+            <h1 className={`${style.heading} ${lilita.className}`}>Meet Our Founder</h1>
             <div className={style.founder}>
                 <div className={style.left}>
                     <div className={style.picture}>
@@ -72,6 +54,31 @@ const AboutUsHero = () => {
                     <p className={style.info}>
                         the Director of Dynastical Communication Private Limited, the leading digital marketing and advertising company in Pune, is a seasoned professional with many years of expertise in developing and implementing effective digital marketing strategies. He has in-depth knowledge of social media, email marketing, paid advertising, and content marketing, along with other digital marketing platforms. He has a proven history of utilising these channels to increase customer conversion rates, generate leads, and drive traffic. He is able to continually analyse and optimise campaigns to achieve the highest ROI thanks to his sharp eye for data and analytics. He works in close collaboration with his team and clients to create amazing outcomes and surpass expectations since he is an excellent communicator and collaborator.
                     </p>
+                </div>
+            </div>
+            <div className={style.container2}>
+                <h1 className={lilita.className}>Why Choose Us</h1>
+                <div className={style.info}>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi omnis natus quo! Qui, quod voluptate. Aut qui accusamus voluptas quo, ea perferendis sapiente fugiat iste repudiandae perspiciatis nesciunt temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat id provident harum laboriosam tempore officia quisquam doloremque molestias et? Quaerat voluptas dolorem officiis necessitatibus quae. Animi temporibus perferendis ab accusantium.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum ab ipsa, debitis adipisci maxime? Aperiam ipsum, molestiae ea, a optio neque maiores earum iusto ex odit, aspernatur laborum? Id?</p>
+                </div>
+            </div>
+            <div className={style.countDiv}>
+                <div ref={ref} className={style.point}>
+                    <div className={style.number}>{isInView && <CountUp start={0} end={5000} duration={3} delay={0} />} +</div>
+                    <p>Leads Converted</p>
+                </div>
+                <div ref={ref} className={style.point}>
+                    <div className={style.number}>{isInView && <CountUp start={0} end={2000} duration={3} delay={0} />} +</div>
+                    <p>Successful Campaigns</p>
+                </div>
+                <div ref={ref} className={style.point}>
+                    <div className={style.number}>{isInView && <CountUp start={0} end={100} duration={3} delay={0} />} +</div>
+                    <p>Satisfied Clients</p>
+                </div>
+                <div ref={ref} className={style.point}>
+                    <div className={style.number}>{isInView && <CountUp start={0} end={10} duration={3} delay={0} />} +</div>
+                    <p>Years of Industrial Experience</p>
                 </div>
             </div>
         </>

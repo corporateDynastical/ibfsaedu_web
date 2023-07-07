@@ -1,11 +1,19 @@
+"use client"
 import Link from "next/link";
 import Image from "next/image";
-import { Lilita_One } from "next/font/google";
+import { Lilita_One, Montserrat } from "next/font/google";
+import { motion } from "framer-motion";
+import {BsArrowRight} from "react-icons/bs"
 import style from "@styles/AboutUs.module.scss";
 
 const lilita = Lilita_One({
   weight: "400",
   subsets: ['latin-ext']
+})
+
+const mont = Montserrat({
+  weight: "800",
+  subsets: ['latin']
 })
 
 const AboutUs = () => {
@@ -21,8 +29,11 @@ const AboutUs = () => {
 
   return (
     <div className={style.container}>
-      <div className={style.circle}></div>
-      <div className={style.circle3}></div>
+      <div className={style.circle}>
+        <div className={style.outerBorder}>
+          <div className={style.innerBorder}></div>
+        </div>
+      </div>
       <div className={style.left}>
         <p className={`${style.headingOne}`}>We're Offering</p>
         <h1 className={lilita.className}>Awesome Customer Services</h1>
@@ -43,118 +54,41 @@ const AboutUs = () => {
       </div>
       <div className={style.right}>
         <div className={style.blockDiv}>
-          <div style={{ display: "flex", alignItems: "center", gap: "4vw" }}>
-            <div className={style.block}>
-              <h1 className={style.title}>
-                {dynasticalArr.map((item, index) => {
-                  return (
-                    <span
-                      className={lilita.className}
-                      style={{
-                        transform: `rotate(${(index * 18)}deg)`,
-                      }}>
-                      {item}
-                    </span>
-                  )
-                })}
-              </h1>
-              <div className={`${style.icon}`}>
-                <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
-                <Link href={'/corporate-solutions'} >
-                  <div className={style.overlay}>
-                    View More
-                  </div>
-                </Link>
-              </div>
-              <button>
-                <Link href={'/corporate-solutions'}>
-                  Learn More
-                </Link>
-              </button>
+          <div className={style.block}>
+            <div className={style.picture}>
+              <Image src={'/icons/teamwork.png'} alt="corporate solutions" fill />
             </div>
-            <div className={style.block}>
-              <h1 className={style.title}>
-                {politicalArr.map((item, index) => {
-                  return (
-                    <span className={`${style.poli} ${lilita.className}`}
-                      style={{
-                        transform: `rotate(${(index * 18)}deg)`,
-                      }}>
-                      {item}
-                    </span>
-                  )
-                })}
-              </h1>
-              <div className={`${style.icon}`}>
-                <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
-                <Link href={'political-analysis'} >
-                  <div className={style.overlay}>
-                    View More
-                  </div>
-                </Link>
-              </div>
-              <button>
-                <Link href={'/political-analysis'}>
-                  Learn More
-                </Link>
-              </button>
-            </div>
+            <p className={mont.className}>Corporate Solution</p>
+            <button>
+              <Link href={'/corporate-solutions'}>See More <span><BsArrowRight /></span>  </Link>
+            </button>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "4vw" }}>
-            <div className={style.block}>
-              <h1 className={`${style.title} ${style.title3}`}>
-                {evnetsArr.map((item, index) => {
-                  return (
-                    <span className={`${style.eve} ${lilita.className}`}
-                      style={{
-                        transform: `rotate(${(index * 18)}deg)`,
-                      }}>
-                      {item}
-                    </span>
-                  )
-                })}
-              </h1>
-              <div className={`${style.icon} ${lilita.className}`}>
-                <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
-                <Link href={'events'} >
-                  <div className={style.overlay}>
-                    View More
-                  </div>
-                </Link>
-              </div>
-              <button>
-                <Link href={'/events'}>
-                  Learn More
-                </Link>
-              </button>
+          <div className={style.block}>
+            <div className={style.picture}>
+              <Image src={'/icons/statistic.png'} alt="political analysis" fill />
             </div>
-            <div className={style.block}>
-              <h1 className={`${style.title} ${style.title3}`}>
-                {digitalArr.map((item, index) => {
-                  return (
-                    <span className={`${style.eve} ${lilita.className}`}
-                      style={{
-                        transform: `rotate(${(index * 18)}deg)`,
-                      }}>
-                      {item}
-                    </span>
-                  )
-                })}
-              </h1>
-              <div className={`${style.icon} ${lilita.className}`}>
-                <Image src={'/assets/images/about.jpg'} alt="dynastical services" fill />
-                <Link href={'/digital-marketing'} >
-                  <div className={style.overlay}>
-                    View More
-                  </div>
-                </Link>
-              </div>
-              <button>
-                <Link href={'/digital-marketing'}>
-                  Learn More
-                </Link>
-              </button>
+            <p className={mont.className}>Political Analysis</p>
+            <button>
+              <Link href={'/political-analysis'}>See More <span><BsArrowRight /></span>  </Link>
+            </button>
+          </div>
+          <div className={style.block}>
+            <div className={style.picture}>
+              <Image src={'/icons/people.png'} alt="events" fill />
             </div>
+            <p className={mont.className}>Events</p>
+            <button>
+              <Link href={'/events'}>See More <span><BsArrowRight /></span>  </Link>
+            </button>
+          </div>
+          <div className={style.block}>
+            <div className={style.picture}>
+              <Image src={'/icons/digital-campaign.png'} alt="digital marketing" fill />
+            </div>
+            <p className={mont.className}>Digital Marketing</p>
+            <button>
+              <Link href={'/digital-marketing'}>See More <span><BsArrowRight /></span>  </Link>
+            </button>
           </div>
         </div>
       </div>
