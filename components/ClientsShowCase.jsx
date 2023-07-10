@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import { Lilita_One } from 'next/font/google'
+import { Didact_Gothic } from 'next/font/google'
 import style from '@styles/ClientsShowCase.module.scss'
 
-const lilita = Lilita_One({
+const didact = Didact_Gothic({
     weight: "400",
     subsets: ['latin']
 })
@@ -60,21 +60,21 @@ const ClientsShowCase = () => {
             name: "प्रियंका धोत्रे",
             post: "अध्यक्षा : युवा स्पंदन संस्था शिरूर"
         },
-        // {
-        //     src: "/assets/images/about.jpg",
-        //     name: "अनिल दिलीप सातव पाटील",
-        //     post: "अध्यक्ष, भाजप युवा मोर्चा, हवेली तालुका"
-        // },
-        // {
-        //     src: "/assets/images/about.jpg",
-        //     name: "रामकृष्ण हेमचंद्र सातव पाटील",
-        //     post: "संचालक : कृषी उत्पन्न बाजार समिती, हवेली, पुणे"
-        // },
+        {
+            src: "/assets/images/about.jpg",
+            name: "अनिल दिलीप सातव पाटील",
+            post: "अध्यक्ष, भाजप युवा मोर्चा, हवेली तालुका"
+        },
+        {
+            src: "/assets/images/about.jpg",
+            name: "रामकृष्ण हेमचंद्र सातव पाटील",
+            post: "संचालक : कृषी उत्पन्न बाजार समिती, हवेली, पुणे"
+        },
     ]
 
     return (
         <div className={style.container}>
-            <h1 className={lilita.className}>Our Political Clients</h1>
+            <h1 className={didact.className}>Our <span> Political </span>  Clients</h1>
             <div className={style.clients}>
                 {data.map((item, index) => {
                     return (

@@ -16,7 +16,6 @@ const lilita = Lilita_One({
 })
 
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import '@styles/ServicePageTestimonials.scss'
 
 const ServicePageTestimonials = () => {
@@ -72,18 +71,6 @@ const ServicePageTestimonials = () => {
 
     return (
         <div className={'container'}>
-            <motion.div
-                drag="y" dragConstraints={{ left: 50, right: 50, top: 50, bottom: 50 }}
-                className="circle1"></motion.div>
-            <motion.div
-                drag dragConstraints={{ left: 50, right: 50, top: 50, bottom: 50 }}
-                className="circle2"></motion.div>
-            <motion.div
-                drag dragConstraints={{ left: 50, right: 50, top: 50, bottom: 50 }}
-                className="circle3"></motion.div>
-            <motion.div
-                drag="y" dragConstraints={{ left: 50, right: 50, top: 50, bottom: 50 }}
-                className="circle4"></motion.div>
             <h1 className={'heading'}>
                 <span className={lilita.className}>Hear what  our esteemed clients have to say about us.
                 </span>
@@ -126,7 +113,7 @@ const ServicePageTestimonials = () => {
                 }
             </div>
             <div className='shape'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000" fillOpacity="1" d="M0,160L80,181.3C160,203,320,245,480,229.3C640,213,800,139,960,101.3C1120,64,1280,64,1360,64L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(254, 126, 38)" fillOpacity="1" d="M0,160L80,181.3C160,203,320,245,480,229.3C640,213,800,139,960,101.3C1120,64,1280,64,1360,64L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
             </div>
         </div>
     )

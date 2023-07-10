@@ -10,15 +10,18 @@
             position: absolute;
             top: 10vh;
             left: 10vw;
-            font-size: 2rem;
+            font-size: 3rem;
             text-transform: capitalize;
-            color: #fff;
+            background: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            color: #353638;
         }
 
         .tagline{
             position: absolute;
-            top: 18vh;
-            left: 10vw;
+            top: 25vh;
+            left: 10.5vw;
             font-size: 1rem;
             text-transform: capitalize;
             color: #fff;
@@ -26,28 +29,77 @@
     }
 
     .one{
-        background: url("../public/assets/images/clients/clientOne.png");
+        background: url("../public/slides/1.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
     }
     .two{
-        background: url("../public/assets/images/clients/sky2.jpg");
+        background: url("../public/slides/2.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
     }
     .three{
-        background: url("../public/assets/images/clients/sky3.jpg");
+        background: url("../public/slides/3.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
     }
     .four{
-        background: url("../public/assets/images/clients/sky4.jpg");
+        background: url("../public/slides/4.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .five{
+        background: url("../public/slides/5.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .six{
+        background: url("../public/slides/6.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .seven{
+        background: url("../public/slides/7.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .eight{
+        background: url("../public/slides/8.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .nine{
+        background: url("../public/slides/9.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .ten{
+        background: url("../public/slides/10.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .eleven{
+        background: url("../public/slides/11.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

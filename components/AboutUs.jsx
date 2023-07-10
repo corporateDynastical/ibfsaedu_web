@@ -1,31 +1,22 @@
-"use client"
+"use client";
 import Link from "next/link";
 import Image from "next/image";
-import { Lilita_One, Montserrat } from "next/font/google";
+import { Didact_Gothic, Montserrat } from "next/font/google";
 import { motion } from "framer-motion";
-import {BsArrowRight} from "react-icons/bs"
+import { BsArrowRight } from "react-icons/bs";
 import style from "@styles/AboutUs.module.scss";
 
-const lilita = Lilita_One({
+const didact = Didact_Gothic({
   weight: "400",
-  subsets: ['latin-ext']
-})
+  subsets: ["latin-ext"],
+});
 
 const mont = Montserrat({
   weight: "800",
-  subsets: ['latin']
-})
+  subsets: ["latin"],
+});
 
 const AboutUs = () => {
-
-  const dynastical = "Corporate Solutions"
-  const dynasticalArr = Array.from(dynastical)
-  const political = "Political Analysis"
-  const politicalArr = Array.from(political)
-  const evnets = "Events"
-  const evnetsArr = Array.from(evnets)
-  const digital = "Digital Marketing"
-  const digitalArr = Array.from(digital)
 
   return (
     <div className={style.container}>
@@ -36,7 +27,7 @@ const AboutUs = () => {
       </div>
       <div className={style.left}>
         <p className={`${style.headingOne}`}>We're Offering</p>
-        <h1 className={lilita.className}>Awesome Customer Services</h1>
+        <h1 className={didact.className}>Awesome <span> Services</span></h1>
         <p className={style.tagline}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
@@ -56,38 +47,70 @@ const AboutUs = () => {
         <div className={style.blockDiv}>
           <div className={style.block}>
             <div className={style.picture}>
-              <Image src={'/icons/teamwork.png'} alt="corporate solutions" fill />
-            </div>
-            <p className={mont.className}>Corporate Solution</p>
-            <button>
-              <Link href={'/corporate-solutions'}>See More <span><BsArrowRight /></span>  </Link>
-            </button>
-          </div>
-          <div className={style.block}>
-            <div className={style.picture}>
-              <Image src={'/icons/statistic.png'} alt="political analysis" fill />
-            </div>
-            <p className={mont.className}>Political Analysis</p>
-            <button>
-              <Link href={'/political-analysis'}>See More <span><BsArrowRight /></span>  </Link>
-            </button>
-          </div>
-          <div className={style.block}>
-            <div className={style.picture}>
-              <Image src={'/icons/people.png'} alt="events" fill />
-            </div>
-            <p className={mont.className}>Events</p>
-            <button>
-              <Link href={'/events'}>See More <span><BsArrowRight /></span>  </Link>
-            </button>
-          </div>
-          <div className={style.block}>
-            <div className={style.picture}>
-              <Image src={'/icons/digital-campaign.png'} alt="digital marketing" fill />
+              <Image
+                src={"/icons/digital-campaign.png"}
+                alt="digital marketing"
+                fill
+              />
             </div>
             <p className={mont.className}>Digital Marketing</p>
             <button>
-              <Link href={'/digital-marketing'}>See More <span><BsArrowRight /></span>  </Link>
+              <Link href={"/digital-marketing"}>
+                See More{" "}
+                <span>
+                  <BsArrowRight />
+                </span>{" "}
+              </Link>
+            </button>
+          </div>
+          <div className={style.block}>
+            <div className={style.picture}>
+              <Image
+                src={"/icons/teamwork.png"}
+                alt="corporate solutions"
+                fill
+              />
+            </div>
+            <p className={mont.className}>Corporate Solution</p>
+            <button>
+              <Link href={"/corporate-solutions"}>
+                See More{" "}
+                <span>
+                  <BsArrowRight />
+                </span>{" "}
+              </Link>
+            </button>
+          </div>
+          <div className={style.block}>
+            <div className={style.picture}>
+              <Image
+                src={"/icons/statistic.png"}
+                alt="political analysis"
+                fill
+              />
+            </div>
+            <p className={mont.className}>Political Analysis</p>
+            <button>
+              <Link href={"/political-analysis"}>
+                See More{" "}
+                <span>
+                  <BsArrowRight />
+                </span>{" "}
+              </Link>
+            </button>
+          </div>
+          <div className={style.block}>
+            <div className={style.picture}>
+              <Image src={"/icons/people.png"} alt="events" fill />
+            </div>
+            <p className={mont.className}>Events</p>
+            <button>
+              <Link href={"/events"}>
+                See More{" "}
+                <span>
+                  <BsArrowRight />
+                </span>{" "}
+              </Link>
             </button>
           </div>
         </div>

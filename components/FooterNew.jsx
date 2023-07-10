@@ -64,14 +64,14 @@ const FooterNew = () => {
 
     return (
         <div className={style.container}>
-            <div className={style.shape1}>
+            {/* <div className={style.shape1}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0E1B1F" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,96C480,96,600,160,720,192C840,224,960,224,1080,202.7C1200,181,1320,139,1380,117.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
                 </svg>
             </div>
             <div className={style.shape2}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1445 330"><path fill="#bbb" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,96C480,96,600,160,720,192C840,224,960,224,1080,202.7C1200,181,1320,139,1380,117.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
                 </svg>
-            </div>
+            </div> */}
             <div className={style.contactDiv}>
                 <div className={style.left}>
                     <h1>Ready To Get Started</h1>

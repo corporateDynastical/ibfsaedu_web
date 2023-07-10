@@ -1,121 +1,174 @@
 .container1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 8vh 10vw 0 10vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 8vh 10vw 0 10vw;
 
-    h1 {
-        font-size: 4rem;
-        padding-bottom: 20px;
-    }
+  h1 {
+    font-size: 4rem;
+    padding-bottom: 20px;
+    font-weight: 600;
 
-    .info {
-        text-align: center;
-        font-size: 1.2rem;
+    span {
+      font-weight: 400;
+      position: relative;
 
-        p {
-        }
-    }
-}
-.container2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 8vh 10vw;
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    .info {
-        padding: 2vh 0;
-        text-align: center;
-        font-size: 1.2rem;
-
-        p {
-            padding: 10px 0;
-        }
-    }
-}
-
-.countDiv {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: flex-start;
-    padding: 10vh 0;
-    background: #393939;
-
-    .point {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 14px;
         width: 100%;
-        flex-direction: column;
-
-        .number {
-            font-size: 4rem;
-            color: #fffb00;
-        }
-
-        p {
-            width: 70%;
-            text-align: center;
-            font-size: 2rem;
-            color: #fff;
-        }
+        height: 3px;
+        background: rgb(255, 153, 85, 0.8);
+        padding: 5px;
+      }
     }
+  }
 
+  .tagline {
+    color: rgb(255, 55, 0);
+    padding-bottom: 10px;
+  }
+
+  .info {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333333;
+  }
 }
 
-.heading {
+.founder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 7vh 0 0 0;
+
+  h1 {
     text-align: center;
     width: 100%;
     padding-top: 3rem;
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 10px;
+
+    span {
+      font-weight: 400;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 14px;
+        width: 100%;
+        height: 3px;
+        background: rgb(255, 153, 85, 0.8);
+        padding: 5px;
+      }
+    }
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .picture {
+      height: 60vh;
+      width: 70%;
+      position: relative;
+
+      img {
+        position: absolute;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    padding: 0 5vw 0 0;
+
+    .info {
+      font-size: 20px;
+
+      span {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+  }
 }
 
-.founder {
+.container2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 8vh 10vw;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+
+    span {
+      font-weight: 400;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 14px;
+        width: 100%;
+        height: 3px;
+        background: rgb(255, 153, 85, 0.8);
+        padding: 5px;
+      }
+    }
+  }
+
+  .info {
+    padding: 2vh 0;
+    text-align: center;
+    font-size: 1.2rem;
+
+    p {
+      padding: 10px 0;
+    }
+  }
+}
+
+.countDiv {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+  padding: 10vh 0;
+  background: #393939;
+
+  .point {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 7vh 0;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
 
-    .left {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .picture {
-            height: 60vh;
-            width: 70%;
-            position: relative;
-
-            img {
-                position: absolute;
-            }
-
-        }
+    .number {
+      font-size: 4rem;
+      color: #FE7E26;
     }
 
-    .right {
-        flex: 1;
-        padding: 0 5vw 0 0;
-
-        .info {
-            font-size: 20px;
-
-            span {
-                font-size: 2rem;
-                font-weight: 500;
-            }
-        }
+    p {
+      width: 70%;
+      text-align: center;
+      font-size: 2rem;
+      color: #fff;
     }
+  }
 }

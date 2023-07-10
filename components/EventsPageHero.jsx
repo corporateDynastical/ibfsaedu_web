@@ -5,11 +5,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Lilita_One } from 'next/font/google'
+import { Didact_Gothic } from 'next/font/google'
 import Image from 'next/image'
 import style from '@styles/EventsPageHero.module.scss'
 
-const lilita = Lilita_One({
+const didact = Didact_Gothic({
     weight: "400",
     subsets: ['latin']
 })
@@ -18,16 +18,10 @@ const EventsPageHero = () => {
 
     return (
         <div className={style.container}>
-            <div className={style.circle1}></div>
-            <div className={style.circle2}></div>
-            <div className={style.circle3}></div>
-            <div className={style.circle4}></div>
-            <div className={style.circle5}></div>
-            <div className={style.circle6}></div>
             <div className={style.infoDiv}>
                 <div className={style.strip}>
                     <div className={style.circle}></div>
-                    <h1 className={`${style.title} ${lilita.className}`}>Coporate Events</h1>
+                    <h1 className={`${style.title} ${didact.className}`}> <span>Coporate</span> Events</h1>
                 </div>
                 <h2 className={style.tagline}>Lorem ipsum dolor sit amet consec</h2>
                 <div className={style.data}>
@@ -38,7 +32,7 @@ const EventsPageHero = () => {
                 </div>
             </div>
             <div className={style.carouselHeadings}>
-                <h1 className={`${style.carouselTitle} ${lilita.className}`}>Moments of Corporate Brilliance</h1>
+                <h1 className={`${style.carouselTitle} ${didact.className}`}>Moments of <span> Corporate </span> Brilliance</h1>
                 <p className={style.carouselTagline}>Captivating Event Highlights</p>
             </div>
             <div className={style.sliderDiv}>
@@ -110,7 +104,7 @@ const EventsPageHero = () => {
             </div>
             <div className={style.infoDiv}>
                 <div className={`${style.strip} ${style.reverse}`}>
-                    <h1 className={`${style.title} ${lilita.className}`}>Social Events</h1>
+                    <h1 className={`${style.title} ${didact.className}`}> <span>Social</span>  Events</h1>
                     <div className={style.circle}></div>
                 </div>
                 <h2 className={`${style.tagline} ${style.taglineEnd}`}>Lorem ipsum dolor sit amet consec</h2>
@@ -123,7 +117,7 @@ const EventsPageHero = () => {
                 </div>
             </div>
             <div className={style.carouselHeadings}>
-                <h1 className={`${style.carouselTitle} ${lilita.className}`}>Political Events in Frames</h1>
+                <h1 className={`${style.carouselTitle} ${didact.className}`}> <span>Political</span>  Events in Frames</h1>
                 <p className={style.carouselTagline}>Captivating Moments in Pictures</p>
             </div>
             <div className={style.sliderDiv}>

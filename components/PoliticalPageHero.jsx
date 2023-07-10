@@ -1,8 +1,8 @@
-import { Lilita_One } from 'next/font/google'
+import { Didact_Gothic } from 'next/font/google'
 import Image from 'next/image'
 import style from '@styles/PoliticalPageHero.module.scss'
 
-const lilita = Lilita_One({
+const didact = Didact_Gothic({
     weight: "400",
     subsets: ['latin']
 })
@@ -11,16 +11,10 @@ const PoliticalPageHero = () => {
 
     return (
         <div className={style.container}>
-            <div className={style.circle1}></div>
-            <div className={style.circle2}></div>
-            <div className={style.circle3}></div>
-            <div className={style.circle4}></div>
-            <div className={style.circle5}></div>
-            <div className={style.circle6}></div>
             <div>
                 <div className={style.strip}>
                     <div className={style.circle}></div>
-                    <h1 className={`${style.title} ${lilita.className}`}>Image Building</h1>
+                    <h1 className={`${style.title} ${didact.className}`}>Image <span> Building </span></h1>
                 </div>
                 <h2 className={style.tagline}>Lorem ipsum dolor sit amet consec</h2>
                 <div className={style.data}>
@@ -32,7 +26,7 @@ const PoliticalPageHero = () => {
             </div>
             <div>
                 <div className={`${style.strip} ${style.reverse}`}>
-                    <h1 className={`${style.title} ${lilita.className}`}>Election Campaign</h1>
+                    <h1 className={`${style.title} ${didact.className}`}>Election <span> Campaign </span></h1>
                     <div className={style.circle}></div>
                 </div>
                 <h2 className={`${style.tagline} ${style.taglineEnd}`}>Lorem ipsum dolor sit amet consec</h2>
@@ -47,7 +41,7 @@ const PoliticalPageHero = () => {
             <div>
                 <div className={style.strip}>
                     <div className={style.circle}></div>
-                    <h1 className={`${style.title} ${lilita.className}`}>Post Election Campaign</h1>
+                    <h1 className={`${style.title} ${didact.className}`}><span> Post Election </span>  Campaign</h1>
                 </div>
                 <h2 className={style.tagline}>Lorem ipsum dolor sit amet consec</h2>
                 <div className={style.data}>

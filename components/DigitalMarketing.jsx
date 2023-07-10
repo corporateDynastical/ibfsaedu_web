@@ -1,8 +1,8 @@
-import { Lilita_One } from 'next/font/google'
+import { Didact_Gothic } from 'next/font/google'
 import Image from 'next/image'
 import style from '@styles/DigitalMarketing.module.scss'
 
-const lilita = Lilita_One({
+const didact = Didact_Gothic({
     weight: "400",
     subsets: ['latin']
 })
@@ -11,16 +11,10 @@ const DigitalMarketing = () => {
 
     return (
         <div className={style.container}>
-            <div className={style.circle1}></div>
-            <div className={style.circle2}></div>
-            <div className={style.circle3}></div>
-            <div className={style.circle4}></div>
-            <div className={style.circle5}></div>
-            <div className={style.circle6}></div>
             <div>
                 <div className={style.strip}>
                     <div className={style.circle}></div>
-                    <h1 className={`${style.title} ${lilita.className}`}>Search Engine Optimization</h1>
+                    <h1 className={`${style.title} ${didact.className}`}>Search Engine  <span> Optimization </span></h1>
                 </div>
                 <h2 className={style.tagline}>Dominate Search Engines with Superior SEO!</h2>
                 <div className={style.data}>
@@ -32,7 +26,7 @@ const DigitalMarketing = () => {
             </div>
             <div>
                 <div className={`${style.strip} ${style.reverse}`}>
-                    <h1 className={`${style.title} ${lilita.className}`}>Pay Per Click</h1>
+                    <h1 className={`${style.title} ${didact.className}`}>Pay Per  <span> Click </span></h1>
                     <div className={style.circle}></div>
                 </div>
                 <h2 className={`${style.tagline} ${style.taglineEnd}`}>Boost Traffic, Boost Revenue with PPC Solutions!</h2>
@@ -47,7 +41,7 @@ const DigitalMarketing = () => {
             <div>
                 <div className={style.strip}>
                     <div className={style.circle}></div>
-                    <h1 className={`${style.title} ${lilita.className}`}>Website Development</h1>
+                    <h1 className={`${style.title} ${didact.className}`}> Website <span>  Development</span></h1>
                 </div>
                 <h2 className={style.tagline}>Fueling Your Web Marketing Journey!</h2>
                 <div className={style.data}>

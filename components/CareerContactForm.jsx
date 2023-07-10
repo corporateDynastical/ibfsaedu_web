@@ -1,7 +1,7 @@
-import { Lilita_One } from 'next/font/google'
+import { Didact_Gothic } from 'next/font/google'
 import style from '@styles/CareerContactForm.module.scss'
 
-const lilita = Lilita_One({
+const didact = Didact_Gothic({
     weight: "400",
     subsets: ['latin']
 })
@@ -10,7 +10,7 @@ const CareerContactForm = () => {
     return (
         <div className={style.container}>
             <div className={style.left}>
-                <h1 className={`${lilita.className} ${style.title}`}>Connect with Us Today!</h1>
+                <h1 className={`${didact.className} ${style.title}`}>Connect <span>with</span>  Us <span>Today</span> !</h1>
                 <form className={style.form} action="">
                     <div className={style.name}>
                         <div className={style.first}>
@@ -46,7 +46,7 @@ const CareerContactForm = () => {
                 </form>
             </div>
             <div className={style.right}>
-                <h1 className={lilita.className}>Current Openings</h1>
+                <h1 className={didact.className}>Current Openings</h1>
                 <div className={style.posts}>
                     <p>Graphic Designer</p>
                     <p>Content Writer (Hindi, English, Marathi)</p>

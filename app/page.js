@@ -3,20 +3,21 @@ import AboutUs from "@components/AboutUs";
 import ClientsSlides from "@components/ClientsSlides";
 import CompanyAndVentures from "@components/CompanyAndVentures";
 import ContactForm from "@components/ContactForm";
-import Hero from "@components/Hero";
+import HeroFinal from "@components/HeroFinal";
+import HeroNew from "@components/HeroNew";
 import OurBlogs from "@components/OurBlogs";
-import ServicePageTestimonials from "@components/ServicePageTestimonials";
 import Slider from "@components/Slider";
+import Testimonial from "@components/Testimonial";
 
 
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <HeroFinal />
       <About />
       <AboutUs />
       <ClientsSlides />
-      <ServicePageTestimonials />
+      <Testimonial />
       <ContactForm />
       <CompanyAndVentures />
       <OurBlogs />
