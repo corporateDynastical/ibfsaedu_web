@@ -23,9 +23,9 @@ const EventsPageHero = () => {
                     <div className={style.circle}></div>
                     <h1 className={`${style.title} ${didact.className}`}> <span>Coporate</span> Events</h1>
                 </div>
-                <h2 className={style.tagline}>Lorem ipsum dolor sit amet consec</h2>
+                <h2 className={style.tagline}>Your corporate events made perfect with seamless planning!</h2>
                 <div className={style.data}>
-                    <p className={style.info}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi eos dolorem, doloremque totam natus ad nemo tenetur ducimus sit quia perspiciatis eius eligendi accusantium recusandae quaerat est accusamus quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?</p>
+                    <p className={style.info}>From high-profile conferences to executive retreats and from on-ground special day programs to in-hall corporate programs, our team handles every detail, from concept development to flawless execution. With a focus on innovation and personalization, we deliver events that inspire, engage, and drive business success. Trust us to make your corporate event an extraordinary affair.</p>
                     <div className={style.picture}>
                         <Image src='/assets/images/services/brand.png' alt="Coporate Events" fill />
                     </div>
@@ -107,12 +107,12 @@ const EventsPageHero = () => {
                     <h1 className={`${style.title} ${didact.className}`}> <span>Social</span>  Events</h1>
                     <div className={style.circle}></div>
                 </div>
-                <h2 className={`${style.tagline} ${style.taglineEnd}`}>Lorem ipsum dolor sit amet consec</h2>
+                <h2 className={`${style.tagline} ${style.taglineEnd}`}>Leave the planning to us, and enjoy the perfect social events!</h2>
                 <div className={style.data}>
                     <div className={style.picture}>
                         <Image src='/assets/images/services/brand.png' alt="Social Events" fill />
                     </div>
-                    <p className={`${style.info} ${style.infoEnd}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi eos dolorem, doloremque totam natus ad nemo tenetur ducimus sit quia perspiciatis eius eligendi accusantium recusandae quaerat est accusamus quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?
+                    <p className={`${style.info} ${style.infoEnd}`}>We take pride in curating and executing a diverse range of exceptional social events. We have successfully organized and managed various events that cater to different interests and themes. With our expertise and passion, we guarantee an exceptional event that will leave a lasting impression.
                     </p>
                 </div>
             </div>
