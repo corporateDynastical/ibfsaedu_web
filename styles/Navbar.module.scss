@@ -53,18 +53,19 @@
       position: absolute;
       top: 0;
       right: 0;
-      background: rgba(255, 55, 0);
-      
+      height: max-content;
+      background: rgba(255, 155, 0);
+
       .menuContainer {
         position: relative;
-    
+
         .topDiv {
           width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding: 0 3vw;
-    
+
           .menu {
             font-size: 3rem;
             font-weight: 600;
@@ -72,7 +73,7 @@
             border-bottom: 1px solid #fff;
             width: fit-content;
           }
-    
+
           button {
             font-size: 3rem;
             font-weight: 600;
@@ -80,18 +81,18 @@
             -webkit-text-fill-color: #fff;
           }
         }
-    
+
         .menuDiv {
-          padding: 7vh 3vw;
+          padding: 1vh 3vw 7vh 3vw;
           font-size: 1.5rem;
           color: #fff;
           text-transform: uppercase;
           font-weight: 600;
-    
+
           li {
             margin: 30px 0;
             word-spacing: 5px;
-    
+
             &:hover {
               color: #353638;
             }
@@ -101,4 +102,3 @@
     }
   }
 }
-

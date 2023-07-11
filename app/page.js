@@ -16,6 +16,7 @@ export default function Home() {
       <HeroFinal />
       <About />
       <AboutUs />
+      <Slider />
       <ClientsSlides />
       <Testimonial />
       <ContactForm />

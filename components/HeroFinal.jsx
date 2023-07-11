@@ -8,6 +8,7 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { BsArrowDownCircleFill } from "react-icons/bs";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import style from "@styles/HeroFinal.module.scss";
@@ -29,6 +30,15 @@ const HeroFinal = () => {
     deleteSpeed: 80,
   });
 
+  const handleClick = () => {
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    const scrollAmount = 1 * vh;
+    window.scrollTo({
+      top: scrollAmount,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className={style.container}>
       <div className={style.circle}>
@@ -41,16 +51,18 @@ const HeroFinal = () => {
           <div className={style.innerBorder}></div>
         </div>
       </div>
-      <div className={style.circle3}>
-        <div className={style.outerBorder}>
-          <div className={style.innerBorder}></div>
-        </div>
-      </div>
+      <motion.div 
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{delay: 3}}
+      onClick={()=>handleClick()}
+      className={style.arrow}>
+        <BsArrowDownCircleFill />
+      </motion.div>
       <div ref={ref} className={style.left}>
         <motion.p
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
-          // animate={{x: isInView ? 0 : "-100vw"}}
           transition={{
             duration: 1,
             ease: "linear",
@@ -64,7 +76,6 @@ const HeroFinal = () => {
         <motion.h1
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
-          // animate={{x: isInView ? 0 : "-100vw"}}
           transition={{
             duration: 1,
             ease: "linear",
@@ -73,13 +84,11 @@ const HeroFinal = () => {
           }}
           className={didact.className}
         >
-          {" "}
           <span>Dynastical</span> Communication
         </motion.h1>
         <motion.p
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
-          // animate={{x: isInView ? 0 : "-100vw"}}
           transition={{
             duration: 1,
             ease: "linear",
@@ -169,7 +178,6 @@ const HeroFinal = () => {
         <motion.div
           initial={{ x: "100vw" }}
           animate={{ x: 0 }}
-          // animate={{x: isInView ? 0 : "100vw"}}
           transition={{
             duration: 1,
             ease: "linear",

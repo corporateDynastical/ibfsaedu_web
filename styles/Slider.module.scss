@@ -1,83 +1,14 @@
 .container{
     width: 100%;
-    padding: 0 12vw 0 12vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 35%, rgba(221,221,221,1) 100%);
+    height: 30vh;
     position: relative;
     overflow: hidden;
-
-    h1{
-        position: absolute;
-        top: 50px;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
-        color: #525252;
-    }
+    padding: 0 15vw;
 
     img{
-        mix-blend-mode: luminosity;
-
-        &:hover{
-            mix-blend-mode: normal;
-        }
-    }
-
-    .circle1{
-        position: absolute;
-        top: -13%;
-        left: 3%;
-        min-width: 300px;
-        min-height: 300px;
-        background: rgb(155,205,210);
-        background: linear-gradient(42deg, rgba(0, 0, 0, 0.7) 0%, rgba(255,255,255,1) 100%);
-        border-radius: 50%;
-        z-index: 0;
-        box-shadow: -0.2px 0.2px 1px #000;
-    }
-    .circle2{
-        position: absolute;
-        top: -5%;
-        left: 18%;
-        min-width: 150px;
-        min-height: 150px;
-        background: rgb(155,205,210);
-        background: linear-gradient(142deg, rgba(245, 240, 240, 0.7) 0%, rgb(224, 223, 223) 100%);
-        border-radius: 50%;
-        z-index: 0;
-        box-shadow: -0.2px 0.2px 1px #000;
-    }
-    .circle3{
-        position: absolute;
-        bottom: -1%;
-        right: 5%;
-        left: auto;
-        min-width: 180px;
-        min-height: 180px;
-        background: rgb(248,108,108);
-        background: linear-gradient(to top, rgba(255, 249, 249, 0.7) 0%, rgb(145, 140, 140) 100%);
-        border-radius: 50%;
-        z-index: 0;
-        box-shadow: 0.2px -0.2px 1px #000;
-    }
-    .circle4{
-        position: absolute;
-        top: 7%;
-        right: 25%;
-        left: auto;
-        min-width: 100px;
-        min-height: 100px;
-        background: rgb(248,108,108);
-        background: linear-gradient(173deg, rgba(255, 249, 249, 0.7) 0%, rgb(145, 140, 140) 100%);
-        border-radius: 50%;
-        z-index: 0;
-        box-shadow: 0.2px -0.2px 1px #000;
+        filter: grayscale(100%);
     }
 }
