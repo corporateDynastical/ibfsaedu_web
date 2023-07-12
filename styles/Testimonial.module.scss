@@ -1,12 +1,12 @@
 .container {
   width: 100%;
-  padding: 10vh 0;
+  padding: 10vh 0 5vh 0;
   text-align: center;
   overflow: hidden;
 
   .title {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #353638;
 
     span {
@@ -17,9 +17,10 @@
 
   .testimonyContainer {
     display: flex;
-    width: 400vw;
+    width: 800vw;
     align-items: center;
     transition: all 1s;
+    height: 60vh;
 
     .testimonySlide {
       display: flex;
@@ -34,18 +35,18 @@
         justify-content: center;
         align-items: flex-start;
         flex: 1;
-        gap: 13px;
 
         .top {
           display: flex;
           justify-content: flex-start;
           align-items: center;
           gap: 20px;
+          height: 150px;
 
           .picture {
             position: relative;
-            width: 100px;
-            height: 110px;
+            width: 150px;
+            height: 100%;
 
             img {
               position: absolute;
@@ -81,6 +82,14 @@
 
         &:nth-child(2) {
           padding: 0 0 0 5vw;
+
+          .top{
+
+            .picture{
+              width: 100px;
+              height: 100px;
+            }
+          }
         }
       }
     }

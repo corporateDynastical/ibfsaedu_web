@@ -14,12 +14,12 @@ const page = () => {
         subHeading={"about"}
         title1={"Dynastical"}
         title2={"Communication"}
-        src={'/cartoons/aboutUs2.jpeg'}
+        src={'/cartoons/aboutusnew.png'}
       />
       <AboutUsHero />
       <Testimonial />
-      <ContactForm />
       <Slider />
+      <ContactForm />
     </div>
   );
 };

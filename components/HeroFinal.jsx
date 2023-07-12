@@ -84,7 +84,20 @@ const HeroFinal = () => {
           }}
           className={didact.className}
         >
-          <span>Dynastical</span> Communication
+          Dynastical
+        </motion.h1>
+        <motion.h1
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
+          transition={{
+            duration: 1,
+            ease: "linear",
+            type: "tween",
+            delay: 0.3,
+          }}
+          className={didact.className}
+        >
+          Communication
         </motion.h1>
         <motion.p
           initial={{ x: "-100vw" }}

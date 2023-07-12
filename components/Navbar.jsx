@@ -67,36 +67,61 @@ const Navbar = () => {
           </div>
           <AnimatePresence>
             {show && (
-              <motion.div 
-              variants={item}
-              initial={{height:0,opacity:0}}
-              animate={{height:"100vh", opacity:1}}
-              transition={{duration:.5}}
-              exit="exit"
-              className={style.navMenu}>
+              <motion.div
+                variants={item}
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "100vh", opacity: 1 }}
+                transition={{ duration: .5 }}
+                exit="exit"
+                className={style.navMenu}>
                 <div className={style.menuContainer}>
                   <div className={style.topDiv}>
-                    <h1 className={style.menu}>Menu</h1>
-                    <button onClick={() => setShow(false)}>
+                    <motion.h1
+                      initial={{ y: 80, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.5 }}
+                      exit={{
+                        opacity: 0,
+                        y: -90,
+                        transition: {
+                          ease: "easeInOut",
+                          delay: 0
+                        }
+                      }}
+                      className={style.menu}>Menu</motion.h1>
+                    <motion.button
+                      initial={{ y: 80, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.5 }}
+                      exit={{
+                        opacity: 0,
+                        y: -90,
+                        transition: {
+                          ease: "easeInOut",
+                          delay: 0
+                        }
+                      }}
+                      onClick={() => setShow(false)}>
                       <AiOutlineClose />
-                    </button>
+                    </motion.button>
                   </div>
                   <div className={style.menuDiv}>
                     <ul>
                       {data.map((item, index) => {
                         return (
                           <motion.li
-                          initial={{y:80,opacity:0}}
-                          animate={{y:0, opacity:1}}
-                          transition={{delay:0.1*index}}
-                          exit={{
-                           opacity:0,
-                           y:90,
-                             transition:{
-                               ease:"easeInOut",
-                               delay: 0.1 * index
-                             }
-                          }}
+                            initial={{ y: 80, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: 0.1 * index }}
+                            exit={{
+                              opacity: 0,
+                              y: 90,
+                              transition: {
+                                ease: "easeInOut",
+                                delay: 0.01 * index,
+                                duration: 0.5
+                              }
+                            }}
                             onClick={() => setShow(false)}
                             key={index}
                           >

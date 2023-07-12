@@ -10,8 +10,8 @@ const page = () => {
   return (
     <div>
         <PageTitle subHeading={'meet our'} title1={'Political'} title2={'Clients'} />
-        <ClientsShowCase />
-        <PoliticalClientTestimonials />
+        {/* <ClientsShowCase /> */}
+        {/* <PoliticalClientTestimonials /> */}
         <ContactForm />
         <Slider />
     </div>

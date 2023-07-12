@@ -5,7 +5,7 @@ import React from 'react'
 const page = () => {
     return (
         <div>
-            <PageTitle subHeading={'Join Our Winning Team!'} title1={'Career'} />
+            <PageTitle subHeading={'Career'} title1={'Join Our'} title2={'Winning Team!'} src={'/cartoons/career.png'} />
             <CareerContactForm />
         </div>
     )

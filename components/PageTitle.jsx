@@ -18,27 +18,20 @@ const bebas = Bebas_Neue({
 const PageTitle = ({ subHeading, title1, title2, src }) => {
   return (
     <div className={style.container}>
-      <div className={`${style.left}`}>
-        <div className={style.circle}>
-          <div className={style.outerBorder}>
-            <div className={style.innerBorder}></div>
-          </div>
+      <div className={style.circle2}>
+        <div className={style.outerBorder}>
+          <div className={style.innerBorder}></div>
         </div>
-        <p className={`${style.headingOne}`}>{subHeading}</p>
-        <h1 className={didact.className}>
-          <span> {title1} </span>
-          <br /> {title2}
-        </h1>
+      </div>
+      <div className={style.left}>
+        <p className={didact.className}>{subHeading}</p>
+        <h1 className={didact.className}>{title1}</h1>
+        <h1 className={didact.className}>{title2}</h1>
       </div>
       <div className={style.right}>
-        <div className={style.outerCircle}>
-          <div className={style.innerCircle}>
-            <div className={style.picture}>
-              <Image src={src} alt="about dynastical" fill />
-            </div>
-          </div>
+        <div className={style.picture}>
+          <Image src={src} alt="about dynastical" fill />
         </div>
-        <hr className={style.line} />
       </div>
     </div>
   );

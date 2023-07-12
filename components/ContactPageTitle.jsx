@@ -1,14 +1,15 @@
 "use client"
+import Image from 'next/image'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import { Lilita_One } from 'next/font/google'
+import { Didact_Gothic } from 'next/font/google'
 import style from '@styles/ContactPageTitle.module.scss'
 
-const lilita = Lilita_One({
+const didact = Didact_Gothic({
     weight: "400",
     subsets: ['latin']
 })
 
-const ContactPageTitle = () => {
+const ContactPageTitle = ({src}) => {
 
     const [text] = useTypewriter({
         words: ['Namaste . . .', 'Hello . . .', 'Bonjour . . .'],
@@ -19,15 +20,17 @@ const ContactPageTitle = () => {
 
     return (
         <div className={style.container}>
-            <div className={`${style.left}`}>
-                <h1 className={`${style.title} ${lilita.className}`}>
-                    {text}
-                </h1>
+            <div className={style.circle2}>
+                <div className={style.outerBorder}>
+                    <div className={style.innerBorder}></div>
+                </div>
+            </div>
+            <div className={style.left}>
+                <h1 className={didact.className}>{text}</h1>
             </div>
             <div className={style.right}>
-                <div className={style.outerCircle}>
-                    <div className={style.innerCircle}>
-                    </div>
+                <div className={style.picture}>
+                    <Image src={src} alt="about dynastical" fill />
                 </div>
             </div>
         </div>

@@ -6,9 +6,13 @@
     height: 30vh;
     position: relative;
     overflow: hidden;
-    padding: 0 15vw;
+    padding: 0 10vw;
 
     img{
         filter: grayscale(100%);
+
+        &:hover{
+            filter: none;
+        }
     }
 }

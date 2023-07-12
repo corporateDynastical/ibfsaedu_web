@@ -27,7 +27,7 @@ const About = () => {
         </div>
         <div className={style.picture}>
           <Image
-            src="/assets/images/about.jpg"
+            src="/assets/images/welcome.jpeg"
             alt="About Dynastical Communication"
             fill
           />

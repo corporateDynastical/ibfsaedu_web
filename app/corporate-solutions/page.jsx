@@ -9,7 +9,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-        <PageTitle subHeading={'We offer'} title1={'corporate'} title2={'solutions'} />
+        <PageTitle subHeading={'We offer'} title1={'corporate'} title2={'solutions'} src={'/cartoons/corporate.png'} />
         <ServicePageHero />
         <Testimonial />
         <ContactForm />

@@ -20,23 +20,45 @@ import style from "@styles/Slider.module.scss";
 const Slider = () => {
   const data = [
     {
-      src: "/logos/delilah-01.png",
+      src: "/corpLogos/carnival.png",
     },
     {
-      src: "/logos/dynastical white-01.png",
+      src: "/corpLogos/delilah.png",
     },
     {
-      src: "/logos/main_logo.svg",
+      src: "/corpLogos/dynastical.png",
     },
     {
-      src: "/logos/tapas1.png",
+      src: "/corpLogos/epb.png",
     },
     {
-      src: "/logos/the pune studio-01.png",
+      src: "/corpLogos/kulfi_heaven.png",
     },
     {
-      src: "/logos/trispirit-01.png",
+      src: "/corpLogos/promax.png",
     },
+    {
+      src: "/corpLogos/right_foundation.png",
+    },
+    {
+      src: "/corpLogos/runbhumi.png",
+    },
+    {
+      src: "/corpLogos/sadguru_solar.png",
+    },
+    {
+      src: "/corpLogos/tapas.png",
+    },
+    {
+      src: "/corpLogos/tps.png",
+    },
+    {
+      src: "/corpLogos/trispirit.png",
+    },
+    {
+      src: "/corpLogos/vedbrahma.png",
+    },
+
   ];
 
   return (
@@ -44,105 +66,28 @@ const Slider = () => {
       <Swiper
         modules={[A11y, Autoplay]}
         autoplay={{
-          delay: 0,
+          delay: 5000,
         }}
-        speed={2000}
         loop
-        spaceBetween={100}
-        slidesPerView={4}
+        speed={5000}
+        spaceBetween={0}
+        slidesPerView={5}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
         {data.map((item, index) => {
           return (
             <SwiperSlide>
-              <div
-                key={index}
-                className={style.picture}
-                style={{
-                  width: "200px",
-                  height: "100px",
-                  background: "#bbb",
-                  position: "relative",
-                }}
-              >
                 <Image
-                  fill
-                  style={{
-                    position: "absolute",
-                    width: "100%",
-                    height: "100%",
-                    top: 0,
-                    left: 0,
-                  }}
+                  key={index}
+                  width={600}
+                  height={600}
                   src={item.src}
                   alt=""
                 />
-              </div>
             </SwiperSlide>
           );
         })}
-
-        {/* <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={style.picture} style={{ width: '100px', height: '100px', background: "#bbb", position: "relative" }}>
-                        <Image fill style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0}} src={'/assets/images/about.jpg'} alt=""/>
-                    </div>
-                </SwiperSlide> */}
       </Swiper>
     </div>
   );
