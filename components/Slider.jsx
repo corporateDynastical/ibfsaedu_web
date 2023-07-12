@@ -77,9 +77,8 @@ const Slider = () => {
       >
         {data.map((item, index) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
                 <Image
-                  key={index}
                   width={600}
                   height={600}
                   src={item.src}

@@ -9,7 +9,7 @@
 
   .navbar {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1280px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -41,10 +41,10 @@
         gap: 5px;
         font-size: 2rem;
         font-weight: 600;
-        color: rgba(255, 255, 0);
+        color: rgba(255, 55, 0);
 
         span {
-          color: rgba(255, 255, 0);
+          color: rgba(255, 55, 0);
           padding: 10px;
           background: #353638;
         }

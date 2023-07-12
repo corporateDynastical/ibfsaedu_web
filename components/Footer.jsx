@@ -90,7 +90,7 @@ const Footer = () => {
         <div className={style.container}>
             {data.map((item,i)=>{
                 return(
-                <div className={style.links}>
+                <div key={i} className={style.links}>
                     <div  className={style.heading}>
                         <div className={style.word} data-text={item.title1}>
                             {item.title1}
@@ -102,7 +102,7 @@ const Footer = () => {
                     <div className={style.sublinks}>
                         {item.links.map((item,index)=>{
                             return(
-                            <ul>
+                            <ul key={index}>
                                 <li><Link href={item.href}>{item.link}</Link></li>
                             </ul>
                             )

@@ -57,7 +57,7 @@ const ServicesHero = () => {
                 <ul className={style.links}>
                     {corporationData.map((item,index)=>{
                         return (
-                        <Link href={`/${item.href}`} className={style.nameDiv}>
+                        <Link key={index} href={`/${item.href}`} className={style.nameDiv}>
                             <li data-link-text={item.first}>
                                 {item.first}
                             </li>
@@ -79,7 +79,7 @@ const ServicesHero = () => {
                 <ul className={`${style.links} ${style.linksCol1}`}>
                     {politicalData.map((item,index)=>{
                         return (
-                        <Link href={`/${item.href}`} className={style.nameDiv}>
+                        <Link key={index} href={`/${item.href}`} className={style.nameDiv}>
                             <li data-link-text={item.first}>
                                 {item.first}
                             </li>
@@ -103,7 +103,7 @@ const ServicesHero = () => {
                 <ul className={`${style.links} ${style.linksCol2}`}>
                     {eventData.map((item,index)=>{
                             return (
-                            <Link href={`/${item.href}`} className={style.nameDiv}>
+                            <Link key={index} href={`/${item.href}`} className={style.nameDiv}>
                                 <li data-link-text={item.first}>
                                     {item.first}
                                 </li>

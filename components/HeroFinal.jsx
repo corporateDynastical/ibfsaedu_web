@@ -51,6 +51,16 @@ const HeroFinal = () => {
           <div className={style.innerBorder}></div>
         </div>
       </div>
+      <div className={style.circle3}>
+        <div className={style.outerBorder}>
+          <div className={style.innerBorder}></div>
+        </div>
+      </div>
+      <div className={style.circle4}>
+        <div className={style.outerBorder}>
+          <div className={style.innerBorder}></div>
+        </div>
+      </div>
       <motion.div 
       initial={{opacity: 0}}
       animate={{opacity: 1}}
