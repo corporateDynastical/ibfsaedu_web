@@ -119,7 +119,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      // animation: rotationOut 10s infinite linear;
 
       .innerBorder {
         width: 60%;
@@ -127,54 +126,8 @@
         border: 0.14rem solid #ffad76;
         border-style: dotted;
         border-radius: 50%;
-        // animation: rotationInner 10s infinite linear;
-
-        // @keyframes rotationInner {
-        //   0% {
-        //     border: 0.14rem solid #ffad76;
-        //     border-style: dotted;
-        //   }
-        //   25% {
-        //     border: 0.14rem solid #1877f2;
-        //     border-style: dotted;
-        //   }
-        //   50% {
-        //     border: 0.14rem solid #1da1f2;
-        //     border-style: dotted;
-        //   }
-        //   75% {
-        //     border: 0.14rem solid #833ab4;
-        //     border-style: dotted;
-        //   }
-        //   100% {
-        //     border: 0.14rem solid #ffad76;
-        //     border-style: dotted;
-        //   }
-        // }
       }
 
-      // @keyframes rotationOut {
-      //   0% {
-      //     border: 0.14rem solid #ffad76;
-      //     border-style: dotted;
-      //   }
-      //   25% {
-      //     border: 0.14rem solid #1877f2;
-      //     border-style: dotted;
-      //   }
-      //   50% {
-      //     border: 0.14rem solid #1da1f2;
-      //     border-style: dotted;
-      //   }
-      //   75% {
-      //     border: 0.14rem solid #833ab4;
-      //     border-style: dotted;
-      //   }
-      //   100% {
-      //     border: 0.14rem solid #ffad76;
-      //     border-style: dotted;
-      //   }
-      // }
     }
 
     @keyframes rotation {
@@ -183,37 +136,27 @@
         bottom: 0%;
         left: 45%;
         scale: 1;
-        // border: 0.14rem solid #ffad76;
-        // border-style: dotted;
       }
       25% {
         bottom: 30%;
         left: 55%;
         scale: 0.5;
-        // border: 0.14rem solid #1877f2;
-        // border-style: dotted;
       }
       50% {
         bottom: 60%;
         left: 35%;
         scale: 1.5;
-        // border: 0.14rem solid #f21d1d;
-        // border-style: dotted;
       }
       75% {
         bottom: 30%;
         left: 25%;
         scale: 0.5;
-        // border: 0.14rem solid #ff8000;
-        // border-style: dotted;
       }
       100% {
         transform: rotate(360deg);
         bottom: 0%;
         left: 45%;
         scale: 1;
-        // border: 0.14rem solid #ffad76;
-        // border-style: dotted;
       }
     }
   }

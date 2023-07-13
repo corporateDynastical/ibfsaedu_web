@@ -5,6 +5,8 @@
   align-items: center;
   width: 100%;
   padding: 5vh 0 10vh 0;
+  position: relative;
+  overflow: hidden;
 
   .title {
     font-size: 4rem;
@@ -52,19 +54,21 @@
 
       &:nth-child(1) {
         h1 {
-          color: #DF5D6C;
+          color: #df5d6c;
         }
       }
 
       &:nth-child(2) {
         h1 {
-          color: #99C73A;
+          color: #99c73a;
         }
       }
 
-      &:nth-child(3) {}
+      &:nth-child(3) {
+      }
 
-      &:nth-child(4) {}
+      &:nth-child(4) {
+      }
 
       &:nth-child(5) {
         h1 {
@@ -87,7 +91,6 @@
         border-right: 1px solid #bbb;
       }
     }
-
   }
 
   .ventures {
@@ -130,16 +133,208 @@
       &:nth-child(1) {
         border-right: 1px solid #bbb;
         padding-right: 5vw;
-        h1{
-          color: #17C2EF;
+        h1 {
+          color: #17c2ef;
         }
       }
 
       &:nth-child(2) {
         padding-left: 5vw;
-        h1{
-          color: #C60502;
+        h1 {
+          color: #c60502;
         }
+      }
+    }
+  }
+
+  .circle {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 0.14rem solid #ffad76;
+    border-style: dotted;
+    top: 5%;
+    right: -10%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotation 30s infinite linear alternate;
+    z-index: 0;
+
+    .outerBorder {
+      width: 72%;
+      height: 72%;
+      border: 0.14rem solid #ffad76;
+      border-style: dotted;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .innerBorder {
+        width: 60%;
+        height: 60%;
+        border: 0.14rem solid #ffad76;
+        border-style: dotted;
+        border-radius: 50%;
+      }
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+        top: 5%;
+        right: -10%;
+        scale: 1;
+      }
+      10% {
+        top: 10%;
+        right: 20%;
+        scale: 0.9;
+      }
+      20% {
+        top: 15%;
+        right: 30%;
+        scale: 0.8;
+      }
+      30% {
+        top: 30%;
+        right: 40%;
+        scale: 0.7;
+      }
+      40% {
+        top: 43%;
+        right: 48%;
+        scale: 0.6;
+      }
+      50% {
+        top: 55%;
+        right: 45%;
+        scale: 0.5;
+      }
+      60% {
+        top: 60%;
+        right: 40%;
+        scale: 0.6;
+      }
+      70% {
+        top: 75%;
+        right: 20%;
+        scale: 0.7;
+      }
+      80% {
+        top: 45%;
+        right: 5%;
+        scale: 1.5;
+      }
+      90% {
+        top: 25%;
+        right: -5%;
+        scale: 1.2;
+      }
+      100% {
+        transform: rotate(360deg);
+        top: 5%;
+        right: -10%;
+        scale: 1;
+      }
+    }
+  }
+
+  .circle2 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 0.14rem solid #ffad76;
+    border-style: dotted;
+    bottom: 5%;
+    left: -10%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotation2 30s infinite linear alternate;
+    z-index: 0;
+
+    .outerBorder {
+      width: 72%;
+      height: 72%;
+      border: 0.14rem solid #ffad76;
+      border-style: dotted;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .innerBorder {
+        width: 60%;
+        height: 60%;
+        border: 0.14rem solid #ffad76;
+        border-style: dotted;
+        border-radius: 50%;
+      }
+    }
+
+    @keyframes rotation2 {
+      0% {
+        transform: rotate(0deg);
+        bottom: 5%;
+        left: -10%;
+        scale: 1;
+      }
+      10% {
+        bottom: 10%;
+        left: 20%;
+        scale: 0.9;
+      }
+      20% {
+        bottom: 15%;
+        left: 30%;
+        scale: 0.8;
+      }
+      30% {
+        bottom: 30%;
+        left: 40%;
+        scale: 0.7;
+      }
+      40% {
+        bottom: 43%;
+        left: 48%;
+        scale: 0.6;
+      }
+      50% {
+        bottom: 55%;
+        left: 45%;
+        scale: 0.5;
+      }
+      60% {
+        bottom: 60%;
+        left: 40%;
+        scale: 0.6;
+      }
+      70% {
+        bottom: 75%;
+        left: 20%;
+        scale: 0.7;
+      }
+      80% {
+        bottom: 45%;
+        left: 5%;
+        scale: 1.5;
+      }
+      90% {
+        bottom: 25%;
+        left: -5%;
+        scale: 1.2;
+      }
+      100% {
+        transform: rotate(360deg);
+        bottom: 5%;
+        left: -10%;
+        scale: 1;
       }
     }
   }

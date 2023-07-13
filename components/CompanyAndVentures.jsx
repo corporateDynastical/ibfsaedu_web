@@ -16,7 +16,7 @@ const didact = Didact_Gothic({
 const CompanyAndVentures = () => {
   return (
     <div className={style.container}>
-      {/* <div className={style.circle}>
+      <div className={style.circle}>
         <div className={style.outerBorder}>
           <div className={style.innerBorder}></div>
         </div>
@@ -26,11 +26,6 @@ const CompanyAndVentures = () => {
           <div className={style.innerBorder}></div>
         </div>
       </div>
-      <div className={style.circle3}>
-        <div className={style.outerBorder}>
-          <div className={style.innerBorder}></div>
-        </div>
-      </div> */}
       <h1 className={`${style.title} ${didact.className}`}>
         Our <span> Ventures</span>
       </h1>

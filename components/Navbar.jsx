@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoMdCall } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
 import { Lilita_One } from "next/font/google";
 import style from "@styles/Navbar.module.scss";
