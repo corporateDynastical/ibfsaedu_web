@@ -1,20 +1,20 @@
 .container {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
-  padding: 5vh 5vw 8vh 5vw;
+  padding: 6vh 3vw 0vh 7vw;
+  overflow: hidden;
 
   .left {
     flex: 1.5;
-    text-align: center;
+    text-align: start;
     background-size: contain;
     background-repeat: repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
 
     .headingOne {
@@ -53,7 +53,7 @@
 
     .info {
       font-size: 22px;
-      width: 100%;
+      width: 80%;
       color: #000;
       z-index: 2;
       position: relative;
@@ -71,41 +71,45 @@
 
     .blockDiv {
       display: grid;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: auto auto;
       width: 100%;
-      padding: 7vh 0;
-      justify-content: center;
 
       .block {
         display: flex;
-        width: 300px;
         justify-content: center;
         flex-direction: column;
+        gap: 20px;
         align-items: center;
-        gap: 25px;
+        padding: 3vh 2vw;
 
         .picture {
           position: relative;
-          width: 90px;
-          height: 90px;
+          width: 100px;
+          height: 100px;
           border-radius: 10px;
 
           img {
             position: absolute;
+            width: 60%;
+            height: 60%;
           }
         }
 
         p {
-          font-size: 1.5rem;
-          width: min-content;
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 60px;
+          font-size: 2rem;
+          width: max-content;
         }
 
-        &:nth-child(1),&:nth-child(2),&:nth-child(3) {
+        &:nth-child(1) {
+          border-right: 1px solid #bbb;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          border-bottom: 1px solid #bbb;
+        }
+
+        &:nth-child(3) {
           border-right: 1px solid #bbb;
         }
 
@@ -140,17 +144,31 @@
             rgba(255, 107, 7, 1) 47%,
             rgb(255, 153, 86) 100%
           );
-          padding: 5px 15px;
+          padding: 12px 25px;
           margin: 20px 0;
+          border-radius: 20px;
           color: #fff;
           z-index: 2;
           position: relative;
-          font-size: 14px;
 
           a {
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 10px;
+
+            span {
+              font-size: 1rem;
+              width: 10%;
+            }
+          }
+
+          &:hover {
+            a {
+              span {
+                font-size: 1.4rem;
+              }
+            }
           }
         }
       }
@@ -159,24 +177,24 @@
 
   .circle {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     border: 0.1rem solid #ffad76;
-    border-style: dotted;
-    top: 2%;
-    right: 10%;
+    border-style: dashed;
+    top: 15%;
+    left: -10%;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: rotation 10s infinite linear;
+    animation: rotation 5s infinite linear;
 
     .outerBorder {
       width: 60%;
       height: 60%;
       border: 0.1rem solid #ffad76;
-      border-style: dotted;
+      border-style: dashed;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -186,7 +204,7 @@
         width: 50%;
         height: 50%;
         border: 0.1rem solid #ffad76;
-        border-style: dotted;
+        border-style: dashed;
         border-radius: 50%;
       }
     }

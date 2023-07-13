@@ -94,52 +94,7 @@
     }
   }
 
-  // .circle3 {
-  //   position: absolute;
-  //   width: 300px;
-  //   height: 300px;
-  //   border-radius: 50%;
-  //   border: 0.14rem solid #ffad76;
-  //   border-style: dotted;
-  //   top: 0%;
-  //   right: 50%;
-  //   z-index: 2;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   animation: rotation 10s infinite ease-in-out;
-  //   z-index: 0;
-
-  //   .outerBorder {
-  //     width: 72%;
-  //     height: 72%;
-  //     border: 0.14rem solid #ffad76;
-  //     border-style: dotted;
-  //     border-radius: 50%;
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-
-  //     .innerBorder {
-  //       width: 60%;
-  //       height: 60%;
-  //       border: 0.14rem solid #ffad76;
-  //       border-style: dotted;
-  //       border-radius: 50%;
-  //     }
-  //   }
-
-  //   @keyframes rotation {
-  //     from {
-  //       transform: rotate(0deg);
-  //     }
-  //     to {
-  //       transform: rotate(360deg);
-  //     }
-  //   }
-  // }
-
-  .circle4 {
+  .circle3 {
     position: absolute;
     width: 350px;
     height: 350px;
@@ -164,6 +119,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      // animation: rotationOut 10s infinite linear;
 
       .innerBorder {
         width: 60%;
@@ -171,7 +127,54 @@
         border: 0.14rem solid #ffad76;
         border-style: dotted;
         border-radius: 50%;
+        // animation: rotationInner 10s infinite linear;
+
+        // @keyframes rotationInner {
+        //   0% {
+        //     border: 0.14rem solid #ffad76;
+        //     border-style: dotted;
+        //   }
+        //   25% {
+        //     border: 0.14rem solid #1877f2;
+        //     border-style: dotted;
+        //   }
+        //   50% {
+        //     border: 0.14rem solid #1da1f2;
+        //     border-style: dotted;
+        //   }
+        //   75% {
+        //     border: 0.14rem solid #833ab4;
+        //     border-style: dotted;
+        //   }
+        //   100% {
+        //     border: 0.14rem solid #ffad76;
+        //     border-style: dotted;
+        //   }
+        // }
       }
+
+      // @keyframes rotationOut {
+      //   0% {
+      //     border: 0.14rem solid #ffad76;
+      //     border-style: dotted;
+      //   }
+      //   25% {
+      //     border: 0.14rem solid #1877f2;
+      //     border-style: dotted;
+      //   }
+      //   50% {
+      //     border: 0.14rem solid #1da1f2;
+      //     border-style: dotted;
+      //   }
+      //   75% {
+      //     border: 0.14rem solid #833ab4;
+      //     border-style: dotted;
+      //   }
+      //   100% {
+      //     border: 0.14rem solid #ffad76;
+      //     border-style: dotted;
+      //   }
+      // }
     }
 
     @keyframes rotation {
@@ -180,27 +183,37 @@
         bottom: 0%;
         left: 45%;
         scale: 1;
+        // border: 0.14rem solid #ffad76;
+        // border-style: dotted;
       }
       25% {
         bottom: 30%;
         left: 55%;
         scale: 0.5;
+        // border: 0.14rem solid #1877f2;
+        // border-style: dotted;
       }
       50% {
         bottom: 60%;
         left: 35%;
         scale: 1.5;
+        // border: 0.14rem solid #f21d1d;
+        // border-style: dotted;
       }
       75% {
         bottom: 30%;
         left: 25%;
         scale: 0.5;
+        // border: 0.14rem solid #ff8000;
+        // border-style: dotted;
       }
       100% {
         transform: rotate(360deg);
         bottom: 0%;
         left: 45%;
         scale: 1;
+        // border: 0.14rem solid #ffad76;
+        // border-style: dotted;
       }
     }
   }
@@ -236,8 +249,8 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
+    // flex-direction: column;
+    align-items: center;
     padding-left: 13vw;
     z-index: 2;
     position: relative;
@@ -248,9 +261,7 @@
 
     h1 {
       font-size: 5rem;
-      font-weight: 500;
-      letter-spacing: 0.1rem;
-      line-height: 1;
+      font-weight: 600;
       background: rgb(255, 81, 0);
       background: linear-gradient(
         138deg,
@@ -260,6 +271,9 @@
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.1rem;
 
       &:nth-child(3) {
         font-size: 7rem;
@@ -270,6 +284,11 @@
     .tagline {
       font-size: 1.5rem;
       padding: 3vh 5px;
+
+      span{
+        font-size: 2rem;
+        font-weight: 600;
+      }
     }
 
     .logos {
@@ -376,11 +395,12 @@
 
       .advertisement {
         padding: 20px 0;
-        font-size: 2rem;
-        font-weight: 500;
+        font-size: 1.5rem;
+        font-weight: 400;
 
         span {
-          font-weight: 400;
+          font-weight: 500;
+          font-size: 2rem;
           color: rgba(255, 55, 0);
         }
       }

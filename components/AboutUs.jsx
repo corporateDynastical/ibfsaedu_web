@@ -56,10 +56,10 @@ const AboutUs = () => {
             <p className={mont.className}>Digital Marketing</p>
             <button>
               <Link href={"/digital-marketing"}>
-                See More{" "}
-                <span>
+                View More
+                {/* <span>
                   <BsArrowRight />
-                </span>{" "}
+                </span> */}
               </Link>
             </button>
           </div>
@@ -74,10 +74,10 @@ const AboutUs = () => {
             <p className={mont.className}>Corporate Solution</p>
             <button>
               <Link href={"/corporate-solutions"}>
-                See More{" "}
-                <span>
+                View More
+                {/* <span>
                   <BsArrowRight />
-                </span>{" "}
+                </span> */}
               </Link>
             </button>
           </div>
@@ -92,10 +92,10 @@ const AboutUs = () => {
             <p className={mont.className}>Political Analysis</p>
             <button>
               <Link href={"/political-analysis"}>
-                See More{" "}
-                <span>
+                View More
+                {/* <span>
                   <BsArrowRight />
-                </span>{" "}
+                </span> */}
               </Link>
             </button>
           </div>
@@ -106,10 +106,10 @@ const AboutUs = () => {
             <p className={mont.className}>Events</p>
             <button>
               <Link href={"/events"}>
-                See More{" "}
-                <span>
+                View More
+                {/* <span>
                   <BsArrowRight />
-                </span>{" "}
+                </span> */}
               </Link>
             </button>
           </div>
