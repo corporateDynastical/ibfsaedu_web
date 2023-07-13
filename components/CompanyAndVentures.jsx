@@ -1,9 +1,9 @@
-import { Lilita_One, Didact_Gothic } from "next/font/google";
+import { Bebas_Neue, Didact_Gothic } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import style from "@styles/CompanyAndVentures.module.scss";
 
-const lilita = Lilita_One({
+const lilita = Bebas_Neue({
   weight: "400",
   subsets: ["latin-ext"],
 });
@@ -37,9 +37,9 @@ const CompanyAndVentures = () => {
       <div className={style.ventures}>
         <div className={style.company}>
           <div className={style.logo}>
-            <Image src={"/corpLogos/tps.png"} alt="" fill />
+            <Image src={"/corpLogos/t_ps-01.png"} alt="" fill />
           </div>
-          <h1>The Pune Studio</h1>
+          <h1 className={lilita.className}>The Pune Studio</h1>
           <p className={didact.className}>
             The Pune Studio is a dynamic and versatile multipurpose studio
             with Pune's first-biggest Chroma Screen that has been serving the
@@ -54,9 +54,9 @@ const CompanyAndVentures = () => {
         </div>
         <div className={style.company}>
           <div className={style.logo}>
-            <Image src={"/corpLogos/delilah.png"} alt="" fill />
+            <Image src={"/corpLogos/d_elilah-01.png"} alt="" fill />
           </div>
-          <h1>Delilah Kitchen & Bar</h1>
+          <h1 className={lilita.className}>Delilah Kitchen & Bar</h1>
           <p className={didact.className}>
             Delilah Restaurant & Bar, an exquisite haven inspired by Roman
             elegance and charm. Nestled in the heart of Kothrud, our newly
@@ -77,33 +77,33 @@ const CompanyAndVentures = () => {
       <div className={style.logos}>
         <div className={style.company}>
           <div className={style.logo}>
-            <Image src={"/corpLogos/trispirit.png"} alt="" fill />
+            <Image src={"/corpLogos/t_rispirit-01-01-01.png"} alt="" fill />
           </div>
-          <h1>Trispirit Studios Private Limited</h1>
+          <h1 className={lilita.className}>Trispirit Studios Private Limited</h1>
         </div>
         <div className={style.company}>
           <div className={style.logo}>
             <Image src={"/corpLogos/tapas.png"} alt="" fill />
           </div>
-          <h1>Tapas Hospitality LLP</h1>
+          <h1 className={lilita.className}>Tapas Hospitality LLP</h1>
         </div>
         <div className={style.company}>
           <div className={style.logo}>
             <Image src={"/assets/images/about.jpg"} alt="" fill />
           </div>
-          <h1>BlendWhite International</h1>
+          <h1 className={lilita.className}>BlendWhite International</h1>
         </div>
         <div className={style.company}>
           <div className={style.logo}>
             <Image src={"/assets/images/about.jpg"} alt="" fill />
           </div>
-          <h1>Namoji Adhya Sports Management</h1>
+          <h1 className={lilita.className}>Namoji Adhya Sports Management</h1>
         </div>
         <div className={style.company}>
           <div className={style.logo}>
             <Image src={"/corpLogos/dynastical.png"} alt="" fill />
           </div>
-          <h1>Dynastical Communication Private Limited</h1>
+          <h1 className={lilita.className}>Dynastical Communication Private Limited</h1>
         </div>
       </div>
     </div>

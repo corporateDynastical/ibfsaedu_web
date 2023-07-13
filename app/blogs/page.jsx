@@ -11,7 +11,6 @@ const page = () => {
         <PageTitle subHeading={'Explore'} title1={'Our Blogs'} title2={'Collection'} src={'/cartoons/blogs.png'} />
         <BlogPageHero />
         <ContactForm />
-        <Slider />
     </div>
   )
 }

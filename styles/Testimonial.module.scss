@@ -40,13 +40,13 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          gap: 20px;
+          gap: 2vw;
           height: 150px;
 
           .picture {
             position: relative;
-            width: 150px;
-            height: 100%;
+            width: 100px;
+            height: 100px;
 
             img {
               position: absolute;
@@ -73,6 +73,10 @@
           text-align: justify;
           font-size: 18px;
           color: #777777;
+
+          a{
+            padding-left: 10px;
+          }
         }
 
         &:nth-child(1) {
@@ -82,14 +86,6 @@
 
         &:nth-child(2) {
           padding: 0 0 0 5vw;
-
-          .top{
-
-            .picture{
-              width: 100px;
-              height: 100px;
-            }
-          }
         }
       }
     }

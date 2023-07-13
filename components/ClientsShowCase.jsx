@@ -11,64 +11,64 @@ const ClientsShowCase = () => {
 
     const data = [
         {
-            src: "/assets/images/about.jpg",
+            src: "/assets/political/ravindra.png",
             name: "रविंद हेमराज धंगेकर",
             post: "आमदार - कसबा विधानसभा मतदार संघ"
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/assets/political/bapu_mankar.png",
             name: "राघवेंद्र बापू मानकर",
             post: "अध्यक्ष, भाजप युवा मोर्चा, पुणे"
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/assets/political/ravindra_bhegade.png",
             name: "रविंद्र भेगडे",
             post: "निवडणूक प्रमुख, भाजपा मावळ विधानसभा. अध्यक्ष, भारतीय जनता पक्ष, मावळ तालुका"
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/assets/political/lahu.png",
             name: "लहु गजानन बालवडकर",
             post: "संस्थापक / अध्यक्ष – लहु बालवडकर सोशल वेलफेअर"
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/assets/political/umesh.png",
             name: "उमेश ज्ञानेश्वर गायकवाड",
             post: "नगरसेवक, प्रभाग क्र. २१ कोरेगाव पार्क-घोरपडी-मुंढवा"
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/assets/political/haribhau.png",
             name: "हरीदास चरवड",
             post: "नगरसेवक, मा. स्थायी समिति सदस्य, सदस्य पी.एम.आर.डी.ए., सदस्य नाव समिति,  पुणे"
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/assets/political/shelar.png",
             name: "रघुविर उद्धवराव शेलार",
             post: "माजी उपाध्यक्ष : देहुरोड कॅन्टोन्मेंट बोर्ड, अध्यक्ष"
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/assets/political/ganesh.png",
             name: "गणेश तुकाराम भोंडवे",
             post: "माजी नगरसेवक, पिंपरी- चिंचवड महानगरपालिका"
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/assets/political/aditya.png",
             name: "आदित्यराजे हनुमंत घुंडरे (पाटील)",
             post: "माजी उपनगराध्यक्ष, आळंदी नगरपरिषद, आळंदी"
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/assets/political/rajashree.png",
+            name: "राजश्री पाटील",
+            // post: "अध्यक्ष, भाजप युवा मोर्चा, हवेली तालुका"
+        },
+        {
+            src: "/assets/political/himali.png",
+            name: "हिमाली कांबळे",
+            // post: "संचालक : कृषी उत्पन्न बाजार समिती, हवेली, पुणे"
+        },
+        {
+            src: "/assets/political/priyanka.png",
             name: "प्रियंका धोत्रे",
             post: "अध्यक्षा : युवा स्पंदन संस्था शिरूर"
-        },
-        {
-            src: "/assets/images/about.jpg",
-            name: "अनिल दिलीप सातव पाटील",
-            post: "अध्यक्ष, भाजप युवा मोर्चा, हवेली तालुका"
-        },
-        {
-            src: "/assets/images/about.jpg",
-            name: "रामकृष्ण हेमचंद्र सातव पाटील",
-            post: "संचालक : कृषी उत्पन्न बाजार समिती, हवेली, पुणे"
         },
     ]
 

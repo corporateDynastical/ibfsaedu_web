@@ -8,87 +8,55 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
-import { Lilita_One } from "next/font/google";
+import { BsArrowRight } from "react-icons/bs";
+import { Didact_Gothic } from "next/font/google";
 
-const lilita = Lilita_One({
+const didact = Didact_Gothic({
   weight: "400",
   subsets: ["latin"],
 });
 
 import style from "@styles/Slider.module.scss";
+import Link from "next/link";
 
-const Slider = () => {
-  const data = [
-    {
-      src: "/corpLogos/carnival.png",
-    },
-    {
-      src: "/corpLogos/delilah.png",
-    },
-    {
-      src: "/corpLogos/dynastical.png",
-    },
-    {
-      src: "/corpLogos/epb.png",
-    },
-    {
-      src: "/corpLogos/kulfi_heaven.png",
-    },
-    {
-      src: "/corpLogos/promax.png",
-    },
-    {
-      src: "/corpLogos/right_foundation.png",
-    },
-    {
-      src: "/corpLogos/runbhumi.png",
-    },
-    {
-      src: "/corpLogos/sadguru_solar.png",
-    },
-    {
-      src: "/corpLogos/tapas.png",
-    },
-    {
-      src: "/corpLogos/tps.png",
-    },
-    {
-      src: "/corpLogos/trispirit.png",
-    },
-    {
-      src: "/corpLogos/vedbrahma.png",
-    },
-
-  ];
+const Slider = ({ data, onPage, title, href }) => {
 
   return (
-    <div className={style.container}>
-      <Swiper
-        modules={[A11y, Autoplay]}
-        autoplay={{
-          delay: 5000,
-        }}
-        loop
-        speed={5000}
-        spaceBetween={0}
-        slidesPerView={5}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
-        {data.map((item, index) => {
-          return (
-            <SwiperSlide key={index}>
-                <Image
-                  width={600}
-                  height={600}
-                  src={item.src}
-                  alt=""
-                />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </div>
+    <>
+      <div className={style.titleDiv}>
+        <h1 className={didact.className}>{title}</h1>
+        { onPage &&
+          <button>
+            <Link href={href} >View All <BsArrowRight /></Link>
+          </button>
+        }
+      </div>
+      <div className={`${style.container} ${onPage ? style.onPage : ''}`}>
+        <Swiper
+          modules={[A11y, Autoplay]}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: "false"
+          }}
+          loop
+          speed={2000}
+          spaceBetween={100}
+          slidesPerView={6}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          {data.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div className={style.picture}>
+                  <Image src={item.src} alt="dynastical clients" fill />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
+    </>
   );
 };
 

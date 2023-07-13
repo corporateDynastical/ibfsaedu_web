@@ -50,11 +50,6 @@ const CorpClientTestimonials = () => {
       src2: "/assets/images/about.jpg",
       comment2:
         "Dynastical Communication's innovative and skilled digital marketing team seamlessly coordinates with our sales team to create engaging social media posts, content, and captions that have been embraced by our audience; their relevant social media promotions increase awareness of our products; and their successful lead generation campaigns have generated quality leads and boosted our business. We genuinely applaud their services!",
-      // name3: "दिनेश ज्ञानेश्वर गायकवाड",
-      // post3: "सामाजिक कार्यकर्ता",
-      // src3: "/assets/political/dinesh.png",
-      // comment3:
-      //   "राजकीय आणि सामाजिक क्षेत्रातले कार्य ही नेहमी सांघिक प्रयत्नातून साध्य होतात. एका कृतीमागे अनेक विचारांची जोड असते. डायनॅस्टीकल कम्युनिकेशन अनेक वर्ष माझ्यासाठी ही विचारांची कार्यप्रणाली राबवतेय. संपूर्ण टीमने अतिशय सुनियोजित अशा निवडपूर्व आधुनिक कार्यप्रणालीव्दारे डिजिटल रणनीती, वॉर रूम प्लॅनिंग, मतदार संघाचे सर्वेक्षण असे अनेक उपक्रम यशस्वीरित्या पूर्णत्वास  नेले. सोशल मिडीयाचा प्रभावी वापर करत त्यांनी माझे विकासकार्य जनतेपर्यंत पोहचवले. सामाजिक उपक्रमांचे नियोजन, प्रसिद्धी, प्रचार,प्रसार अशा सगळ्यात स्तरावर संपूर्ण टीम बारकाईने लक्ष देते.",
     },
   ];
 

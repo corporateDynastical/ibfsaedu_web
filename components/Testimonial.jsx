@@ -25,7 +25,7 @@ const Testimonial = () => {
 
   const data = [
     {
-      corpImg: "/corpLogos/right_foundation.png",
+      corpImg: "/corpLogos/rf_01.png",
       corpName: "Right Foundation",
       corpPost: "Real Estate Agency",
       corpComment: "We wholeheartedly endorse Dynastical Communication for their remarkable contribution to our construction business. Their  strategic lead generation, brand building, and social media    campaigns have propelled our online presence, attracting quality ...",
@@ -35,7 +35,7 @@ const Testimonial = () => {
       poliComment: "नेतृत्व जन्माला येत असतांना त्यांची घडणावळ मोलाची ठरते. २०१७ आणि २०२३ या दोन्ही निवडणुकी दरम्यान या वाक्याचा नेमका प्रयत्य मला आला. निवणुकीदरम्यान विजयश्री खेचून आणण्याच्या माझ्या प्रवासातले मोलाचे साथीदार म्हणजे डायनॅस्टीकल कम्युनिकेशनची कुशल टीम. अतिशय सुनियोजित आणि आधुनिक...",
     },
     {
-      corpImg: "/corpLogos/runbhumi.png",
+      corpImg: "/corpLogos/r_unbhumi-01-01.png",
       corpName: "Royal Runbhumi",
       corpPost: "Multisports Turf",
       corpComment: "With the help of the best digital marketing strategies, Dynastical Communication manages our social media accounts, generates leads for our sports coaching academy, and promotes our services. Dynastical is a fantastic choice for more ...",
@@ -55,7 +55,7 @@ const Testimonial = () => {
       poliComment: "डायनॅस्टीकल कम्युनिकेशन संपूर्ण टीमने राजकारणातल्या बारकाव्यांचा सखोल अभ्यास केलाय. त्यामुळे चालू घडामोडींचा आढावा घेत कुठल्या रणनीती योग्य ठरतील याचे त्यांनी उत्तम मार्गदर्शन केले. प्रभागातल्या अनेक कामांचा अहवाल तयार करणं , जनमत चाचणीद्वारे ...",
     },
     {
-      corpImg: "/corpLogos/carnival.png",
+      corpImg: "/corpLogos/c_arnival-01-01.png",
       corpName: "Carnival",
       corpPost: "Restaurant & Bar",
       corpComment: "Our restaurant and bar in Pune had the pleasure of partnering with an exceptional digital marketing and advertising agency, Dynastical Communication. Their innovative strategies, targeted campaigns, and lead generation have...",
@@ -65,7 +65,7 @@ const Testimonial = () => {
       poliComment: "राजकीय क्षेत्र अतिशय परिवर्तनशील आहे, दिवस सरत नाही तो नवीन बदलाला आम्हाला सामोरे जावे लागते. हा रोजचा होणार बदल अगदी सुनियोजित पद्धतीने हाताळायचे काम डायनॅस्टीकल कम्युनिकेशन करते. चैतन्यस्पर्श पादुका दर्शन सोहळा, सुरसंध्या, ...",
     },
     {
-      corpImg: "/corpLogos/sadguru_solar.png",
+      corpImg: "/corpLogos/s_adguru-01-01.png",
       corpName: "Sadguru Solar",
       corpPost: "360° Solar Solutions",
       corpComment: "Choosing Dynastical Communication as a digital marketing agency was the best decision we made for our solar and energy products business. Their innovative digital marketing strategies skyrocketed our online presence ...",
@@ -85,7 +85,7 @@ const Testimonial = () => {
       poliComment: "बदलत्या जगाच्या वेगासोबत चालायचे असेल तर सोशल मिडिया आजच्या समाज मनाचा आरसा आहे. सोशल मिडियाचा प्रभावी वापर करुण माझे  विचार आणि धोरण जनसामान्यापर्यंत पोहोचवण्याच काम डायनॅस्टीकल कम्युनिकेशन चोख करते. निवडणुकी दरम्यान वोर रूम ...",
     },
     {
-      corpImg: "/corpLogos/tps.png",
+      corpImg: "/corpLogos/t_ps-01.png",
       corpName: "The Pune Studio",
       corpPost: "Multipurpose Shooting Floor",
       corpComment: "We appreciate Dynastical Communication's efficient management of our social media accounts, which includes uploading relevant content that is appropriate to our industry and business, using the best SEO keywords, writing ...",
@@ -109,7 +109,7 @@ const Testimonial = () => {
   return (
     <div className={style.container}>
       <h1 className={style.title}>
-        What's Our <span>Client Say</span>
+        What Our <span>Client Says</span>
       </h1>
       <div
         className={style.testimonyContainer}
@@ -133,7 +133,7 @@ const Testimonial = () => {
                 <div className={`${style.bottom} ${didact.className}`}>
                   {item.corpComment}
                   <span style={{ cursor: "pointer", color: "red" }}>
-                    <Link href={'/corporate-clients'}>View All</Link>
+                    <Link href={'/corporate-clients'}>Read More</Link>
                   </span>
                 </div>
               </div>
@@ -150,7 +150,7 @@ const Testimonial = () => {
                 <div className={`${style.bottom} ${didact.className}`}>
                   {item.poliComment}
                   <span style={{ cursor: "pointer", color: "red" }}>
-                    <Link href={'/political-clients'}>View All</Link>
+                    <Link href={'/political-clients'}>Read More</Link>
                   </span>
                 </div>
               </div>
