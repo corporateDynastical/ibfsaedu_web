@@ -80,7 +80,7 @@ const FooterNew = () => {
                     <div className={style.picture}>
                         <Image src={'/assets/images/main_logo.svg'} alt="Dynastical Communication Logo" fill />
                     </div>
-                    <p className={style.info}>Lorem ipsum, dolor sit amet conse ctetur adipis icing elit. Culpa libero volupt atum ratione commodi, conse quatur velit adipisci. Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Quos ullam minima sed conse quuntur</p>
+                    <p className={style.info}>Dynastical Communication, a leading digital marketing company in Pune, delivers innovative strategies to amplify your online presence. Our expert team specializes in SEO, social media, and content marketing, driving exceptional results for businesses across industries</p>
                 </div>
                 {data.map((item, index) => {
                     return (

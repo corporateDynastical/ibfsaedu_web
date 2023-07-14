@@ -131,7 +131,7 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <div className={`${style.bottom} ${didact.className}`}>
-                  {item.corpComment}
+                  <p>{item.corpComment}</p>
                   <span style={{ cursor: "pointer", color: "red" }}>
                     <Link href={'/corporate-clients'}>Read More</Link>
                   </span>
@@ -148,7 +148,7 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <div className={`${style.bottom} ${didact.className}`}>
-                  {item.poliComment}
+                  <p>{item.poliComment}</p>
                   <span style={{ cursor: "pointer", color: "red" }}>
                     <Link href={'/political-clients'}>Read More</Link>
                   </span>

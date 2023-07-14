@@ -9,13 +9,13 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <PageTitle subHeading={'We offer'} title1={'corporate'} title2={'solutions'} src={'/cartoons/corporate.png'} />
+      <PageTitle subHeading={'We offer'} title1={'corporate'} title2={'solutions'} src={'/cartoons/cat.gif'} />
       <ServicePageHero />
       <Slider
         title={'Our Coporate Clients'}
         href={'/corporate-clients'}
         onPage={true}
-        data={
+        data={ 
           [
             {
               src: "/corpLogos/c_arnival-01-01.png",

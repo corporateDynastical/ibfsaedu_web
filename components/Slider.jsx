@@ -25,7 +25,7 @@ const Slider = ({ data, onPage, title, href }) => {
     <>
       <div className={style.titleDiv}>
         <h1 className={didact.className}>{title}</h1>
-        { onPage &&
+        {onPage &&
           <button>
             <Link href={href} >View All <BsArrowRight /></Link>
           </button>
@@ -40,10 +40,15 @@ const Slider = ({ data, onPage, title, href }) => {
           }}
           loop
           speed={2000}
-          spaceBetween={100}
-          slidesPerView={6}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
+          breakpoints={{
+            1280:{slidesPerView: 6, spaceBetween: 100},
+            900: {slidesPerView: 5},
+            600: {slidesPerView: 4, spaceBetween: 50},
+            400: {slidesPerView: 4, spaceBetween: 20},
+            100: {slidesPerView: 3.5, spaceBetween: 20},
+          }}
         >
           {data.map((item, index) => {
             return (

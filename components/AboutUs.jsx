@@ -2,9 +2,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Didact_Gothic, Montserrat } from "next/font/google";
-import { motion } from "framer-motion";
-import { BsArrowRight } from "react-icons/bs";
+import { motion, useInView } from "framer-motion";
 import style from "@styles/AboutUs.module.scss";
+import { useRef } from "react";
 
 const didact = Didact_Gothic({
   weight: "400",
@@ -18,6 +18,9 @@ const mont = Montserrat({
 
 const AboutUs = () => {
 
+  const ref = useRef(null)
+  const isInView = useInView(ref, {once: true})
+
   return (
     <div className={style.container}>
       <div className={style.circle}>
@@ -25,7 +28,7 @@ const AboutUs = () => {
           <div className={style.innerBorder}></div>
         </div>
       </div>
-      <div className={style.left}>
+      <div  className={style.left}>
         <p className={`${style.headingOne}`}>We're Offering</p>
         <h1 className={didact.className}>Awesome <span> Services</span></h1>
         <p className={style.tagline}>
@@ -43,9 +46,12 @@ const AboutUs = () => {
           and reign your digital kingdom with confidence!
         </p>
       </div>
-      <div className={style.right}>
+      <div ref={ref} className={style.right}>
         <div className={style.blockDiv}>
-          <div className={style.block}>
+          <motion.div 
+          animate={{y: isInView ? 0 : 500, opacity: isInView ? 1 : 0}}
+          transition={{duration: 0.8, type: "spring", delay: 0}}
+          className={style.block}>
             <div className={style.picture}>
               <Image
                 src={"/icons/digital-campaign.png"}
@@ -57,13 +63,13 @@ const AboutUs = () => {
             <button>
               <Link href={"/digital-marketing"}>
                 View More
-                {/* <span>
-                  <BsArrowRight />
-                </span> */}
               </Link>
             </button>
-          </div>
-          <div className={style.block}>
+          </motion.div>
+          <motion.div 
+          animate={{y: isInView ? 0 : 500, opacity: isInView ? 1 : 0}}
+          transition={{duration: 0.8, type: "spring", delay: 0.2}}
+          className={style.block}>
             <div className={style.picture}>
               <Image
                 src={"/icons/teamwork.png"}
@@ -75,13 +81,13 @@ const AboutUs = () => {
             <button>
               <Link href={"/corporate-solutions"}>
                 View More
-                {/* <span>
-                  <BsArrowRight />
-                </span> */}
               </Link>
             </button>
-          </div>
-          <div className={style.block}>
+          </motion.div>
+          <motion.div 
+          animate={{y: isInView ? 0 : 500, opacity: isInView ? 1 : 0}}
+          transition={{duration: 0.8, type: "spring", delay: 0.4}}
+          className={style.block}>
             <div className={style.picture}>
               <Image
                 src={"/icons/statistic.png"}
@@ -93,13 +99,13 @@ const AboutUs = () => {
             <button>
               <Link href={"/political-analysis"}>
                 View More
-                {/* <span>
-                  <BsArrowRight />
-                </span> */}
               </Link>
             </button>
-          </div>
-          <div className={style.block}>
+          </motion.div>
+          <motion.div 
+          animate={{y: isInView ? 0 : 500, opacity: isInView ? 1 : 0}}
+          transition={{duration: 0.8, type: "spring", delay: 0.6}}
+          className={style.block}>
             <div className={style.picture}>
               <Image src={"/icons/people.png"} alt="events" fill />
             </div>
@@ -107,12 +113,9 @@ const AboutUs = () => {
             <button>
               <Link href={"/events"}>
                 View More
-                {/* <span>
-                  <BsArrowRight />
-                </span> */}
               </Link>
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
