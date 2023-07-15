@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={outfit.className}>
-        {/* <Navbar /> */}
+        <Navbar />
         <ScrollComponent />
         {children}
         <FooterNew />
