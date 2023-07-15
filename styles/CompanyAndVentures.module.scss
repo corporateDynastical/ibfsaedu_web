@@ -18,6 +18,16 @@
       font-weight: 400;
       -webkit-text-fill-color: #ff6700;
     }
+
+    @media screen and (max-width: "700px") {
+      font-size: 3rem;
+    }
+    @media screen and (max-width: "500px") {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: "281px") {
+      font-size: 2rem;
+    }
   }
 
   .logos {
@@ -27,8 +37,8 @@
     padding: 5vh 0;
 
     .company {
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -38,8 +48,8 @@
 
       .logo {
         position: relative;
-        width: 300px;
-        height: 160px;
+        width: 75%;
+        height: 50%;
 
         img {
           position: absolute;
@@ -47,7 +57,7 @@
       }
 
       h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 80%;
         text-align: center;
       }
@@ -140,6 +150,13 @@
         h1 {
           color: #17c2ef;
         }
+
+        @media screen and (max-width: "896px") {
+          border-right: none;
+          border-bottom: 1px solid #bbb;
+          padding-right: 0vw;
+          padding-bottom: 5vh;
+        }
       }
 
       &:nth-child(2) {
@@ -147,6 +164,11 @@
 
         h1 {
           color: #c60502;
+        }
+
+        @media screen and (max-width: "896px") {
+          padding-left: 0vw;
+          padding-bottom: 5vh;
         }
       }
     }
@@ -362,5 +384,103 @@
         scale: 1;
       }
     }
+  }
+
+  @media screen and (max-width: "896px") {
+    .ventures{
+      flex-direction: column;
+    }
+    .logos{
+      grid-template-columns: auto auto;
+
+      .company{
+        
+        &:nth-child(2),&:nth-child(4){
+          border-right: none;
+          border-bottom: 1px solid #bbb;
+        }
+        &:nth-child(3){
+          border-right: 1px solid #bbb;
+        }
+        &:nth-child(5){
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: "653px") {
+    padding: 5vh 0 0 0;
+
+    .logos{
+
+      .company{
+        width: 250px;
+        height: 250px;
+
+        h1{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: "512px") {
+
+    .logos{
+
+      .company{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  @media screen and (max-width: "436px") {
+    .ventures{
+      
+      .company{
+        width: 90vw;
+      }
+    }
+    .logos{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+
+      .company{
+        width: 90vw;
+        height: 300px;
+        gap: 20px;
+
+        .logo{
+          width: 100%;
+          height: 100%;
+        }
+
+        h1{
+          font-size: 1.5rem;
+        }
+
+        &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4){
+          border-left: none;
+          border-right: none;
+          border-bottom: 1px solid #bbb;
+        }
+      }
+    }    
+  }
+  @media screen and (max-width: "351px") {
+
+    .logos{
+
+      .company{
+
+        h1{
+          font-size: 1.3rem;
+        }
+      }
+    }    
   }
 }

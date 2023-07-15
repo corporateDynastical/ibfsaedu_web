@@ -161,7 +161,7 @@ export default function Home() {
         ]}
       />
       <CompanyAndVentures />
-      {/* <OurBlogs /> */}
+      <OurBlogs />
       <ContactForm />
     </div>
   );

@@ -1,10 +1,6 @@
-"use client";
-
 import { Didact_Gothic, Bebas_Neue } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import style from "@styles/OurBlogs.module.scss";
 
@@ -19,8 +15,6 @@ const bebas = Bebas_Neue({
 });
 
 const OurBlogs = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const data = [
     {
@@ -58,7 +52,7 @@ const OurBlogs = () => {
           </Link>
         </button>
       </div>
-      <div ref={ref} className={style.bottom}>
+      <div className={style.bottom}>
         {data.map((item, index) => {
           return (
             <Link key={index} href={item.href}>

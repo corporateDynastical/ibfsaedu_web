@@ -18,7 +18,7 @@ const ContactForm = () => {
       <div className={style.subContainer}>
         <div className={style.contactformbox}>
           <h1 className={`${style.titleMain} ${didact.className}`}>
-            Want to discuss an idea ? <span>We’re all ears !</span>
+            <span>Want to discuss an idea ? </span> <br /> We’re all ears !
           </h1>
           <form className={style.form} action="">
             <div className={style.name}>
@@ -73,10 +73,10 @@ const ContactForm = () => {
             <h1 className={style.title}>
               our <span>office !</span>{" "}
             </h1>
-            <h2 className={style.address}>
+            <p className={style.address}>
               Minar Apartment, Law College Rd, Pune
-            </h2>
-            <h3 className={style.phone}>
+            </p>
+            <p className={style.phone}>
               Phone:
               <Link className="px-2" href={"tel: +918766962067"}>
                 +91 87669 62067
@@ -85,8 +85,8 @@ const ContactForm = () => {
               <Link className="px-2" href={"tel: +919175772356"}>
                 +91 91757 72356
               </Link>
-            </h3>
-            <h4 className={style.email}>connectdynastical@gmail.com</h4>
+            </p>
+            <p className={style.email}>connectdynastical@gmail.com</p>
           </div>
         </div>
       </div>

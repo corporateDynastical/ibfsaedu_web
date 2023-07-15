@@ -23,14 +23,14 @@ const Slider = ({ data, onPage, title, href }) => {
 
   return (
     <>
-      <div className={style.titleDiv}>
-        <h1 className={didact.className}>{title}</h1>
-        {onPage &&
+      {onPage &&
+        <div className={style.titleDiv}>
+          <h1 className={didact.className}>{title}</h1>
           <button>
             <Link href={href} >View All <BsArrowRight /></Link>
           </button>
-        }
-      </div>
+        </div>
+      }
       <div className={`${style.container} ${onPage ? style.onPage : ''}`}>
         <Swiper
           modules={[A11y, Autoplay]}
@@ -43,11 +43,12 @@ const Slider = ({ data, onPage, title, href }) => {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
           breakpoints={{
-            1280:{slidesPerView: 6, spaceBetween: 100},
-            900: {slidesPerView: 5},
-            600: {slidesPerView: 4, spaceBetween: 50},
-            400: {slidesPerView: 4, spaceBetween: 20},
-            100: {slidesPerView: 3.5, spaceBetween: 20},
+            1280: { slidesPerView: 6, spaceBetween: 100 },
+            900: { slidesPerView: 5 },
+            600: { slidesPerView: 4, spaceBetween: 50 },
+            400: { slidesPerView: 4, spaceBetween: 20 },
+            300: { slidesPerView: 3.5, spaceBetween: 20 },
+            200: { slidesPerView: 3, spaceBetween: 20 },
           }}
         >
           {data.map((item, index) => {
