@@ -22,66 +22,29 @@ const AboutUsHero = () => {
           Welcome to <span> Dynastical</span>
         </h1>
         <p className={style.tagline}>
-        Revolutionary Digital Marketing is here!
+          Revolutionary Digital Marketing is here!
         </p>
         <div className={style.info}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi
-            omnis natus quo! Qui, quod voluptate. Aut qui accusamus voluptas
-            quo, ea perferendis sapiente fugiat iste repudiandae perspiciatis
-            nesciunt temporibus. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Placeat id provident harum laboriosam tempore
-            officia quisquam doloremque molestias et? Quaerat voluptas dolorem
-            officiis necessitatibus quae. Animi temporibus perferendis ab
-            accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Temporibus nostrum ab ipsa, debitis adipisci maxime? Aperiam
-            ipsum, molestiae ea, a optio neque maiores earum iusto ex odit,
-            aspernatur laborum? Id? Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Illo veniam est sint. Ipsa recusandae tenetur
-            enim, ad laudantium illum. Sapiente reiciendis eius beatae libero
-            et, ea quaerat. Blanditiis, ut iure!
+            The unique advertising and digital marketing firm Dynastical Communication Pvt. Ltd. was founded with the goal of delivering a fresh digital marketing perspective using our unique digital thinking. We are eager to grab youthful minds to ensure that we may offer revolutionary, original, non-plagiarised digital marketing and advertising solutions. With a team of highly skilled and innovative professionals, Dynastical Communication Pvt. Ltd. thrives on pushing the boundaries of traditional marketing techniques. Our passion lies in creating captivating campaigns that resonate with the target audience and leave a lasting impact. At Dynastical Communication, we understand that the digital landscape is ever-evolving, and we continuously adapt to the latest trends and technologies. Our forward-thinking approach allows us to stay ahead of the curve and deliver cutting-edge strategies that drive measurable results for our clients.
           </p>
         </div>
       </div>
       <div className={style.founder}>
-        <h1 className={`${didact.className}`}>
+        <h1 className={`${didact.className} ${style.title}`}>
           Meet Our <span> Founder</span>
         </h1>
-        <div style={{ display: "flex", alignContent: "center", justifyContent: "center", padding: "7vh 0" }}>
+        <div className={style.founderInfo}>
           <div className={style.left}>
             <div className={style.picture}>
               <Image src={"/assets/images/about.jpg"} alt="Shubham Joshi" fill />
             </div>
           </div>
           <div className={style.right}>
-            <p
-              style={{
-                color: "#191919",
-                fontSize: "2rem",
-                margin: "10px 0",
-                fontWeight: "500",
-              }}
-            >
-              Mr. Shubham Joshi
-            </p>
-            <p
-              style={{
-                color: "rgba(255,55,0)",
-                fontSize: "1rem",
-                margin: "10px 0",
-                fontWeight: "400",
-              }}
-            >
+            <h1 className={style.founderName}>Mr. Shubham Joshi</h1>
+            <h3 className={style.tagline}>
               Founder & Managing Director
-            </p>
-            <hr
-              style={{
-                width: "30%",
-                height: "3px",
-                margin: "10px 0",
-                background: "rgba(255,155,0)",
-              }}
-            />
+            </h3>
             <p className={style.info}>
               the Director of Dynastical Communication Private Limited, the
               leading digital marketing and advertising company in Pune, is a
@@ -105,8 +68,8 @@ const AboutUsHero = () => {
         <p className={style.tagline}>Charting New Digital Frontiers!</p>
         <div className={style.info}>
           <p>
-          With an experienced team and a results-driven approach, we excel in providing top-notch digital marketing and advertising services to our clients. Our specialized expertise lies in delivering customized solutions that cater to your unique needs. We thrive on innovation, constantly seeking new strategies and tactics to stay ahead of the curve.
-          Our commitment to delivering value for money ensures that every campaign we undertake yields maximum returns on investment. And above all, we prioritize exceptional customer service, going the extra mile to build strong relationships and exceed expectations. Partner with us for unparalleled marketing excellence.
+            With an experienced team and a results-driven approach, we excel in providing top-notch digital marketing and advertising services to our clients. Our specialized expertise lies in delivering customized solutions that cater to your unique needs. We thrive on innovation, constantly seeking new strategies and tactics to stay ahead of the curve.
+            Our commitment to delivering value for money ensures that every campaign we undertake yields maximum returns on investment. And above all, we prioritize exceptional customer service, going the extra mile to build strong relationships and exceed expectations. Partner with us for unparalleled marketing excellence.
           </p>
         </div>
       </div>

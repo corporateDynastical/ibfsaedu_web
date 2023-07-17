@@ -1,7 +1,6 @@
 "use client";
 
 import { Didact_Gothic, Bebas_Neue } from "next/font/google";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import style from "@styles/PageTitle.module.scss";
 
@@ -15,23 +14,18 @@ const bebas = Bebas_Neue({
   subsets: ["latin"],
 });
 
-const PageTitle = ({ subHeading, title1, title2, src }) => {
+const PageTitle = ({ subHeading, title }) => {
   return (
     <div className={style.container}>
-      <div className={style.left}>
-        <p className={didact.className}>{subHeading}</p>
-        <h1 className={didact.className}>{title1}</h1>
-        <h1 className={didact.className}>{title2}</h1>
-      </div>
-      <div className={style.right}>
-        <div className={style.circle}>
-          <div className={style.outerBorder}>
-            <div className={style.innerBorder}></div>
-          </div>
-        </div>
-        <div className={style.picture}>
-          <Image src={src} alt="about dynastical" fill />
-        </div>
+      <div style={{overflow: "hidden"}}>
+        <motion.div
+          initial={{ x: "-100%", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className={style.heading}>
+          <p className={didact.className}>{subHeading}</p>
+          <h1 className={didact.className}>{title}</h1>
+        </motion.div>
       </div>
     </div>
   );

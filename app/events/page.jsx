@@ -1,5 +1,4 @@
 import EventsPageHero from '@components/EventsPageHero'
-import ServicePageContactForm from '@components/ServicePageContactForm'
 import PageTitle from '@components/PageTitle'
 import Slider from '@components/Slider'
 import React from 'react'
@@ -8,7 +7,7 @@ import ContactForm from '@components/ContactForm'
 const page = () => {
   return (
     <div>
-      <PageTitle subHeading={'We offer'} title1={'Event'} title2={"Management"} src={'/cartoons/career.png'} />
+      <PageTitle subHeading={'We offer'} title={'Event Management'} />
       <EventsPageHero />
       <Slider
         title={'Our Coporate Clients'}

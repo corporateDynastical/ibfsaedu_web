@@ -9,7 +9,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <PageTitle subHeading={'We offer'} title1={'political'} title2={'analysis'} />
+      <PageTitle subHeading={'We offer'} title={'political analysis'} />
       <PoliticalPageHero />
       <Slider 
       title={'Our Political Clients'}

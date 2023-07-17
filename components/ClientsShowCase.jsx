@@ -58,12 +58,10 @@ const ClientsShowCase = () => {
         {
             src: "/assets/political/rajashree.png",
             name: "राजश्री पाटील",
-            // post: "अध्यक्ष, भाजप युवा मोर्चा, हवेली तालुका"
         },
         {
             src: "/assets/political/himali.png",
             name: "हिमाली कांबळे",
-            // post: "संचालक : कृषी उत्पन्न बाजार समिती, हवेली, पुणे"
         },
         {
             src: "/assets/political/priyanka.png",

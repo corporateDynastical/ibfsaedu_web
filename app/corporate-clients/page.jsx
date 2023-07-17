@@ -8,7 +8,7 @@ import CorpClientTestimonials from '@components/CorpClientTestimonials'
 const page = () => {
   return (
     <div>
-      <PageTitle subHeading={'Meet Our'} title1={'Corporate'} title2={'Clients'} src={'/cartoons/corporate.png'} />
+      <PageTitle subHeading={'Meet Our'} title={'Corporate Clients'} />
       <CorpClientShowCase />
       <CorpClientTestimonials />
       <ContactForm />

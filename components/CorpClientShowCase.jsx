@@ -11,51 +11,51 @@ const CorpClientsShowCase = () => {
 
     const data = [
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/r_unbhumi-01-01.png",
             name: "Royal Runbhumi Multisports Turf",
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/vedbrahma.png",
             name: "Vedbrahma",
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/c_arnival-01-01.png",
             name: "Carnival Restaurant & Bar",
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/s_adguru-01-01.png",
             name: "Sadguru Solar",
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/promax.png",
             name: "Pro Max",
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/rf_01.png",
             name: "Right Foundation",
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/t_ps-01.png",
             name: "Pune Studio",
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/epb.png",
             name: "Excess Power Batteries",
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/tapas.png",
             name: "Tapas",
         },
         {
-            src: "/assets/images/about.jpg",
-            name: "OSM studio",
+            src: "/corpLogos/k_ulfi-01.png",
+            name: "Kulfi Heaven",
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/d_elilah-01.png",
             name: "Delilah kitchen & Bar",
         },
         {
-            src: "/assets/images/about.jpg",
+            src: "/corpLogos/a_k realty-01.png",
             name: "AK Realty",
         },
     ]

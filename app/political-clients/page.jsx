@@ -8,7 +8,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <PageTitle subHeading={'meet our'} title1={'Political'} title2={'Clients'} src={'/cartoons/political.png'} />
+      <PageTitle subHeading={'meet our'} title={'Political Clients'} />
       <ClientsShowCase />
       <PoliticalClientTestimonials />
       <Slider

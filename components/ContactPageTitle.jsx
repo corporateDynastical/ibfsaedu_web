@@ -1,7 +1,7 @@
 "use client"
-import Image from 'next/image'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { Didact_Gothic } from 'next/font/google'
+import { motion } from 'framer-motion'
 import style from '@styles/ContactPageTitle.module.scss'
 
 const didact = Didact_Gothic({
@@ -9,7 +9,7 @@ const didact = Didact_Gothic({
     subsets: ['latin']
 })
 
-const ContactPageTitle = ({src}) => {
+const ContactPageTitle = ({ src }) => {
 
     const [text] = useTypewriter({
         words: ['Namaste . . .', 'Hello . . .', 'Bonjour . . .'],
@@ -20,18 +20,14 @@ const ContactPageTitle = ({src}) => {
 
     return (
         <div className={style.container}>
-            <div className={style.circle2}>
-                <div className={style.outerBorder}>
-                    <div className={style.innerBorder}></div>
-                </div>
-            </div>
-            <div className={style.left}>
-                <h1 className={didact.className}>{text}</h1>
-            </div>
-            <div className={style.right}>
-                <div className={style.picture}>
-                    <Image src={src} alt="about dynastical" fill />
-                </div>
+            <div style={{ overflow: "hidden" }}>
+                <motion.div
+                    initial={{ x: "-100%" }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 0.7 }}
+                    className={style.heading}>
+                    <h1 className={didact.className}>{text}</h1>
+                </motion.div>
             </div>
         </div>
     )

@@ -35,7 +35,7 @@ const EventsPageHero = () => {
                 </div>
                 <h2 className={style.tagline}>Your corporate events made perfect with seamless planning!</h2>
                 <div className={style.data}>
-                    <p className={style.info}>From high-profile conferences to executive retreats and from on-ground special day programs to in-hall corporate programs, our team handles every detail, from concept development to flawless execution. With a focus on innovation and personalization, we deliver events that inspire, engage, and drive business success. Trust us to make your corporate event an extraordinary affair.</p>
+                    <p className={style.info}>From high-profile conferences to executive retreats and from on-ground special day programs to in-hall corporate programs, our team handles every detail, from concept development to flawless execution. With a focus on innovation and personalization, we deliver events that inspire, engage, and drive business success. Trust us to make your corporate event an extraordinary affair. Our team of experienced event planners understands the power of a well-executed corporate event. We go beyond the ordinary to create extraordinary affairs that leave a lasting impact on your attendees. From meticulously designing the event concept to flawlessly executing every detail, we ensure that your event is a true reflection of your company's vision and values.</p>
                     <div className={style.pictureDiv}>
                         <div className={style.picture}>
                             <Image src='/assets/images/services/brand.png' alt="Search Engine Optimization (SEO)" fill />
@@ -57,12 +57,7 @@ const EventsPageHero = () => {
                     onSlideChange={() => console.log('slide change')}
                 >
                     <SwiperSlide>
-                        <div style={{
-                            position: "relative",
-                            width: "100%",
-                            height: "80vh",
-                            border: "1px solid #000"
-                        }}>
+                        <div className={style.pictureSlide}>
                             <Image
                                 style={{
                                     position: "absolute",
@@ -71,40 +66,7 @@ const EventsPageHero = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div style={{
-                            position: "relative",
-                            width: "100%",
-                            height: "80vh",
-                            border: "1px solid #000"
-                        }}>
-                            <Image
-                                style={{
-                                    position: "absolute",
-                                }}
-                                src={"/assets/images/about.jpg"} alt='dynastical corporate events' fill />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div style={{
-                            position: "relative",
-                            width: "100%",
-                            height: "80vh",
-                            border: "1px solid #000"
-                        }}>
-                            <Image
-                                style={{
-                                    position: "absolute",
-                                }}
-                                src={"/assets/images/about.jpg"} alt='dynastical corporate events' fill />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div style={{
-                            position: "relative",
-                            width: "100%",
-                            height: "80vh",
-                            border: "1px solid #000"
-                        }}>
+                        <div className={style.pictureSlide}>
                             <Image
                                 style={{
                                     position: "absolute",
@@ -130,7 +92,7 @@ const EventsPageHero = () => {
                         </div>
                     </div>
                     <p className={`${style.info} ${style.infoEnd}`}>
-                        Our team takes great pride in curating and executing a wide range of exceptional social events. With a proven track record of successfully organizing and managing various events, we specialize in creating immersive experiences that cater to diverse interests and themes. Count on our expertise and passion to deliver an event that exceeds your expectations, leaving a lasting impression on your guests.
+                        Our team takes great pride in curating and executing a wide range of exceptional social events. With a proven track record of successfully organizing and managing various events, we specialize in creating immersive experiences that cater to diverse interests and themes. Count on our expertise and passion to deliver an event that exceeds your expectations, leaving a lasting impression on your guests. We take pride in creating immersive and extraordinary social events that leave a lasting impression on your guests, fostering cherished memories for years to come. Let us transform your vision into a reality and curate an event that truly stands out from the rest.
                     </p>
                 </div>
             </div>
@@ -148,12 +110,7 @@ const EventsPageHero = () => {
                     onSlideChange={() => console.log('slide change')}
                 >
                     <SwiperSlide>
-                        <div style={{
-                            position: "relative",
-                            width: "100%",
-                            height: "80vh",
-                            border: "1px solid #000"
-                        }}>
+                        <div className={style.pictureSlide}>
                             <Image
                                 style={{
                                     position: "absolute",
@@ -162,40 +119,7 @@ const EventsPageHero = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div style={{
-                            position: "relative",
-                            width: "100%",
-                            height: "80vh",
-                            border: "1px solid #000"
-                        }}>
-                            <Image
-                                style={{
-                                    position: "absolute",
-                                }}
-                                src={"/assets/images/about.jpg"} alt='dynastical corporate events' fill />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div style={{
-                            position: "relative",
-                            width: "100%",
-                            height: "80vh",
-                            border: "1px solid #000"
-                        }}>
-                            <Image
-                                style={{
-                                    position: "absolute",
-                                }}
-                                src={"/assets/images/about.jpg"} alt='dynastical corporate events' fill />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div style={{
-                            position: "relative",
-                            width: "100%",
-                            height: "80vh",
-                            border: "1px solid #000"
-                        }}>
+                        <div className={style.pictureSlide}>
                             <Image
                                 style={{
                                     position: "absolute",

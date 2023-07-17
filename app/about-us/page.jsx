@@ -12,9 +12,7 @@ const page = () => {
     <div>
       <PageTitle
         subHeading={"about"}
-        title1={"Dynastical"}
-        title2={"Communication"}
-        src={'/cartoons/aboutusnew.png'}
+        title={"Dynastical Communication"}
       />
       <AboutUsHero />
       <Testimonial />

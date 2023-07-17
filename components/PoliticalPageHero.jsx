@@ -82,7 +82,7 @@ const PoliticalPageHero = () => {
         <h2 className={`${style.tagline} ${style.taglineEnd}`}>
           Campaign Smarter, Win Bigger!
         </h2>
-        <div className={style.data}>
+        <div className={`${style.data} ${style.dataRev}`}>
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image

@@ -81,7 +81,7 @@ const DigitalMarketing = () => {
         <h2 className={`${style.tagline} ${style.taglineEnd}`}>
           Boost Traffic, Boost Revenue with PPC Solutions!
         </h2>
-        <div className={style.data}>
+        <div className={`${style.data} ${style.dataRev}`}>
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image

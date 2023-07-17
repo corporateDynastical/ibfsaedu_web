@@ -20,37 +20,6 @@ const ServicePageHero = () => {
   const ref4 = useRef(null);
   const isInView4 = useInView(ref4, { once: true });
 
-  const data = [
-    {
-      title: "Brand Identity",
-      href: "brandIdentity",
-      tagline: "Lorem ipsum dolor sit amet consec",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi eos dolorem, doloremque totam natus ad nemo tenetur ducimus sit quia perspiciatis eius eligendi accusantium recusandae quaerat est accusamus quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?",
-    },
-    {
-      title: "Repositioning Of Brand",
-      href: "repositioningOfBrand",
-      tagline: "Lorem ipsum dolor sit amet consec",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi eos dolorem, doloremque totam natus ad nemo tenetur ducimus sit quia perspiciatis eius eligendi accusantium recusandae quaerat est accusamus quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?",
-    },
-    {
-      title: "Corporate Identity",
-      href: "corporateIdentity",
-      tagline: "Lorem ipsum dolor sit amet consec",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi eos dolorem, doloremque totam natus ad nemo tenetur ducimus sit quia perspiciatis eius eligendi accusantium recusandae quaerat est accusamus quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?",
-    },
-    {
-      title: "Audio-Visuals",
-      href: "audioVisuals",
-      tagline: "Lorem ipsum dolor sit amet consec",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi eos dolorem, doloremque totam natus ad nemo tenetur ducimus sit quia perspiciatis eius eligendi accusantium recusandae quaerat est accusamus quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore incidunt illum ullam totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed doloremque possimus alias, explicabo autem aspernatur?",
-    },
-  ];
-
   return (
     <div className={style.container}>
       <div className={style.circle}>
@@ -113,7 +82,7 @@ const ServicePageHero = () => {
         <h2 className={`${style.tagline} ${style.taglineEnd}`}>
           Let's break the mold & rewrite the story!
         </h2>
-        <div className={style.data}>
+        <div className={`${style.data} ${style.dataRev}`}>
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
@@ -190,7 +159,7 @@ const ServicePageHero = () => {
         <h2 className={`${style.tagline} ${style.taglineEnd}`}>
           Ignite Your Brands with Audio-Visual Impact!
         </h2>
-        <div className={style.data}>
+        <div className={`${style.data} ${style.dataRev}`}>
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image

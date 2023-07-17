@@ -1,11 +1,12 @@
 .container {
-  padding: 15vh 10vw 15vh 10vw;
+  padding: 15vh 7vw 15vh 7vw;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 15vh;
+  overflow: hidden;
 
   .strip {
     display: flex;
@@ -23,24 +24,12 @@
       -webkit-text-fill-color: #353638;
       font-weight: 600;
       position: relative;
-      margin-left: 2vw;
 
       span {
         font-weight: 400;
         -webkit-text-fill-color: #ff6700;
       }
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -1.5vw;
-        bottom: 0;
-        margin: auto;
-        width: 10px;
-        height: 100px;
-        background: #353638;
-      }
     }
   }
 
@@ -65,7 +54,7 @@
   .data {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 2vw;
     z-index: 1;
     position: relative;
@@ -86,7 +75,7 @@
       height: 100%;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
 
       .picture {
         position: relative;
@@ -95,6 +84,8 @@
 
         img {
           position: absolute;
+          width: 100%;
+          height: 100%;
           border-radius: 20px;
         }
       }
@@ -291,5 +282,90 @@
         scale: 1;
       }
     }
+  }
+
+  @media screen and (max-width: "1024px") {
+
+    .strip{
+
+      .title{
+        font-size: 3.5rem;
+      }
+    }
+
+    .data{
+
+      .info{
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media screen and (max-width: "900px") {
+    padding: 7vh 7vw;
+    gap: 8vh;
+
+    .data{
+      flex-direction: column-reverse;
+    }
+
+    .dataRev{
+      flex-direction: column;
+    }
+
+    .reverse{
+      justify-content: flex-start;
+    }
+    .taglineEnd{
+      text-align: start;
+    }
+    .data{
+      .infoEnd{
+        text-align: start;
+      }
+    }
+  }
+
+  @media screen and (max-width: "700px") {
+    .strip{
+      .title{
+        font-size: 3rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: "444px") {
+    .data{
+
+      .info{
+        text-align: justify;
+      }
+      .infoEnd{
+        text-align: justify;
+      }
+    }
+  }
+
+  @media screen and (max-width: "300px") {
+    .strip{
+      .title{
+        font-size: 1.5rem;
+      }
+    }
+    .tagline{
+      font-size: 12px;
+    }
+    .data{
+      .info{
+        font-size: 12px;
+      }
+      .pictureDiv{
+        .picture{
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+
   }
 }
