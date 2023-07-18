@@ -15,7 +15,6 @@ const lilita = Lilita_One({
 
 const Navbar = () => {
   const data = [
-    { item: "home", link: "/" },
     { item: "about", link: "/about-us" },
     { item: "digital marketing", link: "/digital-marketing" },
     { item: "corporate  solutions", link: "/corporate-solutions" },
@@ -24,6 +23,7 @@ const Navbar = () => {
     { item: "corporate clients", link: "/corporate-clients" },
     { item: "political clients", link: "/political-clients" },
     { item: "blogs", link: "/blogs" },
+    { item: "career", link: "/career" },
     { item: "contact", link: "/contact-us" },
   ];
 
@@ -58,7 +58,7 @@ const Navbar = () => {
           </div>
           <div className={style.navButton}>
             <button onClick={() => setShow(true)}>
-              Menu{" "}
+              Menu
               <span>
                 <GiHamburgerMenu />
               </span>
@@ -69,7 +69,7 @@ const Navbar = () => {
               <motion.div
                 variants={item}
                 initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "100vh", opacity: 1 }}
+                animate={{ height: "100%", opacity: 1 }}
                 transition={{ duration: 0.5 }}
                 exit="exit"
                 className={style.navMenu}
@@ -90,7 +90,7 @@ const Navbar = () => {
                       }}
                       className={style.menu}
                     >
-                      Menu
+                      <Link href={'/'}>Home</Link>
                     </motion.h1>
                     <motion.button
                       initial={{ y: 80, opacity: 0 }}

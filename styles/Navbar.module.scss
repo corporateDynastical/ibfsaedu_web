@@ -9,17 +9,16 @@
 
   .navbar {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 10px;
+    align-items: center;
+    padding: 5px 2vw;
 
     .logo {
       flex: 1;
       display: flex;
       justify-content: flex-start;
-      padding-left: 5%;
       align-items: center;
 
       .picture {
@@ -29,10 +28,11 @@
 
         img {
           position: absolute;
-          background: #fff;
+          background: transparent;
         }
       }
     }
+
     .navButton {
       button {
         display: flex;
@@ -50,8 +50,9 @@
         }
       }
     }
+
     .navMenu {
-      width: 50vw;
+      width: 55%;
       position: absolute;
       top: 0;
       right: 0;
@@ -60,6 +61,7 @@
 
       .menuContainer {
         position: relative;
+        overflow-x: hidden;
 
         .topDiv {
           width: 100%;
@@ -69,10 +71,9 @@
           padding: 0 3vw;
 
           .menu {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 600;
             color: yellow;
-            border-bottom: 1px solid #fff;
             width: fit-content;
           }
 
@@ -85,9 +86,10 @@
         }
 
         .menuDiv {
-          padding: 1vh 3vw 7vh 3vw;
-          font-size: 1.5rem;
+          padding: 2vh 3vw;
+          font-size: 22px;
           color: #fff;
+          background-color: #353638;
           text-transform: uppercase;
           font-weight: 600;
 
@@ -98,6 +100,184 @@
             &:hover {
               color: yellow;
             }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: "916px") {
+      .navButton {
+        button {
+          font-size: 1.5rem;
+        }
+      }
+
+      .navMenu {
+        width: 65%;
+
+        .menuContainer {
+
+          .topDiv {}
+
+          .menuDiv {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: "560px") {
+
+      .logo {
+
+        .picture {
+          width: 180px;
+          height: 60px;
+        }
+      }
+
+      .navButton {
+        button {
+          font-size: 1.5rem;
+        }
+      }
+
+      .navMenu {
+        width: 70%;
+
+        .menuContainer {
+
+          .topDiv {
+            padding: 0 2vw 0 4vw;
+          }
+
+          .menuDiv {
+            font-size: 18px;
+            padding: 2vh 3vw 2vh 5vw;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: "450px") {
+
+      .logo {
+
+        .picture {
+          width: 180px;
+          height: 60px;
+        }
+      }
+
+      .navButton {
+        button {
+          font-size: 1.5rem;
+        }
+      }
+
+      .navMenu {
+        width: 65%;
+
+        .menuContainer {
+
+          .topDiv {
+            padding-top: 20px;
+
+            .menu {
+              font-size: 2rem;
+            }
+
+            button {
+              font-size: 2rem;
+            }
+          }
+
+          .menuDiv {
+            font-size: 16px;
+            height: 100vh;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: "360px") {
+
+      .logo {
+
+        .picture {
+          width: 160px;
+          height: 60px;
+        }
+      }
+
+      .navButton {
+        button {
+          font-size: 1.2rem;
+        }
+      }
+
+      .navMenu {
+        width: 80%;
+        opacity: 0.8;
+
+        .menuContainer {
+
+          .topDiv {
+            padding-top: 10px;
+
+            .menu {
+              font-size: 2rem;
+            }
+
+            button {
+              font-size: 2rem;
+            }
+          }
+
+          .menuDiv {
+            font-size: 16px;
+            height: 100vh;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: "310px") {
+
+      .logo {
+
+        .picture {
+          width: 150px;
+          height: 60px;
+        }
+      }
+
+      .navButton {
+        button {
+          font-size: 1.2rem;
+        }
+      }
+
+      .navMenu {
+        width: 85%;
+
+        .menuContainer {
+
+          .topDiv {
+            padding-top: 10px;
+
+            .menu {
+              font-size: 2rem;
+            }
+
+            button {
+              font-size: 2rem;
+            }
+          }
+
+          .menuDiv {
+            font-size: 16px;
+            height: 100vh;
           }
         }
       }

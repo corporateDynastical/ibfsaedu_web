@@ -1,7 +1,6 @@
 import Navbar from '@components/Navbar'
 import './globals.css'
 import { Outfit } from 'next/font/google'
-// import Footer from '@components/Footer'
 import ScrollComponent from '@components/ScrollComponent'
 import FooterNew from '@components/FooterNew'
 
@@ -16,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={outfit.className}>
-        {/* <Navbar /> */}
+        <Navbar />
         <ScrollComponent />
         {children}
         <FooterNew />
