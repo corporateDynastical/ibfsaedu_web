@@ -43,13 +43,14 @@ const Slider = ({ data, onPage, title, href }) => {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
           breakpoints={{
-            1280: { slidesPerView: 6, spaceBetween: 100 },
+            1280: { slidesPerView: 7, spaceBetween: 70},
             1024: { slidesPerView: 5, spaceBetween: 100 },
             900: { slidesPerView: 5 },
             600: { slidesPerView: 4, spaceBetween: 50 },
-            400: { slidesPerView: 4, spaceBetween: 20 },
-            300: { slidesPerView: 3.5, spaceBetween: 20 },
-            200: { slidesPerView: 3, spaceBetween: 20 },
+            500: { slidesPerView: 4, spaceBetween: 50 },
+            400: { slidesPerView: 3.8, spaceBetween: 30 },
+            300: { slidesPerView: 3.8, spaceBetween: 30 },
+            200: { slidesPerView: 3.8, spaceBetween: 30 },
           }}
         >
           {data.map((item, index) => {

@@ -5,7 +5,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-        <PageTitle subHeading={"our"} title1={'privacy'} title2={'policy'} />
+        <PageTitle subHeading={"our"} title={'privacy policy'}/>
         <PrivacyPolicy />
     </div>
   )

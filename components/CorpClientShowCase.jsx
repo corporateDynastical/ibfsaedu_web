@@ -51,7 +51,7 @@ const CorpClientsShowCase = () => {
             name: "Kulfi Heaven",
         },
         {
-            src: "/corpLogos/d_elilah-01.png",
+            src: "/corpLogos/D_elilah123.png",
             name: "Delilah kitchen & Bar",
         },
         {

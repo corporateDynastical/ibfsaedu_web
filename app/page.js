@@ -17,12 +17,6 @@ export default function Home() {
       <Slider
         data={[
           {
-            src: "/corpLogos/c_arnival-01-01.png",
-          },
-          {
-            src: "/corpLogos/d_elilah-01.png",
-          },
-          {
             src: "/corpLogos/epb.png",
           },
           {
@@ -39,6 +33,12 @@ export default function Home() {
           },
           {
             src: "/corpLogos/rf_01.png",
+          },
+          {
+            src: "/corpLogos/c_arnival-01-01.png",
+          },
+          {
+            src: "/corpLogos/D_elilah123.png",
           },
           {
             src: "/corpLogos/r_unbhumi-01-01.png",
@@ -71,12 +71,6 @@ export default function Home() {
         onPage={true}
         data={[
           {
-            src: "/corpLogos/c_arnival-01-01.png",
-          },
-          {
-            src: "/corpLogos/d_elilah-01.png",
-          },
-          {
             src: "/corpLogos/epb.png",
           },
           {
@@ -93,6 +87,12 @@ export default function Home() {
           },
           {
             src: "/corpLogos/rf_01.png",
+          },
+          {
+            src: "/corpLogos/c_arnival-01-01.png",
+          },
+          {
+            src: "/corpLogos/D_elilah123.png",
           },
           {
             src: "/corpLogos/r_unbhumi-01-01.png",

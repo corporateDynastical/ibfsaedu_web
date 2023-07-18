@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -37,7 +37,7 @@
 
     h1 {
       font-size: 6rem;
-      width: 100%;
+      width: min-content;
       font-weight: 600;
       text-transform: capitalize;
       z-index: 1;
@@ -49,7 +49,7 @@
           rgba(242, 252, 69, 1) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      height: 200px;
+      padding-bottom: 20px;
     }
 
     @media screen and (max-width: "866px") {
@@ -71,7 +71,6 @@
 
       h1 {
         font-size: 4rem;
-        height: 150px;
       }
     }
 
@@ -125,7 +124,6 @@
         font-size: 1rem;
       }
 
-      h1 {}
     }
   }
 
@@ -138,28 +136,24 @@
     padding-left: 6vw;
   }
 
-  @media screen and (max-height: "700px") {
-    height: 70vh;
-  }
-
   @media screen and (max-width: "664px") {
-    height: 55vh;
+    height: 50vh;
     padding-bottom: 3vh;
   }
 
   @media screen and (max-width: "446px") {
-    height: 50vh;
+    height: 45vh;
     padding-bottom: 3vh;
   }
 
   @media screen and (max-width: "340px") {
-    height: 50vh;
+    height: 40vh;
     padding-left: 6vw;
     padding-bottom: 3vh;
   }
 
   @media screen and (max-width: "310px") {
-    height: 40vh;
+    height: 37vh;
     padding-bottom: 2vh;
   }
 }

@@ -84,13 +84,13 @@ const CompanyAndVentures = () => {
         </div>
         <div className={style.company}>
           <div className={style.logo}>
-            <Image src={"/assets/images/about.jpg"} alt="" fill />
+            <Image src={"/corpLogos/BLEND-01.png"} alt="" fill />
           </div>
           <h1 className={lilita.className}>BlendWhite International</h1>
         </div>
         <div className={style.company}>
           <div className={style.logo}>
-            <Image src={"/assets/images/about.jpg"} alt="" fill />
+            <Image src={"/corpLogos/namoji.png"} alt="" fill />
           </div>
           <h1 className={lilita.className}>Namoji Adhya Sports Management</h1>
         </div>

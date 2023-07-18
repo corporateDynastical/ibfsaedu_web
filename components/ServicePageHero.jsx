@@ -86,7 +86,7 @@ const ServicePageHero = () => {
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
-                src="/assets/images/services/brand.png"
+                src="/services/repositioning.png"
                 alt="Repositioning of Brand"
                 fill
               />

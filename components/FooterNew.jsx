@@ -14,21 +14,33 @@ const FooterNew = () => {
 
     const data = [
         {
-            title: "About",
+            title: "Main Links",
             links: [
                 {
-                    href: "/about-company",
+                    href: "/",
+                    link: "Home"
+                },
+                {
+                    href: "/about-us",
                     link: "About Company"
                 },
                 {
-                    href: "/founder-&-team",
-                    link: "Our Founder & Team"
+                    href: "/career",
+                    link: "Career"
+                },
+                {
+                    href: "/contact-us",
+                    link: "Contact"
                 },
             ]
         },
         {
             title: "Services",
             links: [
+                {
+                    href: "/digital-marketing",
+                    link: "Digital Marketing"
+                },
                 {
                     href: "/corporate-solutions",
                     link: "Corporate Solutions"
@@ -40,10 +52,6 @@ const FooterNew = () => {
                 {
                     href: "/events",
                     link: "Events"
-                },
-                {
-                    href: "/digital-marketing",
-                    link: "Digital Marketing"
                 },
             ]
         },
@@ -149,7 +157,12 @@ const FooterNew = () => {
             </div>
             <div className={style.cc}>
                 <AiOutlineCopyrightCircle />
-                <p> Dynastical Communication. All rights reserved by Agency</p>
+                <p>
+                    <span>
+                        <Link href={'/privacy-policy'}>
+                            Dynastical Communication.
+                        </Link>
+                    </span>  All rights reserved by Agency</p>
             </div>
         </div>
     )

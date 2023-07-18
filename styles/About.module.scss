@@ -353,6 +353,14 @@
         height: 350px;
       }
     }
+
+    .circle {
+      width: 350px;
+      height: 350px;
+      top: 30%;
+      left: -10%;
+      opacity: 0.5;
+    }
   }
 
   @media screen and (max-width: "400px") {

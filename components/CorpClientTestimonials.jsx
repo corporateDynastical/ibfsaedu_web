@@ -50,6 +50,10 @@ const CorpClientTestimonials = () => {
       src2: "/corpLogos/epb.png",
       comment2:
         "Dynastical Communication's innovative and skilled digital marketing team seamlessly coordinates with our sales team to create engaging social media posts, content, and captions that have been embraced by our audience; their relevant social media promotions increase awareness of our products; and their successful lead generation campaigns have generated quality leads and boosted our business. We genuinely applaud their services!",
+      name3: "Delilah Kitchen",
+      src3: "/corpLogos/D_elilah123.png",
+      comment3:
+        "We are thrilled with the outstanding digital marketing services provided by Dynastical Communication. Their expertise in the field has been instrumental in revolutionizing our e-commerce business. With their strategic approach and cutting-edge marketing strategies, our online presence has soared to new heights. Their lead generation campaigns have proven to be highly effective, driving substantial sales and expanding our customer base. We wholeheartedly recommend Dynastical Communication for any business looking for a reliable and result-oriented digital marketing partner.",
     },
   ];
 
@@ -85,7 +89,7 @@ const CorpClientTestimonials = () => {
                   <div className={style.picture}>
                     <Image src={item.src1} alt={item.name1} fill />
                   </div>
-                  <p className={style.name}>{item.name1}</p>
+                  <p className={`${style.name} ${didact.className}`}>{item.name1}</p>
                   <p className={style.post}>{item.post1}</p>
                 </div>
               </div>
@@ -107,7 +111,7 @@ const CorpClientTestimonials = () => {
                   <div className={style.picture}>
                     <Image src={item.src2} alt={item.name2} fill />
                   </div>
-                  <p className={style.name}>{item.name2}</p>
+                  <p className={`${style.name} ${didact.className}`}>{item.name2}</p>
                   <p className={style.post}>{item.post2}</p>
                 </div>
               </div>
@@ -129,7 +133,7 @@ const CorpClientTestimonials = () => {
                   <div className={style.picture}>
                     <Image src={item.src3} alt={item.name3} fill />
                   </div>
-                  <p className={style.name}>{item.name3}</p>
+                  <p className={`${style.name} ${didact.className}`}>{item.name3}</p>
                   <p className={style.post}>{item.post3}</p>
                 </div>
               </div>

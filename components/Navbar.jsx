@@ -89,8 +89,9 @@ const Navbar = () => {
                         },
                       }}
                       className={style.menu}
+                      onClick={() => setShow(false)}
                     >
-                      <Link href={'/'}>Home</Link>
+                      <Link  href={'/'}>Home</Link>
                     </motion.h1>
                     <motion.button
                       initial={{ y: 80, opacity: 0 }}

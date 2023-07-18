@@ -8,7 +8,7 @@ import ContactForm from '@components/ContactForm'
 const page = () => {
   return (
     <div>
-        <PageTitle subHeading={'Explore'} title={'Our Blogs Collection'} />
+        <PageTitle subHeading={'Explore'} title={'Blogs Collection'} />
         <BlogPageHero />
         <ContactForm />
     </div>
