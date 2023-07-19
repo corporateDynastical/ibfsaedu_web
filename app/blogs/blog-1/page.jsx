@@ -2,6 +2,11 @@ import BlogBody from '@components/BlogBody'
 import PageTitle from '@components/PageTitle'
 import React from 'react'
 
+export const metadata = {
+  title: 'Trendy Digital Marketing & Advertising',
+  description: 'The world of marketing and advertising has transformed rapidly over the years, and the emergence of digital media has played a crucial role in this evolution.',
+}
+
 const page = () => {
   return (
     <>

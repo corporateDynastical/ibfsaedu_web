@@ -118,10 +118,10 @@ const PoliticalPageHero = () => {
             <span> Post Election </span> Campaign
           </motion.h1>
         </div>
-        <h2 className={style.tagline}>Building a Legacy, Engaging for the Future!</h2>
+        <h2 className={style.tagline}>We build, We create and History repeats!</h2>
         <div className={style.data}>
           <p className={style.info}>
-            We offer comprehensive post-election campaign services aimed at building a lasting legacy and engaging with constituents. Through tailored content creation and strategic communication, we keep your audience informed and connected. Our team monitors and manages your online reputation, ensuring a positive image in the digital landscape. We help advance your policy goals through advocacy strategies, persuasive messaging, and mobilizing public support. Additionally, we assist in building alliances and coalitions to maximize the impact of your political agenda. With ongoing strategic guidance and analysis, we ensure you stay ahead of political trends and continue making history. Contact us today to elevate your post-election campaign and leave a lasting impact on your community.
+            Even after winning a campaign, the use of social media to stay in touch with your supporters, promote multiple agenda, and garner support for your programs can be vital to your political campaign. In order to effectively engage with your followers and stay connected, there are several key strategies. Keep them informed about your ongoing projects on the legislative front and any events you attend. Another important aspect of social media engagement is responding promptly to your audience. Share new proposals, pending legislation, and upcoming events relevant to your role as a public servant. Lastly, engaging your constituents through polls and surveys on various topics and policy issues is a great way to show that you value their opinions. It also helps you gauge public sentiment and better understand the needs and preferences of your constituents.
           </p>
           <div className={style.pictureDiv}>
             <div className={style.picture}>

@@ -2,6 +2,11 @@ import BlogBody from '@components/BlogBody'
 import PageTitle from '@components/PageTitle'
 import React from 'react'
 
+export const metadata = {
+  title: "Let's colour your brand",
+  description: 'At our digital marketing agency, we understand the importance of branding and advertising in the online world.',
+}
+
 const page = () => {
   return (
     <>

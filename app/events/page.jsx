@@ -4,6 +4,11 @@ import Slider from '@components/Slider'
 import React from 'react'
 import ContactForm from '@components/ContactForm'
 
+export const metadata = {
+  title: 'Events',
+  description: 'Dynastical Communication is a full-service digital marketing and advertising agency in Pune that helps businesses increase their online visibility and reach their target audience.',
+}
+
 const page = () => {
   return (
     <div>

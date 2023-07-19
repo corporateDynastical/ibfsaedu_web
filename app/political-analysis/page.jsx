@@ -6,6 +6,11 @@ import Slider from '@components/Slider'
 import Testimonial from '@components/Testimonial'
 import React from 'react'
 
+export const metadata = {
+  title: 'Political Analysis',
+  description: 'Dynastical Communication is a full-service digital marketing and advertising agency in Pune that helps businesses increase their online visibility and reach their target audience.',
+}
+
 const page = () => {
   return (
     <div>

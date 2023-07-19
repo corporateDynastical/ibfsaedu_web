@@ -2,6 +2,11 @@ import BlogBody from '@components/BlogBody'
 import PageTitle from '@components/PageTitle'
 import React from 'react'
 
+export const metadata = {
+  title: 'Creative Graphic Designs',
+  description: 'The world of graphic design is a vast and diverse landscape that encompasses a wide range of services and skills.',
+}
+
 const page = () => {
   return (
     <>

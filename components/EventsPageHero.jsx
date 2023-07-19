@@ -106,6 +106,7 @@ const EventsPageHero = () => {
                     modules={[Pagination, A11y]}
                     spaceBetween={0}
                     slidesPerView={1}
+                    loop
                     pagination={{ clickable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
@@ -151,6 +152,7 @@ const EventsPageHero = () => {
                     modules={[Pagination, A11y]}
                     spaceBetween={0}
                     slidesPerView={1}
+                    loop
                     pagination={{ clickable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}

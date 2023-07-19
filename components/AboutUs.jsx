@@ -19,7 +19,7 @@ const mont = Montserrat({
 const AboutUs = () => {
 
   const ref = useRef(null)
-  const isInView = useInView(ref, {once: true})
+  const isInView = useInView(ref, { once: true })
 
   return (
     <div className={style.container}>
@@ -28,11 +28,11 @@ const AboutUs = () => {
           <div className={style.innerBorder}></div>
         </div>
       </div>
-      <div  className={style.left}>
+      <div className={style.left}>
         <p className={`${style.headingOne}`}>We're Offering</p>
         <h1 className={didact.className}>Awesome <span> Services</span></h1>
         <p className={style.tagline}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Navigating Success in the Digital Era !
         </p>
         <p className={style.info}>
           Dynastical Communication is a full-service digital marketing and
@@ -48,13 +48,13 @@ const AboutUs = () => {
       </div>
       <div ref={ref} className={style.right}>
         <div className={style.blockDiv}>
-          <motion.div 
-          animate={{y: isInView ? 0 : 500, opacity: isInView ? 1 : 0}}
-          transition={{duration: 0.8, type: "spring", delay: 0}}
-          className={style.block}>
+          <motion.div
+            animate={{ y: isInView ? 0 : 500, opacity: isInView ? 1 : 0 }}
+            transition={{ duration: 0.8, type: "spring", delay: 0 }}
+            className={style.block}>
             <div className={style.picture}>
               <Image
-                src={"/icons/digital-campaign.png"}
+                src={"/services/digital_marketing.png"}
                 alt="digital marketing"
                 fill
               />
@@ -66,13 +66,13 @@ const AboutUs = () => {
               </Link>
             </button>
           </motion.div>
-          <motion.div 
-          animate={{y: isInView ? 0 : 500, opacity: isInView ? 1 : 0}}
-          transition={{duration: 0.8, type: "spring", delay: 0.2}}
-          className={style.block}>
+          <motion.div
+            animate={{ y: isInView ? 0 : 500, opacity: isInView ? 1 : 0 }}
+            transition={{ duration: 0.8, type: "spring", delay: 0.2 }}
+            className={style.block}>
             <div className={style.picture}>
               <Image
-                src={"/icons/teamwork.png"}
+                src={"/services/corp_soln.png"}
                 alt="corporate solutions"
                 fill
               />
@@ -84,13 +84,13 @@ const AboutUs = () => {
               </Link>
             </button>
           </motion.div>
-          <motion.div 
-          animate={{y: isInView ? 0 : 500, opacity: isInView ? 1 : 0}}
-          transition={{duration: 0.8, type: "spring", delay: 0.4}}
-          className={style.block}>
+          <motion.div
+            animate={{ y: isInView ? 0 : 500, opacity: isInView ? 1 : 0 }}
+            transition={{ duration: 0.8, type: "spring", delay: 0.4 }}
+            className={style.block}>
             <div className={style.picture}>
               <Image
-                src={"/icons/statistic.png"}
+                src={"/services/political_analysis.png"}
                 alt="political analysis"
                 fill
               />
@@ -102,14 +102,14 @@ const AboutUs = () => {
               </Link>
             </button>
           </motion.div>
-          <motion.div 
-          animate={{y: isInView ? 0 : 500, opacity: isInView ? 1 : 0}}
-          transition={{duration: 0.8, type: "spring", delay: 0.6}}
-          className={style.block}>
+          <motion.div
+            animate={{ y: isInView ? 0 : 500, opacity: isInView ? 1 : 0 }}
+            transition={{ duration: 0.8, type: "spring", delay: 0.6 }}
+            className={style.block}>
             <div className={style.picture}>
-              <Image src={"/icons/people.png"} alt="events" fill />
+              <Image src={"/services/events.png"} alt="events" fill />
             </div>
-            <p className={mont.className}>Events</p>
+            <p className={mont.className}>Event Management</p>
             <button>
               <Link href={"/events"}>
                 View More
