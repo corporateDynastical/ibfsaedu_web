@@ -60,7 +60,7 @@ const DigitalMarketing = () => {
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
-                src="/assets/images/services/brand.png"
+                src="/services/seo.png"
                 alt="Search Engine Optimization (SEO)"
                 fill
               />
@@ -85,7 +85,7 @@ const DigitalMarketing = () => {
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
-                src="/assets/images/services/brand.png"
+                src="/services/PPC.png"
                 alt="pay per click"
                 fill
               />
@@ -132,7 +132,7 @@ const DigitalMarketing = () => {
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
-                src="/assets/images/services/brand.png"
+                src="/services/webdev.png"
                 alt="Website Development"
                 fill
               />

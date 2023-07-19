@@ -37,7 +37,7 @@ const AboutUsHero = () => {
         <div className={style.founderInfo}>
           <div className={style.left}>
             <div className={style.picture}>
-              <Image src={"/assets/images/about.jpg"} alt="Shubham Joshi" fill />
+              <Image src={"/assets/images/shubham_joshi.jpeg"} alt="Shubham Joshi" fill />
             </div>
           </div>
           <div className={style.right}>
@@ -87,21 +87,21 @@ const AboutUsHero = () => {
           <div className={style.number}>
             {isInView && (
               <CountUp start={0} end={2000} duration={3} delay={0} />
-            )}{" "}
+            )}
             +
           </div>
           <p>Successful Campaigns</p>
         </div>
         <div ref={ref} className={style.point}>
           <div className={style.number}>
-            {isInView && <CountUp start={0} end={100} duration={3} delay={0} />}{" "}
+            {isInView && <CountUp start={0} end={100} duration={3} delay={0} />}
             +
           </div>
           <p>Satisfied Clients</p>
         </div>
         <div ref={ref} className={style.point}>
           <div className={style.number}>
-            {isInView && <CountUp start={0} end={10} duration={3} delay={0} />}{" "}
+            {isInView && <CountUp start={0} end={10} duration={3} delay={0} />}
             +
           </div>
           <p>Years of Industrial Experience</p>

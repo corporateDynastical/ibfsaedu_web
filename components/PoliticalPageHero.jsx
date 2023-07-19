@@ -61,7 +61,7 @@ const PoliticalPageHero = () => {
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
-                src="/assets/images/services/brand.png"
+                src="/services/image_build.png"
                 alt="Image Building"
                 fill
               />
@@ -86,7 +86,7 @@ const PoliticalPageHero = () => {
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
-                src="/assets/images/services/brand.png"
+                src="/services/election_camp.png"
                 alt="Election Campaign"
                 fill
               />
@@ -118,24 +118,15 @@ const PoliticalPageHero = () => {
             <span> Post Election </span> Campaign
           </motion.h1>
         </div>
-        <h2 className={style.tagline}>Lorem ipsum dolor sit amet consec</h2>
+        <h2 className={style.tagline}>Building a Legacy, Engaging for the Future!</h2>
         <div className={style.data}>
           <p className={style.info}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            commodi eos dolorem, doloremque totam natus ad nemo tenetur ducimus
-            sit quia perspiciatis eius eligendi accusantium recusandae quaerat
-            est accusamus quas. Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Inventore incidunt illum ullam totam ab maiores
-            unde, minus itaque sint beatae quaerat id! Enim sed doloremque
-            possimus alias, explicabo autem aspernatur?Lorem ipsum dolor, sit
-            amet consectetur adipisicing elit. Inventore incidunt illum ullam
-            totam ab maiores unde, minus itaque sint beatae quaerat id! Enim sed
-            doloremque possimus alias, explicabo autem aspernatur?
+            We offer comprehensive post-election campaign services aimed at building a lasting legacy and engaging with constituents. Through tailored content creation and strategic communication, we keep your audience informed and connected. Our team monitors and manages your online reputation, ensuring a positive image in the digital landscape. We help advance your policy goals through advocacy strategies, persuasive messaging, and mobilizing public support. Additionally, we assist in building alliances and coalitions to maximize the impact of your political agenda. With ongoing strategic guidance and analysis, we ensure you stay ahead of political trends and continue making history. Contact us today to elevate your post-election campaign and leave a lasting impact on your community.
           </p>
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
-                src="/assets/images/services/brand.png"
+                src="/services/post_elec.png"
                 alt="Post Election Campaign"
                 fill
               />

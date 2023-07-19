@@ -60,7 +60,7 @@ const ServicePageHero = () => {
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
-                src="/assets/images/services/brand.png"
+                src="/services/brand_identity.png"
                 alt="Brand Identity"
                 fill
               />
@@ -138,7 +138,7 @@ const ServicePageHero = () => {
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
-                src="/assets/images/services/brand.png"
+                src="/services/corporate_identity.png"
                 alt="corporate identity"
                 fill
               />
@@ -163,7 +163,7 @@ const ServicePageHero = () => {
           <div className={style.pictureDiv}>
             <div className={style.picture}>
               <Image
-                src="/assets/images/services/brand.png"
+                src="/services/audio_visuals.png"
                 alt="audio-visuals"
                 fill
               />

@@ -23,6 +23,60 @@ const EventsPageHero = () => {
     const ref2 = useRef(null)
     const isInView2 = useInView(ref2, { once: true })
 
+    const dataCorp = [
+        {
+            src: "/corpEvent/1.jpg"
+        },
+        {
+            src: "/corpEvent/2.jpg"
+        },
+        {
+            src: "/corpEvent/3.jpg"
+        },
+        {
+            src: "/corpEvent/4.jpg"
+        },
+        {
+            src: "/corpEvent/5.jpg"
+        },
+        {
+            src: "/corpEvent/6.jpg"
+        },
+        {
+            src: "/corpEvent/7.jpg"
+        },
+        {
+            src: "/corpEvent/8.jpg"
+        },
+    ]
+
+    const dataSocial = [
+        {
+            src: "/socialEvent/1.jpeg"
+        },
+        {
+            src: "/socialEvent/2.jpeg"
+        },
+        {
+            src: "/socialEvent/3.jpeg"
+        },
+        {
+            src: "/socialEvent/4.jpg"
+        },
+        {
+            src: "/socialEvent/5.jpg"
+        },
+        {
+            src: "/socialEvent/6.jpg"
+        },
+        {
+            src: "/socialEvent/7.jpg"
+        },
+        {
+            src: "/socialEvent/8.jpg"
+        },
+    ]
+
     return (
         <div className={style.container}>
             <div className={style.infoDiv}>
@@ -38,7 +92,7 @@ const EventsPageHero = () => {
                     <p className={style.info}>From high-profile conferences to executive retreats and from on-ground special day programs to in-hall corporate programs, our team handles every detail, from concept development to flawless execution. With a focus on innovation and personalization, we deliver events that inspire, engage, and drive business success. Trust us to make your corporate event an extraordinary affair. Our team of experienced event planners understands the power of a well-executed corporate event. We go beyond the ordinary to create extraordinary affairs that leave a lasting impact on your attendees. From meticulously designing the event concept to flawlessly executing every detail, we ensure that your event is a true reflection of your company's vision and values.</p>
                     <div className={style.pictureDiv}>
                         <div className={style.picture}>
-                            <Image src='/assets/images/services/brand.png' alt="Search Engine Optimization (SEO)" fill />
+                            <Image src='/services/corp_event.png' alt="Corporate Events" fill />
                         </div>
                     </div>
                 </div>
@@ -56,24 +110,16 @@ const EventsPageHero = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                 >
-                    <SwiperSlide>
-                        <div className={style.pictureSlide}>
-                            <Image
-                                style={{
-                                    position: "absolute",
-                                }}
-                                src={"/assets/images/about.jpg"} alt='dynastical corporate events' fill />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className={style.pictureSlide}>
-                            <Image
-                                style={{
-                                    position: "absolute",
-                                }}
-                                src={"/assets/images/about.jpg"} alt='dynastical corporate events' fill />
-                        </div>
-                    </SwiperSlide>
+                    {dataCorp.map((item, index) => {
+                        return (
+                            <SwiperSlide key={index}>
+                                <div className={style.pictureSlide}>
+                                    <Image src={item.src} alt='dynastical corporate events' fill />
+                                </div>
+                            </SwiperSlide>
+                        )
+                    })
+                    }
                 </Swiper>
             </div>
             <div className={style.infoDiv}>
@@ -88,7 +134,7 @@ const EventsPageHero = () => {
                 <div className={style.data}>
                     <div className={style.pictureDiv}>
                         <div className={style.picture}>
-                            <Image src='/assets/images/services/brand.png' alt="Search Engine Optimization (SEO)" fill />
+                            <Image src='/services/social_event.png' alt="Social Events" fill />
                         </div>
                     </div>
                     <p className={`${style.info} ${style.infoEnd}`}>
@@ -109,24 +155,16 @@ const EventsPageHero = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                 >
-                    <SwiperSlide>
-                        <div className={style.pictureSlide}>
-                            <Image
-                                style={{
-                                    position: "absolute",
-                                }}
-                                src={"/assets/images/about.jpg"} alt='dynastical corporate events' fill />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className={style.pictureSlide}>
-                            <Image
-                                style={{
-                                    position: "absolute",
-                                }}
-                                src={"/assets/images/about.jpg"} alt='dynastical corporate events' fill />
-                        </div>
-                    </SwiperSlide>
+                    {dataSocial.map((item, index) => {
+                        return (
+                            <SwiperSlide key={index}>
+                                <div className={style.pictureSlide}>
+                                    <Image src={item.src} alt='dynastical social events' fill />
+                                </div>
+                            </SwiperSlide>
+                        )
+                    })
+                    }
                 </Swiper>
             </div>
         </div>
