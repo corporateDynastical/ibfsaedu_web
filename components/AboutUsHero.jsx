@@ -13,7 +13,7 @@ const didact = Didact_Gothic({
 
 const AboutUsHero = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, );
 
   return (
     <>
@@ -73,8 +73,8 @@ const AboutUsHero = () => {
           </p>
         </div>
       </div>
-      <div className={style.countDiv}>
-        <div ref={ref} className={style.point}>
+      <div ref={ref} className={style.countDiv}>
+        <div className={style.point}>
           <div className={style.number}>
             {isInView && (
               <CountUp start={0} end={5000} duration={3} delay={0} />
@@ -83,7 +83,7 @@ const AboutUsHero = () => {
           </div>
           <p>Leads Converted</p>
         </div>
-        <div ref={ref} className={style.point}>
+        <div className={style.point}>
           <div className={style.number}>
             {isInView && (
               <CountUp start={0} end={2000} duration={3} delay={0} />
@@ -92,14 +92,14 @@ const AboutUsHero = () => {
           </div>
           <p>Successful Campaigns</p>
         </div>
-        <div ref={ref} className={style.point}>
+        <div className={style.point}>
           <div className={style.number}>
             {isInView && <CountUp start={0} end={100} duration={3} delay={0} />}
             +
           </div>
           <p>Satisfied Clients</p>
         </div>
-        <div ref={ref} className={style.point}>
+        <div className={style.point}>
           <div className={style.number}>
             {isInView && <CountUp start={0} end={10} duration={3} delay={0} />}
             +

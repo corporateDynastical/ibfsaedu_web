@@ -3,6 +3,7 @@ import './globals.css'
 import { Outfit } from 'next/font/google'
 import ScrollComponent from '@components/ScrollComponent'
 import FooterNew from '@components/FooterNew'
+import ScrollToTop from '@components/ScrollToTop'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body className={outfit.className}>
         <Navbar />
         <ScrollComponent />
+        <ScrollToTop />
         {children}
         <FooterNew />
       </body>
