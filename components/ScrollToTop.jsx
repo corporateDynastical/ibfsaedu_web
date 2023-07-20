@@ -1,20 +1,23 @@
 "use client"
 
-import React,{ useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { IoIosArrowUp } from 'react-icons/io'
 
 function ScrollToTop() {
-    
+
     const [arrowclass, setarrowclass] = useState("hidden")
 
-    window.addEventListener('scroll',()=>{
-        if(window.scrollY > 200){
-            setarrowclass('')
-        } else {
-            setarrowclass('hidden')
-        }
-    })
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                setarrowclass('')
+            } else {
+                setarrowclass('hidden')
+            }
+        })
+    }, [])
 
-    const scrollUp = ()=> {
+    const scrollUp = () => {
         window.scrollTo({
             top: 0,
             left: 0,
@@ -22,15 +25,13 @@ function ScrollToTop() {
         })
     }
 
-  return (
-    <>
-        <div className={`fixed bottom-5 right-7 text-white z-[99] bg-[#F36E21] p-2 rounded-full cursor-pointer ${arrowclass}`} onClick={scrollUp}>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18" />
-            </svg>
-        </div>
-    </>
-  )
+    return (
+        <>
+            <div className={`fixed bottom-3 right-3 md:bottom-7 md:right-9 text-lg text-[#000] z-[99] bg-[#f7f5f5] shadow-2xl shadow-slate-900 p-[12px] md:p-[20px] rounded-full cursor-pointer ${arrowclass}`} onClick={scrollUp}>
+                <IoIosArrowUp />
+            </div>
+        </>
+    )
 }
 
 export default ScrollToTop
