@@ -1,11 +1,11 @@
 import { AiFillHome, AiOutlineMail, AiFillFacebook, AiOutlineTwitter, AiFillInstagram, AiFillLinkedin, AiOutlineCopyrightCircle } from 'react-icons/ai'
 import { IoMdCall } from 'react-icons/io'
-import { Lilita_One } from 'next/font/google'
+import { Didact_Gothic } from 'next/font/google'
 import Link from 'next/link'
 import Image from 'next/image'
 import style from '@styles/FooterNew.module.scss'
 
-const lilita = Lilita_One({
+const didact = Didact_Gothic({
     weight: "400",
     subsets: ['latin']
 })
@@ -93,7 +93,7 @@ const FooterNew = () => {
                 {data.map((item, index) => {
                     return (
                         <div key={index} className={style.col}>
-                            <h1 className={`${lilita.className} ${style.heading}`}>{item.title}</h1>
+                            <h1 className={`${didact.className} ${style.heading}`}>{item.title}</h1>
                             <ul>
                                 {item.links.map((item, index) => {
                                     return (
@@ -108,7 +108,7 @@ const FooterNew = () => {
                 })
                 }
                 <div className={style.col}>
-                    <h1 className={`${lilita.className} ${style.heading}`}>Contact</h1>
+                    <h1 className={`${didact.className} ${style.heading}`}>Contact</h1>
                     <ul>
                         <li className={style.contactItem}>
                             <div className={style.icon}>

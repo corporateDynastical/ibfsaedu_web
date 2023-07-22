@@ -18,7 +18,7 @@ const ContactForm = () => {
       <div className={style.subContainer}>
         <div className={style.contactformbox}>
           <h1 className={`${style.titleMain} ${didact.className}`}>
-            <span>Want to discuss an idea ? </span> <br /> We’re all ears !
+            <span>What are you waiting for? </span> <br /> Let's make it happen!
           </h1>
           <form className={style.form} action="">
             <div className={style.name}>

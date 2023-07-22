@@ -197,13 +197,14 @@
     height: 100vh;
     display: flex;
     justify-content: flex-end;
-    padding-right: 5vw;
+    padding-right: 4.5vw;
     align-items: center;
     z-index: 2;
     position: relative;
 
     .heading {
       font-size: 1.5rem;
+      padding-left: 10px;
     }
 
     h1 {
@@ -220,6 +221,9 @@
       align-items: flex-start;
       gap: 0.1rem;
 
+      &:nth-child(2) {
+        padding-left: 4px;
+      }
       &:nth-child(3) {
         font-size: 7rem;
         font-weight: 800;
@@ -573,9 +577,17 @@
       align-items: center;
       padding: 10vh 0 0 0;
 
+      .heading{
+        padding-left: 0;
+      }
+
       h1{
         align-items: center;
         justify-content: center;
+
+        &:nth-child(2){
+          padding-left: 0;
+        }
       }
 
       .logos{

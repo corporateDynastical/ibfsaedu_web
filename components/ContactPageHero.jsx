@@ -21,7 +21,7 @@ const ContactPageHero = () => {
       </div>
       <div className={style.formDiv}>
         <h1 className={`${style.titleMain} ${didact.className}`}>
-          Want to discuss an idea ? <br /> <span>We’re all ears !</span>
+        What are you waiting for? <br /> <span>Let's make it happen!</span>
         </h1>
         <form className={style.form} action="">
           <div className={style.name}>
