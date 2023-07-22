@@ -12,7 +12,7 @@ const ClientsShowCase = () => {
     const data = [
         {
             src: "/assets/political/ravindra.png",
-            name: "रविंद हेमराज धंगेकर",
+            name: "रविंद्र हेमराज धंगेकर",
             post: "आमदार - कसबा विधानसभा मतदार संघ"
         },
         {
@@ -37,8 +37,8 @@ const ClientsShowCase = () => {
         },
         {
             src: "/assets/political/haribhau.png",
-            name: "हरीदास चरवड",
-            post: "नगरसेवक, मा. स्थायी समिति सदस्य, सदस्य पी.एम.आर.डी.ए., सदस्य नाव समिति,  पुणे"
+            name: "हरिदास चरवड",
+            post: "नगरसेवक, मा. स्थायी समिती सदस्य, सदस्य पी.एम.आर.डी.ए., सदस्य नाव समिती,  पुणे"
         },
         {
             src: "/assets/political/shelar.png",
