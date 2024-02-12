@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -43,3 +44,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # bankinstitute
 ibfsa.edu
 >>>>>>> 312eb892eefe691efbfc64cac4c08f431b436704
+=======
+# ibfsaedu_web
+ibfsaedu_web final work 
+>>>>>>> bc8de3110d9810cd907e67649206fa9254d89b03
