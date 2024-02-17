@@ -139,7 +139,7 @@ const Navbar = () => {
                                             <Instagram className="w-5 h-5" />
                                         </Link>
                                     </div>
-                                    <p className="max-sm:w-max text-center text-xs">Opening Hours : <br /> Monday to Saturday - 10.00 AM to 8.00 PM</p>
+                                    <p className="max-sm:w-max text-center text-xs">Opening Hours : <br /> Monday to Saturday 10:00AM to 08:00PM </p>
                                 </div>
                             </SheetDescription>
                         </SheetHeader>

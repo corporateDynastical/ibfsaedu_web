@@ -1,8 +1,8 @@
 export const Feedbacks = [
     {
-        name: "Ex.General Manager, ITM,  Mumbai.(ICICI Bank Sales Academy)",
-        comment: "MR.AMIT SAXENA ",
-        bankName: "CEO, Jobstation  ",
+        name: "Ex. General Manager, ITM,  Mumbai.(ICICI Bank Sales Academy)",
+        comment: "Mr.Amit Saxena",
+        bankName: "CEO, Job station",
         image: "/team/Advisory_Saxenacrop.png"
     },
     {
@@ -14,7 +14,7 @@ export const Feedbacks = [
    
     {
         name: "Ex.Deputy General Manager, ITM,  Mumbai.(ICICI Bank Sales Academy)",
-        comment: "MR.SANGRAM DESHMUKH",
+        comment: "Mr.Sangram Deshmukh",
         bankName: "ICICI Bank Sales Academy",
         image: "/team/Advisory_Deshmukh.png"
     },
@@ -22,21 +22,21 @@ export const Feedbacks = [
 
     {
         name: "Charted Accountant",
-        comment: "CA UMAKANT KAPSE",
+        comment: "CA Umakant Kapse",
         bankName: "",
         image: "/team/Advisory_Kapse.png"
     },
 
     {
         name: "M.com, LLB",
-        comment: "ADV.VIJAY KHARAT",
+        comment: "Adv.Vijay Kharat",
         bankName: "",
         image: "/team/Advisory_Kharat.png"
     },
 
     {
         name: "Mcom, MBA, M Phil, Phd Prof. Sanjivani Engineering & Tecnology Institute, Kolhapur.",
-        comment: "DR.AJAY MASKE",
+        comment: "Dr.Ajay Maske",
         bankName: "",
         image: "/team/Advisory_Ajay.png"
     },

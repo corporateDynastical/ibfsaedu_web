@@ -30,6 +30,7 @@ const FormSchema = z.object({
         message: "Please enter a valid email id."
     }),
     message: z.string(),
+    resume: z.string(), // New field for uploading resume
 })
 
 export function ContactForm() {
@@ -43,7 +44,8 @@ export function ContactForm() {
             username: "",
             contact: "",
             email: "",
-            message: ""
+            message: "",
+            resume: "", // Initialize resume field
         },
     })
 
@@ -118,6 +120,20 @@ export function ContactForm() {
                             <FormLabel>Message</FormLabel>
                             <FormControl>
                                 <Textarea placeholder="Type your message here." {...field} rows={6} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
+                 <FormField
+                    disabled={loading}
+                    control={form.control}
+                    name="resume"
+                    render={({ field }) => (
+                        <FormItem>
+                            <FormLabel>Upload Resume</FormLabel>
+                            <FormControl>
+                                <Input type="file" {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>

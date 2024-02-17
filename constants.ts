@@ -68,13 +68,13 @@ export const Feedbacks = [
         image: "/testimonial/archana.jpeg"
     },
    {
-        name: " Pratamesh savade",
+        name: " Pratamesh Savade",
         comment: "The online classes, mock test and the other facilities given by the institute encourage me to mark success in the competitive examinations. Especially the motivation given by the faculty of the institute and the management played a vital role to handle the examination in a time bound manner. ",
         bankName: "Kotak bank",
         image: "/testimonial/archana.jpeg"
     },
     {
-        name: " Prathamesh kale",
+        name: " Prathamesh Kale",
         comment: "They gave me a clear idea of what to expect for exam in each subject. The major highlight   which I felt really helpful was the Mock Test series. Great faculties, Good and precise study   materials, encouraging staffs, exam oriented revision classes all made the way to success. ",
         bankName: "Axis Bank",
         image: "/testimonial/Prathmesh_kale.png"
@@ -110,13 +110,13 @@ export const Feedbacks = [
         image: "/testimonial/Sajid_Jamadar.png"
     },
     {
-        name: "Pratik dolare",
+        name: "Pratik Dolare",
         comment: "I pursued Advanced Diploma from this Institute. The quality of teaching in my course is at  par with one of the best faculties . The teachers are highly qualified and Professionals . Therefore, the curriculum is up to speed with the recent developments. The placements were much better than my expectations. We had recruiters from various Banks.",
         bankName: "Axis Bank",
         image: "/testimonial/Pratik_Dolare.png"
     },
     {
-        name: "Chandrakant bhalerao",
+        name: "Chandrakant Bhalerao",
         comment: "My overall experience to date has been amazing. Institute has provided me with a number of opportunities to grow and explore my skills. The emphasis education always helped me a.",
         bankName: "Axis bank, Latur",
         image: "/testimonial/Chandrakant.png"

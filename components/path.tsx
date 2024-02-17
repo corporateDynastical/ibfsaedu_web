@@ -68,7 +68,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
               <div className="card">
                 <div className="card-body border-0">
                   <div>
-                    <h5 className="text-primary"><b>A : Introduction to Banking</b></h5>
+                    <h5 className="text-primary text-green-600 font-semibold text-green-600 font-semibold"><b>A : Introduction to Banking</b></h5>
                     <br />
                     <ul className="list-disc pl-5">
                       <li>Role of Banks, Important principles of Bank.</li>
@@ -78,7 +78,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
                   </div>
                   <div>
                     <br /><br />
-                    <h5 className="text-primary"><b>B : Liability Products</b> </h5>
+                    <h5 className="text-primary text-green-600 font-semibold"><b>B : Liability Products</b> </h5>
                     <br />
                     <ul className="list-disc pl-5">
                       <li>Current Accounts- Introduction to Current Account, CA variants</li>
@@ -88,7 +88,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
                   </div>
                   <div>
                     <br />
-                    <h5 className="text-primary"><b>C : Asset Products</b></h5>
+                    <h5 className="text-primary text-green-600 font-semibold"><b>C : Asset Products</b></h5>
                     <ul className="list-disc pl-5">
                       <li>Secured Assets-Home loan, Auto loan, Jewel loan, case studies</li>
                       <li>Unsecured Assets- Credit cards, Personal Loan & Education Loan</li>
@@ -96,7 +96,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
                   </div>
                   <div>
                     <br /><br />
-                    <h5 className="text-primary"><b>D : Banking Sales & Relationship Managemen</b>t</h5>
+                    <h5 className="text-primary text-green-600 font-semibold"><b>D : Banking Sales & Relationship Managemen</b>t</h5>
                     <br />
                     <ul className="list-disc pl-5">
 
@@ -126,7 +126,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
                 <div className="card-body">
                   <div>
 
-                    <h5 className="text-primary"> <b>E : Audit and Compliance</b></h5>
+                    <h5 className="text-primary text-green-600 font-semibold"> <b>E : Audit and Compliance</b></h5>
                     <ul className="list-disc pl-5">
                       <li>Regulatory compliance &amp; Audit, Banking Ombudsman Scheme, Benefits of RBIO scheme</li>
                       <li>Banking Code of conduct, RBI clean note policy, Security features of currency notes</li>
@@ -139,7 +139,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
                   </div>
                   <div>
                     <br />
-                    <h5 className="text-primary"> <b>F : Digital Banking and Fintech</b></h5>
+                    <h5 className="text-primary text-green-600 font-semibold"> <b>F : Digital Banking and Fintech</b></h5>
                     <ul className="list-disc pl-5">
                       <li>Soft Skills & Personality Development</li>
                       <li>Digital banking trends and innovations .</li>
@@ -150,7 +150,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
                   </div>
                   <div>
                     <br />
-                    <h5 className="text-primary"><b>G : Professional Excellence</b></h5>
+                    <h5 className="text-primary text-green-600 font-semibold"><b>G : Professional Excellence</b></h5>
                     <ul className="list-disc pl-5">
                       <li>Business Etiquettes, E-maiI Writing, Handling Inbound & Outbound Calls</li>
                       <li>Group Discussions</li>

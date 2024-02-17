@@ -2,6 +2,7 @@
 import MissionVissionContent from "./mission-vission-content"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import Director from "@/components/director"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Image from 'next/image';
@@ -60,9 +61,11 @@ const MissionVission = () => {
             </div>
 
 
-            <br></br>
-            <Container>
+
+        
+          
                 {/* 
+                  <Container>
                 <div className="flex lg:flex-row flex-col-reverse items-center justify-center">
                     <div className="flex-5 lg:h-[90rem] bg-themeBlue">
                         <div className="flex max-lg:py-14 justify-center items-center h-full">
@@ -80,49 +83,16 @@ const MissionVission = () => {
                         </div>
                     </div>
                 </div>
+                 </Container>
 */}
 
 
-                <div className="flex lg:flex-row flex-col items-center justify-center">
-                    <div className="flex-1 max-lg:min-w-full">
-                        <div className="relative h-[50vh] sm:h-[70vh] lg:h-[30rem] w-full">
-                            <Image src={'/diphoto.png'} alt="founder" fill objectFit="cover" objectPosition="center" />
-                        </div>
-                    </div>
-
-
-                    <div className="flex-1 lg:h-auto bg-themeBlue">
-    <div className="flex flex-col justify-center h-full p-1 lg:py-1 lg:px-6">
-        <MissionVissionContent
-            heading="CHIEF EXECUTIVE OFFICER"
-            content={`
-                Mr. Arvind Shete<br>
-                Ex. Chief Manager, ICICI Bank<br>
-                
-                Mr. Arvind Shete is an Mcom, CAIIB with more than 36 years of experience in the BFSI Industry. He has
-                worked with ICICI Bank (Chief Manager). He has also led many transformational projects for leading BFSI
-                companies as an Independent Consultant.
-                
-                Mr. Arvind is passionate about creating a skilled workforce for the BFSI sector, which is poised for
-                massive growth in the coming decades and faces a perpetual shortage of competent professionals.
-                
-                Mr. Arvind is the CEO in IBFSA, which works with BFSI firms in the area of Skilling and Capability
-                enhancement of Staff and Process Transformation Projects.
-                
-                We offer induction training programs for new hires in the Banking, Financial Services, and Insurance
-                (BFSI) sector. Our training services are highly customizable and can be tailored to meet the specific
-                needs of corporate clients. Whether it be general training topics or more specific subjects, we have the
-                capability and capacity to design and deliver effective training programs.
-            `}
                
-                            />
-                        </div>
-                    </div>
-
-                </div>
 
 
-            </Container>
+           
+            
+            <Director/>
 
 
 

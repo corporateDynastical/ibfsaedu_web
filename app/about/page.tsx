@@ -1,4 +1,5 @@
 import AboutPoints from "@/components/about-points"
+import Director from "@/components/director"
 import ContactSection from "@/components/contact-section"
 import MissionVission from "@/components/mission-vision"
 import Leadteam from "@/components/leadteam"
@@ -9,8 +10,11 @@ const AboutPage = () => {
     return (
         <div>
             <AboutPoints />
+           
             <MissionVission />
-            <Leadteam />
+        
+           <Leadteam/>
+            
             <br></br>
             <br></br>
             <br>

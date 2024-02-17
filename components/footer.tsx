@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
             </Container>
             <div className='bg-themeColor text-white font-normal text-md text-center w-full py-3 relative z-[2]'>
-                <span>© {new Date().getFullYear()} Institute of banking finance skill academy (IBFSA) All rights reserved.</span>
+                <span>© {new Date().getFullYear()} Institute of Banking and Finance Skills Academy (IBFSA) All rights reserved.</span>
             </div>
             <div className='absolute w-full h-full bg-slate-50 top-0 left-0 opacity-20 z-1' />
         </div>

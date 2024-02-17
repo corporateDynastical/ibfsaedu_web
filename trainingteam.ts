@@ -1,20 +1,20 @@
 export const Feedbacks = [
     {
         name: "Ex. Regional Manager Aptech Institute, Mumbai",
-        comment: "MS. PALLAVI MURUDKAR ",
+        comment: "Ms. Pallavi Murudkar ",
         bankName: " ",
         image: "/team/Training_Pallavi.png"
     },
     {
         name: "Ex. Branch Manager ICICI Bank",
-        comment: "MR. SHIVDATT SALUNKHE",
+        comment: "Mr. Shivdatt Salunkhe",
         bankName: "",
         image: "/team/Training_Shivdatt.png"
     },
    
     {
         name: "Ex. Assistant Vice Precidant Equitas Bank",
-        comment: "MR.TARIQ AHMEDI",
+        comment: "Mr.Tariq Ahmedi",
         bankName: "",
         image: "/team/Training_Ahmedi.png"
     },
@@ -22,40 +22,40 @@ export const Feedbacks = [
 
     {
         name: "Ex. Branch Manager ICICI Bank",
-        comment: "MR.PANKAJ MISHRA ",
+        comment: "Mr.Pankaj Mishra ",
         bankName: "",
         image: "/team/Training_Mishra.png"
     },
 
     {
         name: "Ex.Regional Head Sales ICICI Bank",
-        comment: "MR.VIJAY GHADAGE",
+        comment: "Mr.Vijay Ghadage",
         bankName: "",
         image: "/team/Training_Vijay.png"
     },
 
     {
         name: "Ex. Branch manager HDFC Bank",
-        comment: "MR.BALAJI LOKHANDE",
+        comment: "Mr.Balaji Lokhande",
         bankName: "",
         image: "/team/Training_Balaji.png"
     },
 
     {
         name: "Ex. Branch Manager Kotak Bank",
-        comment: "MR.ASHOK SHINDE",
+        comment: "Mr.Ashok Shinde",
         bankName: "",
         image: "/team/Training_Shinde.png"
     },
     {
         name: "Ex.  Manager Axis Bank",
-        comment: "MR.SUMANT MANE",
+        comment: "Mr.Sumant Mane",
         bankName: "",
         image: "/team/Training_Mane.png"
     },
     {
         name: "Ex.Manager ICICI Bank",
-        comment: "MR. RAHUL MOHAN MAHINDRA",
+        comment: "Mr. Rahul Mohan Mahindra",
         bankName: "",
         image: "/team/Training_Rahul.png"
     }

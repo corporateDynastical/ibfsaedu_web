@@ -21,7 +21,7 @@ function Header() {
                             <Instagram className="w-2 sm:w-4 h-4 sm:h-4" />
                         </Link>
                     </div>
-                    <p className="max-sm:w-max max-sm:text-[8px] max-sm:leading-5 max-sm:text-end sm:tracking-wide">Opening Hours : Monday to Saturday - 10.00 AM to 8.00 PM</p>
+                    <p className="max-sm:w-max max-sm:text-[8px] max-sm:leading-5 max-sm:text-end sm:tracking-wide">Opening Hours : Monday to Saturday 10:00AM to 08:00PM  </p>
                 </div>
             </Container>
         </div>

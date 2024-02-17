@@ -159,7 +159,7 @@ const CourseInfo = () => {
                     <div className="col-sm-12 mb-3 mb-sm-0">
                       <div className="card">
                         <div className="card-body text-blue-XXX">
-                          <br /><h2><b>Post Graduation Certificate In Banking and Finance</b></h2><br />
+                          <br /><h2 className="text-themeColor"><b>Post Graduation Certificate In Banking and Finance</b></h2><br />
                           <p>PGCBF– Post Graduation Certificate in Banking &amp; Finance is a power-packed 45-day program offered by the Institute of   Banking and Finance Skills Academy. This program makes the candidate Job-ready in Retail Branch Banking of a Private Sector Bank or Financial Institution. This program is designed to nurture the competencies of working professionals and fresh graduates aspiring to work in the Private Banking Sector of India. This program also allows students to balance work-life challenges and professional commitments</p>
                         </div>
                       </div>
