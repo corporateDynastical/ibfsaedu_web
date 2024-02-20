@@ -1,13 +1,11 @@
-"use client"
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+import { useState } from "react";
+import axios from 'axios';
+import { useToast } from "@/components/ui/use-toast";
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import * as z from "zod"
-import { useState } from "react"
-import axios from 'axios'
-import { useToast } from "@/components/ui/use-toast"
-
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
     Form,
     FormControl,
@@ -15,9 +13,9 @@ import {
     FormItem,
     FormLabel,
     FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "./textarea"
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "./textarea";
 
 const FormSchema = z.object({
     username: z.string().min(2, {
@@ -31,13 +29,13 @@ const FormSchema = z.object({
     }),
     message: z.string(),
     resume: z.string().optional(), // Update to accept a file
-})
+});
 
 
 export function ContactForm() {
 
-    const [loading, setLoading] = useState(false)
-    const { toast } = useToast()
+    const [loading, setLoading] = useState(false);
+    const { toast } = useToast();
 
     const form = useForm<z.infer<typeof FormSchema>>({
         resolver: zodResolver(FormSchema),
@@ -48,24 +46,40 @@ export function ContactForm() {
             message: "",
             resume: "", // Initialize resume field
         },
-    })
+    });
 
     async function onSubmit(data: z.infer<typeof FormSchema>) {
-        setLoading(true)
+        setLoading(true);
         const formData = new FormData();
         formData.append('username', data.username);
         formData.append('contact', data.contact);
         formData.append('email', data.email);
         formData.append('message', data.message);
-        formData.append('resume', data.resume[0]); // Append the file to FormData
-    
+        formData.append('resume', data.resume[0]); 
+
         try {
             const response = await axios.post(`/api/sendMail`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
-                }
+                },
+                responseType: 'blob', 
             });
-            console.log(response.data);
+
+         
+            const blob = new Blob([response.data], { type: 'application/pdf' });
+            const url = window.URL.createObjectURL(blob);
+
+      
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'resume.pdf'; // Set the filename here
+            document.body.appendChild(a);
+            a.click();
+
+            // Cleanup
+            window.URL.revokeObjectURL(url);
+            a.remove();
+
             toast({
                 title: "Thank you for your response",
                 description: "Response submitted successfully. We will get back to you!",
@@ -78,6 +92,8 @@ export function ContactForm() {
                 message: "",
                 resume: "", // Reset the resume field
             });
+
+
         } catch (error) {
             console.error('Error submitting form:', error);
             toast({
@@ -88,7 +104,7 @@ export function ContactForm() {
             setLoading(false);
         }
     }
-    
+
 
     return (
         <Form {...form}>
@@ -169,5 +185,5 @@ export function ContactForm() {
                 </Button>
             </form>
         </Form>
-    )
+    );
 }
