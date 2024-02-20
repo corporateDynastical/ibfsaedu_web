@@ -24,14 +24,15 @@ const FormSchema = z.object({
         message: "Username must be at least 2 characters.",
     }),
     contact: z.string().min(10, {
-        message: "Please enter valid contact number",
+        message: "Please enter a valid contact number",
     }),
-    email: z.string().includes('@', {
+    email: z.string().email({
         message: "Please enter a valid email id."
     }),
     message: z.string(),
-    resume: z.string(), // New field for uploading resume
+    resume: z.string().optional(), // Update to accept a file
 })
+
 
 export function ContactForm() {
 
@@ -51,20 +52,43 @@ export function ContactForm() {
 
     async function onSubmit(data: z.infer<typeof FormSchema>) {
         setLoading(true)
-        const response = await axios.post(`/api/sendMail`, data)
-        console.log(response.data);
-        toast({
-            title: "Thank you for your response",
-            description: "Response submitted successfully. We will get back to you!",
-        })
-        setLoading(false)
-        form.reset({
-            username: "",
-            contact: "",
-            email: "",
-            message: ""
-        });
+        const formData = new FormData();
+        formData.append('username', data.username);
+        formData.append('contact', data.contact);
+        formData.append('email', data.email);
+        formData.append('message', data.message);
+        formData.append('resume', data.resume[0]); // Append the file to FormData
+    
+        try {
+            const response = await axios.post(`/api/sendMail`, formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
+            console.log(response.data);
+            toast({
+                title: "Thank you for your response",
+                description: "Response submitted successfully. We will get back to you!",
+            });
+            setLoading(false);
+            form.reset({
+                username: "",
+                contact: "",
+                email: "",
+                message: "",
+                resume: "", // Reset the resume field
+            });
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            toast({
+                title: "Error",
+                description: "Something went wrong while submitting the form.",
+                status: "error"
+            });
+            setLoading(false);
+        }
     }
+    
 
     return (
         <Form {...form}>
@@ -125,7 +149,7 @@ export function ContactForm() {
                         </FormItem>
                     )}
                 />
-                 <FormField
+                <FormField
                     disabled={loading}
                     control={form.control}
                     name="resume"
@@ -133,12 +157,13 @@ export function ContactForm() {
                         <FormItem>
                             <FormLabel>Upload Resume</FormLabel>
                             <FormControl>
-                                <Input type="file" {...field} />
+                                <Input type="file" {...field} required />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
                     )}
                 />
+
                 <Button disabled={loading} className="w-full" type="submit">
                     {loading ? `Submitting response..` : `Submit`}
                 </Button>
