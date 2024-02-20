@@ -143,7 +143,7 @@ export function ContactForm() {
                         <FormItem>
                             <FormLabel>Message</FormLabel>
                             <FormControl>
-                                <Textarea placeholder="Type your message here." {...field} rows={6} />
+                                <Textarea placeholder="Type your message here." {...field} rows={5} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
