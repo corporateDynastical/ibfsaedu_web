@@ -47,7 +47,6 @@ export function ContactForm() {
             resume: "", // Initialize resume field
         },
     });
-
     async function onSubmit(data: z.infer<typeof FormSchema>) {
         setLoading(true);
         const formData = new FormData();
@@ -56,7 +55,7 @@ export function ContactForm() {
         formData.append('email', data.email);
         formData.append('message', data.message);
         formData.append('resume', data.resume[0]); 
-
+    
         try {
             const response = await axios.post(`/api/sendMail`, formData, {
                 headers: {
@@ -64,22 +63,20 @@ export function ContactForm() {
                 },
                 responseType: 'blob', 
             });
-
-         
+    
             const blob = new Blob([response.data], { type: 'application/pdf' });
             const url = window.URL.createObjectURL(blob);
-
-      
+    
             const a = document.createElement('a');
             a.href = url;
             a.download = 'resume.pdf'; // Set the filename here
             document.body.appendChild(a);
             a.click();
-
-            // Cleanup
+    
+          
             window.URL.revokeObjectURL(url);
             a.remove();
-
+    
             toast({
                 title: "Thank you for your response",
                 description: "Response submitted successfully. We will get back to you!",
@@ -92,8 +89,6 @@ export function ContactForm() {
                 message: "",
                 resume: "", // Reset the resume field
             });
-
-
         } catch (error) {
             console.error('Error submitting form:', error);
             toast({
@@ -104,6 +99,7 @@ export function ContactForm() {
             setLoading(false);
         }
     }
+    
 
 
     return (
