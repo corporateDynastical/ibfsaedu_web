@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 
 export async function POST(req: Request) {
     const body = await req.json()
-    const { username, contact, email, message } = body
+    const { username, contact, email, message,resume } = body
 
     try {
         const htmlBody =
@@ -14,6 +14,7 @@ export async function POST(req: Request) {
             <h3>Contact Number: ${contact}</h3>
             <h3>Email: ${email}</h3>
             <h3>Message: ${message}</h3>
+            <h3>resume: ${resume}</h3>
         </div>
         `
 
@@ -29,7 +30,8 @@ export async function POST(req: Request) {
 
         const messageToSend = {
             from: process.env.USER_EMAIL,
-            to: 'ibfsa.kolhapur@gmail.com',
+            to: ['ibfsa.kolhapur@gmail.com', 'krushnaghadge01@gmail.com', 'document@ibfsaedu.com'],
+    
             subject: "New Enquiry From IBFSA Website.",
             text: "",
             html: `${htmlBody}`
