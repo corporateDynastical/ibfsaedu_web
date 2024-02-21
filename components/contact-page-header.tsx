@@ -25,12 +25,12 @@ const ContactPageHeader = () => {
                         +91 9970114143
                     </span>
                 </Link>
-                <Link href={'mailto:ibfsa.kolhapur@gmail.com'} className='flex items-center justify-center w-full gap-2 px-2 hover:text-themeColor hover:bg-white hover:rounded-lg'>
+                <Link href={'mailto:info@ibfsaedu.com'} className='flex items-center justify-center w-full gap-2 px-2 hover:text-themeColor hover:bg-white hover:rounded-lg'>
                     <div className=''>
                         <Mail className='w-5 h-5' />
                     </div>
                     <span className=''>
-                        ibfsa.kolhapur@gmail.com
+                    info@ibfsaedu.com
                     </span>
                 </Link>
             </div>

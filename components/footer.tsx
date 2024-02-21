@@ -44,12 +44,12 @@ const Footer = () => {
                                     +91 9970114143
                                 </span>
                             </Link>
-                            <Link href={'mailto:ibfsa.kolhapur@gmail.com'} className='flex items-center justify-start w-full gap-2 hover:text-themeText text-themeBlue'>
+                            <Link href={'mailto:info@ibfsaedu.com'} className='flex items-center justify-start w-full gap-2 hover:text-themeText text-themeBlue'>
                                 <div className=''>
                                     <Mail className='w-5 h-5 text-themeColor' />
                                 </div>
                                 <span className=''>
-                                    ibfsa.kolhapur@gmail.com
+                                    info@ibfsaedu.com
                                 </span>
                             </Link>
                             <span className='flex items-start justify-start w-full gap-2 hover:text-themeText text-themeBlue'>
