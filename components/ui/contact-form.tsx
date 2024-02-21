@@ -30,7 +30,7 @@ const FormSchema = z.object({
         message: "Please enter a valid email id."
     }),
     message: z.string(),
-    resume: z.string(), 
+    resume: z.string(), // New field for uploading resume
 })
 
 export function ContactForm() {
@@ -45,41 +45,26 @@ export function ContactForm() {
             contact: "",
             email: "",
             message: "",
-            resume: "", 
+            resume: "", // Initialize resume field
         },
     })
 
     async function onSubmit(data: z.infer<typeof FormSchema>) {
-        setLoading(true);
-        const formData = new FormData();
-        Object.entries(data).forEach(([key, value]) => formData.append(key, value));
-        formData.append('resume', data.resume[0]); 
-    
-        try {
-            const response = await axios.post(`/api/sendMail`, formData, {
-                headers: {
-                    'Content-Type': 'multipart/form-data',
-                },
-            });
-            console.log(response.data);
-            toast({
-                title: "Thank you for your response",
-                description: "Response submitted successfully. We will get back to you!",
-            });
-            setLoading(false);
-            form.reset({
-                username: "",
-                contact: "",
-                email: "",
-                message: "",
-            });
-        } catch (error) {
-            // Error handling
-            console.error('Error:', error);
-            setLoading(false);
-        }
+        setLoading(true)
+        const response = await axios.post(`/api/sendMail`, data)
+        console.log(response.data);
+        toast({
+            title: "Thank you for your response",
+            description: "Response submitted successfully. We will get back to you!",
+        })
+        setLoading(false)
+        form.reset({
+            username: "",
+            contact: "",
+            email: "",
+            message: ""
+        });
     }
-    
 
     return (
         <Form {...form}>
