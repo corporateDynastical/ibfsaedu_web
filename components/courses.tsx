@@ -14,7 +14,7 @@ const Courses = () => {
                 }}
                 transition={{ delay: 0, ease: 'linear', duration: 0.5 }}
                 className="flex-1 rounded-3xl p-4 sm:p-8 xl:p-10 space-y-5">
-                <h1 className="font-bold max-sm:text-center text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-themeBlue sm:leading-snug lg:leading-snug xl:leading-snug max-sm:leading-snug">Post Graduation Diploma in <br className="max-lg:hidden"/>
+                <h1 className="font-bold max-sm:text-center text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-themeBlue sm:leading-snug lg:leading-snug xl:leading-snug max-sm:leading-snug">Post Graduation Certificate in <br className="max-lg:hidden"/>
                     <span className="text-themeColor">
                         Banking & Finance
                     </span>
