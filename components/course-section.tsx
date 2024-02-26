@@ -153,7 +153,7 @@ const CourseSection = () => {
                                         <div>
                                             <br />
                                             <div>
-                                                <br />  <p>5) Opportunity to travel and gain domestic as well as international exposure as most banks and financial service organizations have a wide network. 
+                                                <br />  <p>5) Develop awesome interpersonal skills as you get an opportunity to interact with people from all walks of life across the country. 
 </p>
                                                 <br />
 
