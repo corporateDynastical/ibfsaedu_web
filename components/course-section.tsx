@@ -153,7 +153,7 @@ const CourseSection = () => {
                                         <div>
                                             <br />
                                             <div>
-                                                <br />  <p>7) Develop awesome interpersonal skills as you get an opportunity to interact with people from all walks of life across the country. 
+                                                <br />  <p> 7) Develop awesome interpersonal skills as you get an opportunity to interact with people from all walks of life across the country. 
 </p>
                                                 <br />
 
