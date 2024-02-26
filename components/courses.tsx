@@ -32,7 +32,7 @@ const Courses = () => {
                     <li className="text-sm xl:text-lg">45 day’s Training.</li>
                     <li className="text-sm xl:text-lg">Training mode is virtual.</li>
                     <li className="text-sm xl:text-lg">Daily 2 hrs of lectures. Overall 90 hrs of Training.</li>
-                    <li className="text-sm xl:text-lg">Get Certification in “Post Graduation Diploma in Banking & Finance”.</li>
+                    <li className="text-sm xl:text-lg">Get Certification in “Post Graduation Certificate Banking & Finance”.</li>
                     <li className="text-sm xl:text-lg">Training Fees: 20,000/-, including GST.</li>
                     <li className="text-sm xl:text-lg">Get placement in a Bank.</li>
                 </ul>

@@ -33,7 +33,7 @@ export const Feedbacks = [
     },
     {
         name: "Krishna Yadav",
-        comment: "The Post Graduation Diploma in Banking & Finance turned my aspirations into reality. The course structure was well-paced, covering all aspects of banking. The faculty's dedication and industry connections were instrumental in my success. The job placement support was spot-on, and now I am thriving in my dream banking job. I highly recommend this program to anyone looking for a fast-track entry into the banking sector.",
+        comment: "The Post Graduation Certificate  in Banking & Finance turned my aspirations into reality. The course structure was well-paced, covering all aspects of banking. The faculty's dedication and industry connections were instrumental in my success. The job placement support was spot-on, and now I am thriving in my dream banking job. I highly recommend this program to anyone looking for a fast-track entry into the banking sector.",
         bankName: "ICICI Bank",
         image: "/testimonial/krishna.jpeg"
     },
@@ -45,7 +45,7 @@ export const Feedbacks = [
     },
     {
         name: "Mulayam Yadav",
-        comment: "The Post Graduation Diploma in Banking & Finance opened doors I never thought possible. The industry-focused curriculum and expert faculty prepared me for real-world challenges. Securing a job in a prestigious bank was a direct result of the comprehensive training and placement assistance. Truly a life-changing experience!",
+        comment: "The Post Graduation Certificate  in Banking & Finance opened doors I never thought possible. The industry-focused curriculum and expert faculty prepared me for real-world challenges. Securing a job in a prestigious bank was a direct result of the comprehensive training and placement assistance. Truly a life-changing experience!",
         bankName: "Relationship Officer - ICICI Bank",
         image: "/testimonial/mulayam.jpeg"
     },

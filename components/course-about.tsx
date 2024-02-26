@@ -42,7 +42,7 @@ const CourseAbout = () => {
                 <div className='space-y-6 sm:space-y-8'>
                     <h1 className='title text-start font-bold'>About the course</h1>
                     <p className='text-themeBlue leading-8'>
-                        Are you ready to step into the dynamic world of banking and finance? Our Post Graduation Diploma in Banking & Finance is designed to equip you with the essential skills and knowledge needed for a successful career in this industry. Through a comprehensive virtual training program, we bring the expertise of the banking sector right to your doorstep.
+                        Are you ready to step into the dynamic world of banking and finance? Our Post Graduation Certificate in Banking & Finance is designed to equip you with the essential skills and knowledge needed for a successful career in this industry. Through a comprehensive virtual training program, we bring the expertise of the banking sector right to your doorstep.
                     </p>
                     <div className='grid sm:grid-cols-2 lg:grid-cols-3 items-start justify-items-center justify-center gap-4 sm:gap-8 w-full'>
                         {

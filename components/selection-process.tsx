@@ -11,7 +11,7 @@ const SelectionData = [
     {
         title: "Eligibility Screening:",
         tagline: "Initial Evaluation",
-        info: "Candidates undergo a thorough screening process to ensure they meet the eligibility criteria for the Post Graduation Diploma in Banking & Finance."
+        info: "Candidates undergo a thorough screening process to ensure they meet the eligibility criteria for the Post Graduation Certificate in Banking & Finance."
     },
     {
         title: "Career Advisory Interview:",
@@ -25,8 +25,8 @@ const SelectionData = [
     },
     {
         title: "Course Enrollment:",
-        tagline: "Fee Payment for Post Graduation Diploma",
-        info: "After completing admission requirements, candidates are required to pay the course fee for the Post Graduation Diploma in Banking & Finance to commence their educational journey."
+        tagline: "Fee Payment for Post Graduation Certificate ",
+        info: "After completing admission requirements, candidates are required to pay the course fee for the Post Graduation Certificate  in Banking & Finance to commence their educational journey."
     },
     {
         title: "Certification and Bank Placement:",

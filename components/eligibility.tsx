@@ -10,7 +10,7 @@ const EligibilityData = [
         img: "/icons/excellence.svg",
         title: "Academic Excellence",
         desc: "Minimum 50% Marks Requirement",
-        sentence: "Candidates must have achieved a score of over 50% in their 10th, 12th, and graduation examinations to be eligible for our Post Graduation Diploma in Banking & Finance."
+        sentence: "Candidates must have achieved a score of over 50% in their 10th, 12th, and graduation examinations to be eligible for our Post Graduation Certificate in Banking & Finance."
     },
     {
         img: "/icons/identity.svg",
@@ -28,7 +28,7 @@ const EligibilityData = [
         img: "/icons/calender.svg",
         title: "Age Criteria",
         desc: "Age Limitation",
-        sentence: "Prospective students must be below 28 years of age to meet the age criteria for admission into the Post Graduation Diploma in Banking & Finance."
+        sentence: "Prospective students must be below 28 years of age to meet the age criteria for admission into the Post Graduation Certificate in Banking & Finance."
     },
 ]
 
@@ -37,7 +37,7 @@ const Eligibility = () => {
         <Container>
             <div className="py-14 sm:py-16 space-y-8">
                 <h1 className="title">Eligibility Criteria</h1>
-                <p className="text-themeBlue leading-8 text-center">Open to graduates and professionals from diverse backgrounds, our Post Graduation Diploma in Banking & Finance welcomes individuals with a passion for finance and a desire to excel in the dynamic world of banking.</p>
+                <p className="text-themeBlue leading-8 text-center">Open to graduates and professionals from diverse backgrounds, our Post Graduation Certificate in Banking & Finance welcomes individuals with a passion for finance and a desire to excel in the dynamic world of banking.</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center justify-center gap-4">
                     {
                         EligibilityData.map((item, index) => (

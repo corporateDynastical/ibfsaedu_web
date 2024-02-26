@@ -97,7 +97,7 @@ const CourseInfo = () => {
               >
                 Embark on a transformative journey with our{' '}
                 <span className='text-lg font-bold text-themeColor'>
-                  Post Graduation Diploma in Banking & Finance
+                  Post Graduation Certificate in Banking & Finance
                 </span>
                 , a 20-day virtual training program designed for graduates and professionals. With a focus on academic excellence, candidates with over 50% in 10th, 12th, and graduation, a valid PAN or Aadhaar card, a CIBIL score exceeding 700 or -1, and age below 28 are invited to apply. The selection process involves eligibility screening, a career advisory interview, admission formalities, fee payment, and culminates in a certification and job placement. Join us to gain industry-relevant skills, guided by expert faculty, and launch your successful banking career.
               </motion.p>
