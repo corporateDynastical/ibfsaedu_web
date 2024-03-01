@@ -11,9 +11,9 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-        <ContactPageTitle src={'/cartoons/namaste.png'} />
-        <ContactPageHero />
-        <MapAddress />
+      <ContactPageTitle src={'/cartoons/namaste.png'} />
+      <ContactPageHero />
+      <MapAddress />
     </div>
   )
 }

@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link href={"/"}>
               <div className={style.picture}>
                 <Image
-                  src={"/assets/images/main_logo.svg"}
+                  src={"/mainLogo.png"}
                   alt="dynastical communication logo"
                   fill
                 />

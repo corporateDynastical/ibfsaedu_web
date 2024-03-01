@@ -64,7 +64,7 @@ const page = () => {
           {
             src: "/corpLogos/t_rispirit-01-01-01.png",
           },
-        ]}  />
+        ]} />
       <Slider
         title={'Our Political Clients'}
         href={'/political-clients'}
