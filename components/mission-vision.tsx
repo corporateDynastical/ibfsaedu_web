@@ -53,7 +53,7 @@ const MissionVission = () => {
                     <div className="flex-[1.5] space-y-6">
                         <h1 className="font-bold text-5xl text-green-600 justify-center" style={{ marginLeft: '500px' }}>
                             <strong style={{ color: 'green' }}>
-                                CEO & DIRECTOR
+                                CEO & Director
                             </strong>
                         </h1>
                     </div>
@@ -128,7 +128,7 @@ const MissionVission = () => {
                     <div className="flex-[1.5] space-y-6">
                         <h1 className="font-bold text-5xl text-green-600 justify-center" style={{ marginLeft: '500px' }}>
                             <strong style={{ color: 'green' }}>
-                                CORE TEAM
+                                Core Team
                             </strong>
                         </h1>
                     </div>

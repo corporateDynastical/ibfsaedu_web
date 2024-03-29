@@ -28,7 +28,7 @@ const AboutPoints = () => {
                             }}
                             transition={{ ease: 'linear' }}
                             className='flex-[2] w-full h-full text-3xl md:text-6xl font-black text-themeColor'>
-                            ABOUT US.
+                            About Us
                         </motion.div>
                     </div>
                     <div className='flex items-start justify-center text-sm'>

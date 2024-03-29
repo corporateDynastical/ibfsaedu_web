@@ -11,7 +11,8 @@ const OurRecruiters = () => {
     return (
         <div className='py-8 sm:py-16 bg-slate-50'>
             <Container>
-                <h1 className='title'>Our Recruiters</h1>
+                <h1 className='title'>Successfully Placed With Organisation</h1>
+
                 <div className='pt-2 sm:pt-8 lg:pt-11'>
                     <Swiper
                         modules={[Autoplay]}

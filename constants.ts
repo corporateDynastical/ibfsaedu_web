@@ -71,7 +71,7 @@ export const Feedbacks = [
         name: " Pratamesh Savade",
         comment: "The online classes, mock test and the other facilities given by the institute encourage me to mark success in the competitive examinations. Especially the motivation given by the faculty of the institute and the management played a vital role to handle the examination in a time bound manner. ",
         bankName: "Kotak bank",
-        image: "/testimonial/archana.jpeg"
+        image: "/testimonial/Prath_Savade.jpg"
     },
     {
         name: " Prathamesh Kale",

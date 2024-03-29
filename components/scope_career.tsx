@@ -27,9 +27,9 @@ const scope_career = () => {
                     <div className="card">
                       <div className="card-body border-0 text-light " style={{backgroundColor: '#26577c'}}>
                         <div>
-                          <p>1) The Banking sector offers Excellent Opportunities for career growth with various roles and
+                          <p  className="text-sm xl:text-lg">1) The Banking sector offers Excellent Opportunities for career growth with various roles and
                             departments to choose from</p>
-                          <p>2) In the evolving digital world and the advent of the use of internet banking on a daily basis,
+                          <p className="text-sm xl:text-lg">2) In the evolving digital world and the advent of the use of internet banking on a daily basis,
                             brings new opportunities to the table - be it customer relationships, customer experience,
                             technology and innovation, to name a few.</p>
                         </div>
@@ -39,6 +39,9 @@ const scope_career = () => {
                   <div className="col-md-7 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay={100} style={{height: '250px'}}>
                     <div className="card">
                       <div className="card-body border-0 text-light " style={{backgroundColor: '#26577c'}}>
+
+
+                        
                         <div>
                           <p>3) Banks play a crucial role in the economy, making it a reliable industry even during challenging
                             times. Working in this sector is an opportunity to contribute to the economy.</p>

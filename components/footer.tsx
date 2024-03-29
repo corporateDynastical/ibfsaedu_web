@@ -21,7 +21,10 @@ const Footer = () => {
                         <ul className='flex flex-col gap-2 text-themeBlue font-normal'>
                             <Link className='text-md hover:font-semibold hover:text-themeText pb-4 border-b border-themeBlue border-dashed' href={'/'}>Home</Link>
                             <Link className='text-md hover:font-semibold hover:text-themeText pb-4 border-b border-themeBlue border-dashed' href={'/about'}>About</Link>
-                            <Link className='text-md hover:font-semibold hover:text-themeText pb-4 border-b border-themeBlue border-dashed' href={'/post-graduation-diploma-in-banking&finance'}>Course</Link>
+                            <Link className='text-md hover:font-semibold hover:text-themeText pb-4 border-b border-themeBlue border-dashed' href={'/course'}>Course</Link>
+                            
+                            <Link className='text-md hover:font-semibold hover:text-themeText pb-4 border-b border-themeBlue border-dashed' href={'/curriculum'}>Curriculum</Link>
+                            <Link className='text-md hover:font-semibold hover:text-themeText pb-4 border-b border-themeBlue border-dashed' href={'/path'}>Path</Link>
                             <Link className='text-md hover:font-semibold hover:text-themeText pb-4' href={'/contact'}>Contact</Link>
                         </ul>
                     </div>
@@ -52,12 +55,70 @@ const Footer = () => {
                                     info@ibfsaedu.com
                                 </span>
                             </Link>
+                            <Link href={'mailto:support@ibfsaedu.com'} className='flex items-center justify-start w-full gap-2 hover:text-themeText text-themeBlue'>
+                                <div className=''>
+                                    <Mail className='w-5 h-5 text-themeColor' />
+                                </div>
+                                <span className=''>
+                                    support@ibfsaedu.com
+                                </span>
+                            </Link>
                             <span className='flex items-start justify-start w-full gap-2 hover:text-themeText text-themeBlue'>
                                 <div className='mt-1'>
                                     <MapPin className='w-5 h-5' />
                                 </div>
                                 <span className='flex-[2] text-sm'>
                                 IBF, 3rd Floor, Rainbow Square, Indira Shankar Nagari, Paud Road, Kothrud, Pune 411038.
+                                <Link href={'tel:+919561087770'} className='flex items-center justify-start w-full gap-2 hover:text-themeText text-themeBlue'>
+                                <div className=''>
+                                    <Phone className='w-5 h-5' />
+                                </div>
+                                <span className=''>
+                                    +91 9561087770
+                                </span>
+                            </Link>
+
+                                </span>
+                              
+
+                            </span>
+                            <span className='flex items-start justify-start w-full gap-2 hover:text-themeText text-themeBlue'>
+                                <div className='mt-1'>
+                                    <MapPin className='w-5 h-5' />
+                                </div>
+                               
+                                <span className='flex-[2] text-sm'>
+                                Aryan Workspace-2, Gulbai Tekra Road, Ahmedabad(Gujrat), Pune 411038.
+                                <Link href={'tel:+918007451005'} className='flex items-center justify-start w-full gap-2 hover:text-themeText text-themeBlue'>
+                                <div className=''>
+                                    <Phone className='w-5 h-5' />
+                                </div>
+                                <span className=''>
+                                    +91 8007451005
+                                </span>
+                            </Link>
+
+
+                                </span>
+                              
+                            </span>
+
+
+                            <span className='flex items-start justify-start w-full gap-2 hover:text-themeText text-themeBlue'>
+                                <div className='mt-1'>
+                                    <MapPin className='w-5 h-5' />
+                                </div>
+                               
+                                <span className='flex-[2] text-sm'>
+                               Venus Corner, Matoshree Plazaa, Office No.302, Near Malabar & PNG Showroom, Kolhapur(Maharastra)
+                               <Link href={'tel:+918007451005'} className='flex items-center justify-start w-full gap-2 hover:text-themeText text-themeBlue'>
+                                <div className=''>
+                                    <Phone className='w-5 h-5' />
+                                </div>
+                                <span className=''>
+                                    +91 8007451005
+                                </span>
+                            </Link>
 
                                 </span>
                             </span>

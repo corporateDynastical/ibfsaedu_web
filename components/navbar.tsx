@@ -66,18 +66,18 @@ const Navbar = () => {
                                 <Image src={'/logo_green.png'} alt="IBFSA" width={120} height={120} layout="responsive" />
                             </div>
                             <div className="flex flex-col h-full justify-center gap-1 text-themeColor font-semibold max-xl:w-max max-lg:hidden">
-                                <h1 className={cn("text-xl xl:text-3xl uppercase tracking-tight")}>Institute of Banking Finance</h1>
-                                <p className="text-xs uppercase font-base text-themeBlue">(Skills Academy)</p>
+                                <h1 className={cn("text-xl xl:text-3xl  tracking-tight")}>Institute of Banking Finance</h1>
+                                <p className="text-xs  font-base text-themeBlue">(Skills Academy)</p>
                             </div>
                         </Link>
                         <div className="flex items-start justify-center gap-4 text-themeBlue">
                             <div className="text-xs w-1/2 border-r border-r-slate-400">
-                                <span className="font-light">Address: </span>
-                                <span className="text-themeColor">3rd Floor,Rainbow  square, paud Road, Kothrud Pune 411038.</span>
+                                <span className="font-light"></span>
+                                <span className="text-themeColor"></span>
                             </div>
                             <Link href={'tel:+919970114143'} className="text-xs">
-                                <span className="font-light">Free Call: </span> <br className="lg:hidden" />
-                                <span className="min-w-max text-themeColor">+91 9970114143</span>
+                                <span className="font-light"> </span> <br className="lg:hidden" />
+                                <span className="min-w-max text-themeColor"></span>
                             </Link>
                         </div>
                     </div>
@@ -126,10 +126,10 @@ const Navbar = () => {
                                 <Separator />
                                 <div className="flex flex-col justify-center items-center w-full text-sm my-6 gap-6">
                                     <div className="flex items-center justify-evenly w-full">
-                                        <Link href={'/'} className="bg-themeBlue text-white w-8 h-8 flex items-center justify-center rounded-lg">
+                                        <Link href={'/https://www.youtube.com/@IBFSkillsAcademy'} className="bg-themeBlue text-white w-8 h-8 flex items-center justify-center rounded-lg">
                                             <Twitter className="w-5 h-5" />
                                         </Link>
-                                        <Link href={'/'} className="bg-themeBlue text-white w-8 h-8 flex items-center justify-center rounded-lg">
+                                        <Link href={'/https://www.facebook.com/people/IBFSA/61555442203187/'} className="bg-themeBlue text-white w-8 h-8 flex items-center justify-center rounded-lg">
                                             <Facebook className="w-5 h-5" />
                                         </Link>
                                         <Link href={'/'} className="bg-themeBlue text-white w-8 h-8 flex items-center justify-center rounded-lg">
