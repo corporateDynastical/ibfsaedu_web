@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
  
 @layer base {
   :root {
@@ -78,3 +79,14 @@
     @apply text-3xl sm:text-5xl font-bold text-themeColor text-center
   }
 }
+=======
+
+
+body {
+  background: linear-gradient(45deg, rgba(237, 253, 255, 0.863), rgba(255, 255, 252, 0.897)),url("../public/assets/images/background.png");
+  background-size: contain;
+  background-repeat: repeat;
+  position: relative;  
+}
+
+>>>>>>> d97fe871a43856b2747d993e34952995901b924d

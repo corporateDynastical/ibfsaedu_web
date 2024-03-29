@@ -66,7 +66,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
         <div className="container-fluid py-5">
 
           <div className="relative">
-            <Image src="Growth/Growth3.png" alt="image here" className="w-1/2 right-20" />
+            <Image src="/Growth/Growth3.png" alt="image here" className="w-1/2 right-20" />
             <p className="  absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2  px-4 py-2 text-success" style={{ marginLeft: '200px', textDecoration: 'underline' }}> Growth Path</p>
           </div>
           <div className="row">
@@ -82,7 +82,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
                       {/* Regional Head */}
                       <div style={{ marginLeft: '1000px' }}>
                         <h4 >
-                          <Image src="Growth/Growth1.png" alt="image here" className="img-fluid p-3" style={{ width: '200px', height: '200px' }} />
+                          <Image src="/Growth/Growth1.png" alt="" className="img-fluid p-3" style={{ width: '200px', height: '200px' }} />
                         </h4>
                       </div>
 
@@ -94,48 +94,63 @@ className="w-full h-full object-cover mt-12 ml-auto"
                         <h5 style={{ marginLeft: '800px', textDecoration: 'underline' }}>Regional Head <b>20 LPA to 30 LPA</b>
                         </h5><br />
                       </div><br />
+
                       {/* Cluster Head */}
                       <div>
                         <h5 style={{ marginLeft: '700px', textDecoration: 'underline' }}>Cluster Head <b>15 LPA to 20 LPA</b>
                         </h5><br />
                       </div><br />
+
                       {/* Branch Manager */}
                       <div>
                         <h5 style={{ marginLeft: '600px', textDecoration: 'underline' }}>Branch Manager <b>09 LPA to 15 LPA</b>
-                        </h5><br />
+                        </h5>
+                        <br />
                       </div><br />
+
+
                       {/* Deputy Manager */}
                       <div>
                         <h5 style={{ marginLeft: '500px', textDecoration: 'underline' }}>Deputy Manager <b>05 LPA to 09 LPA</b>
                         </h5><br />
                       </div>
                     </div><br />
+
                     <div className="row">
                       {/* Assistant Manager */}
                       <div>
                         <h5 style={{ marginLeft: '400px', textDecoration: 'underline' }}>Assistant Manager <b>3.6 LPA to 05
                           LPA</b></h5><br />
                       </div><br />
+
+
                       {/* Senior Officer - BDM */}
                       <div>
                         <h5 style={{ marginLeft: '300px', textDecoration: 'underline' }}>Senior Officer - BDM <b>BDM 2.5 LPA to
                           3.6 LPA </b> </h5><br />
                       </div><br />
+
                       {/* Sales Officer - BDE */}
                       <div>
                         <h5 style={{ marginLeft: '200px', textDecoration: 'underline' }}>Sales Officer - BDE <b>1.8 LPA to 2.4
                           LPA</b></h5><br />
                       </div><br />
-                      {/* bottom 
+
+
+                      {/* bottom  
                       <div className="relative" style={{ marginLeft: '400px' }} >
                         <img src="Growth/Growth2.png" alt="image here" className=" p-3  w-1/2 right-10" />
                       </div>
-                      */}
-                      {/* bottom */}
+                      
+                      bottom */}
+
+                      
                       <div className="relative"  >
-                        <Image src="Growth/Growth3.png" alt="image here" className=" p-3  w-1/2 right-10" />
+                        <Image src="/Growth/Growth3.png" alt="image here" className=" p-3  w-1/2 right-10" />
                         <p className=" absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2  px-4 py-2 text-success" style={{ marginLeft: '200px', textDecoration: 'underline' }}>RECRUITMENT PARTNERS</p>
                       </div>
+
+
 
                     </div>
                   </div>
@@ -146,6 +161,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
         </div>
       </div>
       {/*--  End Growth path  SECTION  */}
+      
 
 
 
