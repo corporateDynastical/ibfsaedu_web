@@ -7,6 +7,7 @@ import Container from '@/components/ui/container'
 import Image from 'next/image'
 
 const Footer = () => {
+    
     return (
         <div className='bg-contact bg-contain bg-center bg-no-repeat relative'>
             <Container>

@@ -61,6 +61,7 @@ className="w-full h-full object-cover mt-12 ml-auto"
 
 
       {/* Curriculum Section */}
+      <div className='bg-contact bg-contain bg-center bg-no-repeat relative'>
       <div className="p-5 mb-4 bg-light rounded-3">
         <div className="container-fluid py-5">
           <h5 className="text-primary"><strong>Course Content</strong></h5>
@@ -162,13 +163,14 @@ className="w-full h-full object-cover mt-12 ml-auto"
                     </ul>
                   </div>
                   <div>
-                    <Image src="Curriculum01.png " alt="image here" />
+                    <Image src="/Curriculum01.png " alt="" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
       {/* End Curriculum Section */}
 

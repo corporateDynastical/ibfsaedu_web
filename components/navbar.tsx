@@ -85,7 +85,7 @@ const Navbar = () => {
             </div>
             <div className="border-t shadow-sm w-full max-sm:hidden">
                 <Container>
-                    <div className="flex justify-start gap-20 items-center w-4/5 text-sm py-3 max-w-2xl:ml-0 ml-6">
+                    <div className="flex justify-start gap-20 items-center w-4/5 text-xl py-3 max-w-2xl:ml-0 ml-6">
                         {NavLinks.map((item) => (
                             <Link key={item.name} href={item.href} className={cn("text-themeBlue hover:text-themeColor", pathName === item.href ? 'text-themeColor' : '')}>{item.name}</Link>
                         ))}
