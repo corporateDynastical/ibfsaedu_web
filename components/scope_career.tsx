@@ -41,18 +41,12 @@ const scope_career = () => {
                       <div className="card-body border-0 text-light " style={{backgroundColor: '#26577c'}}>
 
 
-
+                        
                         <div>
-                          <p>
-                            3) Banks play a crucial role in the economy, making it a reliable industry even during challenging
-                            times. Working in this sector is an opportunity to contribute to the economy.
-                            
-                            </p>
-                          <p>
-                            4) Huge opportunity for a lifetime career as the Banking and Financial Services sector is evergreen
-                            and will continue to stay relevant in the country and also across the world.
-                            
-                            </p>
+                          <p>3) Banks play a crucial role in the economy, making it a reliable industry even during challenging
+                            times. Working in this sector is an opportunity to contribute to the economy.</p>
+                          <p>4) Huge opportunity for a lifetime career as the Banking and Financial Services sector is evergreen
+                            and will continue to stay relevant in the country and also across the world.</p>
                         </div>
                       </div>
                     </div>
