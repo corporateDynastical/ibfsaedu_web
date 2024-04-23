@@ -30,7 +30,7 @@ export async function POST(req: Request) {
 
         const messageToSend = {
             from: process.env.USER_EMAIL,
-            to: ['ibfsa.kolhapur@gmail.com', 'krushnaghadge01@gmail.com', 'info@ibfsaedu.com', 'support@ibfsaedu.com', 'document@ibfsaedu.com'],
+            to: ['ibfsa.kolhapur@gmail.com', 'info@ibfsaedu.com', 'support@ibfsaedu.com', 'documents@ibfsaedu.com'],
     
             subject: "New Enquiry From IBFSA Website.",
             text: "",
